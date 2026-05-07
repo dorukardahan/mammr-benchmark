@@ -1,9 +1,9 @@
 {
   "run_type": "0g-sandbox-clean-room",
-  "date_utc": "2026-05-07T16:27:48.369264+00:00",
+  "date_utc": "2026-05-07T22:44:07.207449+00:00",
   "repository": "mammr-benchmark",
   "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
-  "artifact_archive_sha256": "2727dc3411b56149179f728cc10e2e6534ab565d0c014a645cf2f06cc5835b7f",
+  "artifact_archive_sha256": "3ec5d7d157d9c8b8a086a2f8be09de4e0dca93b5b3dbc615e8cdd5ceb441d421",
   "environment": {
     "runner": "0G Sandbox",
     "os": "linux",

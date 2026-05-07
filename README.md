@@ -19,6 +19,8 @@ It is not a general search benchmark. It focuses on the kind of recall problem l
 
 MAMMR was motivated by a real OpenClaw + NoldoMem memory stack running on a CPU-only VPS. That context matters. The production recommendation favors models that were accurate enough while staying small, fast, and stable under VPS resource limits.
 
+Post-release follow-up: after the pinned public reruns and private production canaries, the motivating deployment was migrated from Qwen3-Embedding-0.6B Q8_0 to BGE-M3 Q8_0 with Cohere Rerank 4 Pro kept as the hosted reranker. See `docs/production-migration-follow-up.md`.
+
 If you run an agent on a Mac Studio, Mac mini, workstation GPU, or dedicated inference server, do not copy the production recommendation blindly. Use this dataset and runner to test your own backend. Stronger hardware may make larger local embedding models or local rerankers more practical.
 
 ## What To Read First
@@ -31,6 +33,7 @@ If you run an agent on a Mac Studio, Mac mini, workstation GPU, or dedicated inf
 | understand domain breadth and limits | `docs/domain-coverage.md` |
 | run your own model | `docs/running-your-model.md` |
 | use this with OpenClaw/NoldoMem | `docs/openclaw-noldomem-guide.md` |
+| read the production migration follow-up | `docs/production-migration-follow-up.md` |
 | validate the public artifact in 0G Sandbox | `docs/0g-sandbox-reproducibility.md` |
 | understand what is publishable today | `docs/publication-scorecard.md` |
 | see what blocks a real public leaderboard | `docs/validation-roadmap.md` |
@@ -57,6 +60,7 @@ What is ready:
 - aggregate-only domain coverage report
 - one-command public release preflight
 - 0G Sandbox clean-room preflight run record for the current public candidate package
+- public-safe production migration follow-up
 - frozen release manifest
 - reviewer guide
 - model-assisted public privacy and scope review
@@ -86,6 +90,7 @@ Before any public announcement, the owner should still do a final publication ap
 | `docs/running-your-model.md` | Developer instructions for testing a model. |
 | `docs/reproducing-pinned-local-gguf.md` | Exact reproduction guide for the pinned public local-GGUF reruns. |
 | `docs/openclaw-noldomem-guide.md` | Practical guide for OpenClaw/NoldoMem memory users. |
+| `docs/production-migration-follow-up.md` | Public-safe follow-up from using MAMMR to migrate a production memory stack. |
 | `docs/0g-sandbox-reproducibility.md` | Clean-room validation flow for running the public artifact in 0G Sandbox. |
 | `docs/public-scope-and-privacy-review.md` | Public naming, privacy, and release-scope review record. |
 | `RELEASE-MANIFEST.md` | Frozen evidence boundary, hashes, headline metrics, and validation record. |

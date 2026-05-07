@@ -28,7 +28,9 @@ The public dataset is sanitized. The refreshed pinned four-model local-GGUF reru
 The public rerun result is useful because it separates two claims that were previously tangled:
 
 - Snowflake, BGE-M3, and Jina-v3 remain strong on the sanitized public set.
-- Qwen3-0.6B was a production tradeoff choice on one VPS, not the public sanitized leaderboard winner.
+- Qwen3-0.6B was the initial production tradeoff choice on one VPS, not the public sanitized leaderboard winner.
+
+Post-release production follow-up: the motivating deployment was later migrated to BGE-M3 Q8_0 after the public reruns and private production canaries. This is documented as an operational follow-up, not as a change to the frozen public result files.
 
 ## Full-Corpus And Held-Out Evidence
 
@@ -68,7 +70,7 @@ See `docs/sanitized-reranker-matrix.md`.
 
 For CPU-only OpenClaw/NoldoMem VPS users:
 
-- start with small multilingual embedding models
+- start with small multilingual embedding models, with BGE-M3 Q8_0 as the stronger default candidate from the current public evidence
 - treat reranking as a major quality lever
 - measure latency under real system load
 - do not use local CPU rerankers blindly

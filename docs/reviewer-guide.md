@@ -14,7 +14,8 @@ Allowed claims:
 - The public v0.1 candidate contains a sanitized 305-pair dataset and a runnable embedding evaluator.
 - Four local-GGUF embedding models were rerun on the sanitized public dataset with pinned backend metadata.
 - BGE-M3, Snowflake Arctic L v2, and Jina-v3 formed the strongest group on the sanitized public rerun.
-- Qwen3-Embedding-0.6B Q8_0 was a practical production choice for one CPU-only VPS, but it is not the public sanitized leaderboard winner.
+- Qwen3-Embedding-0.6B Q8_0 was a practical initial production choice for one CPU-only VPS, but it is not the public sanitized leaderboard winner.
+- The motivating deployment later migrated to BGE-M3 Q8_0 after the pinned public reruns and private production canaries.
 - Cohere Rerank 4 Pro and Cohere Rerank v3.5 improved top-10 same-category MRR in the public reranker matrix.
 - The public candidate package passed local preflight and 0G Sandbox clean-room validation.
 

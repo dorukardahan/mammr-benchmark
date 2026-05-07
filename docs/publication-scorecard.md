@@ -47,7 +47,9 @@ This is ready as a public v0.1 candidate, technical report, and four-model local
 
 > MAMMR is a production-informed benchmark for multilingual agent memory retrieval.
 
-> Qwen3-Embedding-0.6B Q8_0 was a practical production choice for the tested CPU-only VPS.
+> Qwen3-Embedding-0.6B Q8_0 was a practical initial production choice for the tested CPU-only VPS.
+
+> The motivating deployment later migrated to BGE-M3 Q8_0 after the pinned public reruns and private production canaries, while keeping hosted Cohere Rerank 4 Pro.
 
 > On the pinned public v0.1 local-GGUF rerun, BGE-M3 had the highest weighted score among the four P0 models tested, Jina-v3 had the highest MRR and Recall@5, and Snowflake stayed close on weighted score.
 

@@ -46,7 +46,9 @@ If you run OpenClaw on a small CPU-only VPS, the original production lesson is r
 - consider hosted reranking if the privacy, cost, and dependency tradeoff is acceptable
 - keep batch sizes conservative when the embedding server also serves live recall
 
-The original production choice was Qwen3-Embedding-0.6B Q8_0 plus hosted reranking. That was a practical choice for one constrained VPS, not a universal winner.
+The original production choice was Qwen3-Embedding-0.6B Q8_0 plus hosted reranking. That was a practical starting choice for one constrained VPS, not a universal winner.
+
+After the pinned public reruns and private production canaries, the motivating deployment migrated to BGE-M3 Q8_0 plus hosted Cohere Rerank 4 Pro. That follow-up is documented in `docs/production-migration-follow-up.md`.
 
 ## Local Mac or Workstation Setup
 
@@ -74,6 +76,8 @@ An embedding benchmark can look good while production recall still feels bad. Fo
 - backend reproducibility after upgrades
 - whether semantic search silently falls back to keyword search
 - reranker timeout and fallback behavior
+
+If you change embedding models, rebuild the whole vector table even when dimensions match. For example, Qwen3-Embedding-0.6B Q8_0 and BGE-M3 Q8_0 both produce 1024-dimensional vectors in the tested setup, but they cannot be mixed. Also record the pooling mode: the tested Qwen3 setup used `last`, while the BGE-M3 setup used `cls`.
 
 ## Minimum Production Smoke Test
 

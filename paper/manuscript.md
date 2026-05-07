@@ -97,7 +97,7 @@ Earlier unpublished exploration covered a wider model set, including local GGUF 
 
 The public v0.1 evidence includes a sanitized reranker matrix for Cohere Rerank 4 Pro and Cohere Rerank v3.5 over the four pinned local-GGUF embedding baselines, using top-10 same-category candidates.
 
-Production deployment uses Qwen3-Embedding-0.6B_Q8_0 served by a llama.cpp-based embedding server on CPU. The production choice was based on a joint quality and operations criterion: benchmark performance, model size, memory footprint, latency, and serving stability on the OpenClaw/NoldoMem VPS.
+At the time of the initial public candidate, the motivating production deployment used Qwen3-Embedding-0.6B_Q8_0 served by a llama.cpp-based embedding server on CPU. That choice was based on a joint quality and operations criterion: benchmark performance, model size, memory footprint, latency, and serving stability on the OpenClaw/NoldoMem VPS.
 
 ## 5. Embedding Results
 
@@ -109,7 +109,9 @@ This keeps the release honest: the public package reports what a reader can insp
 
 ### 5.2 Practical Model Selection
 
-The deployment selected Qwen3-Embedding-0.6B_Q8_0 because model quality was only one constraint. Size, CPU latency, memory footprint, and serving stability also mattered. In the pinned public sanitized rerun, Qwen3 did not rank near the top. That difference is why deployment selection and public leaderboard claims are separated throughout this report.
+The initial deployment selected Qwen3-Embedding-0.6B_Q8_0 because model quality was only one constraint. Size, CPU latency, memory footprint, and serving stability also mattered. In the pinned public sanitized rerun, Qwen3 did not rank near the top. That difference is why deployment selection and public leaderboard claims are separated throughout this report.
+
+After the pinned public reruns and private production canaries, the motivating deployment migrated to BGE-M3 Q8_0 while keeping hosted Cohere Rerank 4 Pro. This is a useful production follow-up, but it is not retroactively counted as frozen public v0.1 benchmark evidence.
 
 This distinction is central to MAMMR. The benchmark is not only a leaderboard; it is a model-selection tool for agent memory systems that must run reliably in their actual deployment environment.
 
@@ -123,7 +125,7 @@ The public v0.1 artifact is a sanitized candidate derived from production-motiva
 
 To reduce this ambiguity, four local GGUF models were rerun on a pinned CPU backend against the sanitized public dataset: Snowflake Arctic L v2 Q8_0, BGE-M3 Q8_0, Jina-v3 Q8_0, and Qwen3-Embedding-0.6B_Q8_0. On this pinned public rerun, BGE-M3 had the highest weighted score, Jina-v3 had the highest same-category MRR and Recall@5, and BGE-M3 had the highest full-corpus+distractor MRR point estimate by a very small margin over Jina-v3. Snowflake stayed close on weighted score and full-corpus retrieval. Qwen3 performed substantially worse on this sanitized public backend.
 
-This result changes the public-release framing. Qwen3 may still be a practical production choice under strict CPU, size, and latency constraints, but the pinned public rerun does not support presenting Qwen3 as the public v0.1 leaderboard winner. Instead, it shows why public artifacts must separate production deployment decisions from reproducible sanitized-data comparisons.
+This result changes the public-release framing. Qwen3 was a practical initial production choice under strict CPU, size, and latency constraints, but the pinned public rerun does not support presenting Qwen3 as the public v0.1 leaderboard winner. Instead, it shows why public artifacts must separate production deployment decisions from reproducible sanitized-data comparisons. The later BGE-M3 production migration is consistent with this public evidence while remaining outside the frozen result boundary.
 
 The public rerun also informed cleanup review. Most Qwen3 high-pair failures were not shared by Snowflake, BGE-M3, and Jina-v3. Therefore, the sanitized dataset was not mass-rewritten to improve Qwen3. The cleanup decision preserves hard agent-memory cases such as vague Turkish recall, typo handling, diacritic normalization, implicit context, relative time, and command/config memories.
 
@@ -144,6 +146,8 @@ First, backend reproducibility matters. In production testing, CPU and Metal exe
 Second, serving configuration can dominate model choice. In the production llama.cpp embedding server, high thread counts caused deadlock-like behavior in the embedding path. Context size also had to be increased because character truncation did not reliably bound token count for JSON-heavy memories. A source-level non-causal attention fix was required for embedding correctness in the deployed setup.
 
 Third, CPU contention matters. The embedding service shared a VPS with other CPU-heavy inference workloads. A model that appears acceptable in an isolated benchmark may still fail operationally if it monopolizes CPU slots, has poor tail latency, or interacts badly with cron-driven backfills.
+
+Fourth, equal vector dimensionality is not enough for safe migration. The later production migration moved between two 1024-dimensional embedding models, but the vector table still had to be rebuilt end to end because model and pooling changes create incompatible vector spaces. The public follow-up records this as an operational migration pattern rather than benchmark evidence.
 
 These constraints are not universal. On a Mac Studio, a Mac mini, or a dedicated inference host, larger local embedding models and local rerankers may be more practical than they were on the tested VPS. The MAMMR recommendation should therefore be interpreted as a resource-constrained production recommendation, not as a hardware-independent model ranking.
 

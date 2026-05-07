@@ -10,7 +10,7 @@ It contains:
 
 - sanitized 305-pair dataset candidate
 - OpenAI-compatible embedding runner
-- Qwen3 diagnostic results on the current production backend
+- Qwen3 diagnostic results from the earlier production backend
 - cleanup queue and cross-model failure overlap review for weak high-relevance pairs
 - structural dataset audit and P0 semantic review
 - aggregate-only inventory of old private embedding and reranker benchmark outputs
@@ -22,11 +22,14 @@ It contains:
 - aggregate-only domain coverage report
 - one-command public release preflight
 - OpenClaw/NoldoMem usage guide
+- public-safe production migration follow-up
 - publication scorecard
 - validation roadmap
 - documentation explaining why this is not a universal leaderboard
 
 The motivating deployment is a CPU-only OpenClaw + NoldoMem VPS. Public users with stronger local hardware should treat the included results as context, not as a hardware-independent prescription.
+
+Post-release production follow-up: the motivating deployment migrated from Qwen3-Embedding-0.6B Q8_0 to BGE-M3 Q8_0 after the pinned public reruns and private production canaries. This is an operational follow-up, not a change to the frozen public result files.
 
 The bundle passes the local release scan.
 
