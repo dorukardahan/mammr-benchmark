@@ -1,0 +1,2163 @@
+{
+  "dataset_high_pairs": 166,
+  "labels": [
+    "Snowflake-Arctic-L-v2 Q8_0",
+    "BGE-M3 Q8_0",
+    "Jina-v3 Q8_0",
+    "Qwen3-0.6B Q8_0"
+  ],
+  "strong_baseline_labels": [
+    "Snowflake-Arctic-L-v2 Q8_0",
+    "BGE-M3 Q8_0",
+    "Jina-v3 Q8_0"
+  ],
+  "model_summaries": [
+    {
+      "label": "Snowflake-Arctic-L-v2 Q8_0",
+      "path": "results/snowflake-arctic-l-v2-q8_0-pinned-20260506.json",
+      "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+      "weighted_score": 0.6995,
+      "unweighted_score": 0.6852,
+      "mrr": 0.8917,
+      "recall_at_5": 0.9578,
+      "total_fail": 96,
+      "high_failure_count": 45
+    },
+    {
+      "label": "BGE-M3 Q8_0",
+      "path": "results/bge-m3-q8_0-pinned-20260506.json",
+      "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+      "weighted_score": 0.7143,
+      "unweighted_score": 0.7016,
+      "mrr": 0.9134,
+      "recall_at_5": 0.9639,
+      "total_fail": 91,
+      "high_failure_count": 13
+    },
+    {
+      "label": "Jina-v3 Q8_0",
+      "path": "results/jina-v3-q8_0-pinned-20260506.json",
+      "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+      "weighted_score": 0.6956,
+      "unweighted_score": 0.6885,
+      "mrr": 0.9257,
+      "recall_at_5": 0.988,
+      "total_fail": 95,
+      "high_failure_count": 10
+    },
+    {
+      "label": "Qwen3-0.6B Q8_0",
+      "path": "results/qwen3-0.6b-q8_0-pinned-20260506.json",
+      "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+      "weighted_score": 0.3731,
+      "unweighted_score": 0.3869,
+      "mrr": 0.4549,
+      "recall_at_5": 0.6446,
+      "total_fail": 187,
+      "high_failure_count": 139
+    }
+  ],
+  "overlap_counts": {
+    "unique_high_failures_any_model": 142,
+    "failed_all_models": 9,
+    "failed_all_strong_baselines": 9,
+    "qwen_only_high_failures": 97
+  },
+  "failure_count_distribution": {
+    "1": 100,
+    "2": 28,
+    "3": 5,
+    "4": 9
+  },
+  "category_counts_any_model": {
+    "conversational_recall": 13,
+    "short_query_long_memory": 12,
+    "crosslingual": 11,
+    "code_to_description": 10,
+    "context_implicit": 10,
+    "partial_match": 10,
+    "synonym_alias": 10,
+    "paraphrase": 9,
+    "turkish_chars": 9,
+    "code_mixed": 8,
+    "code_switching": 8,
+    "temporal": 7,
+    "noise_typo": 6,
+    "specificity": 6,
+    "turkish_morphology": 6,
+    "entity_confusion": 5,
+    "adversarial": 2
+  },
+  "category_counts_all_strong": {
+    "turkish_chars": 3,
+    "temporal": 2,
+    "context_implicit": 1,
+    "conversational_recall": 1,
+    "noise_typo": 1,
+    "partial_match": 1
+  },
+  "category_counts_qwen_only": {
+    "crosslingual": 11,
+    "code_to_description": 10,
+    "short_query_long_memory": 8,
+    "code_switching": 7,
+    "conversational_recall": 7,
+    "paraphrase": 7,
+    "partial_match": 7,
+    "code_mixed": 6,
+    "turkish_morphology": 6,
+    "noise_typo": 5,
+    "entity_confusion": 4,
+    "specificity": 4,
+    "synonym_alias": 4,
+    "turkish_chars": 4,
+    "temporal": 3,
+    "adversarial": 2,
+    "context_implicit": 2
+  },
+  "all_strong_rows": [
+    {
+      "id": "mammr-v0.1-0181",
+      "category": "temporal",
+      "failed_models": [
+        "BGE-M3 Q8_0",
+        "Jina-v3 Q8_0",
+        "Qwen3-0.6B Q8_0",
+        "Snowflake-Arctic-L-v2 Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.2132,
+        "BGE-M3 Q8_0": 0.3047,
+        "Jina-v3 Q8_0": 0.3312,
+        "Qwen3-0.6B Q8_0": 0.1896
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "fail",
+        "BGE-M3 Q8_0": "fail",
+        "Jina-v3 Q8_0": "fail",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0275",
+      "category": "partial_match",
+      "failed_models": [
+        "BGE-M3 Q8_0",
+        "Jina-v3 Q8_0",
+        "Qwen3-0.6B Q8_0",
+        "Snowflake-Arctic-L-v2 Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.1557,
+        "BGE-M3 Q8_0": 0.3083,
+        "Jina-v3 Q8_0": 0.4564,
+        "Qwen3-0.6B Q8_0": 0.253
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "fail",
+        "BGE-M3 Q8_0": "fail",
+        "Jina-v3 Q8_0": "fail",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0108",
+      "category": "conversational_recall",
+      "failed_models": [
+        "BGE-M3 Q8_0",
+        "Jina-v3 Q8_0",
+        "Qwen3-0.6B Q8_0",
+        "Snowflake-Arctic-L-v2 Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.2185,
+        "BGE-M3 Q8_0": 0.4297,
+        "Jina-v3 Q8_0": 0.3949,
+        "Qwen3-0.6B Q8_0": 0.2892
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "fail",
+        "BGE-M3 Q8_0": "fail",
+        "Jina-v3 Q8_0": "fail",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0264",
+      "category": "context_implicit",
+      "failed_models": [
+        "BGE-M3 Q8_0",
+        "Jina-v3 Q8_0",
+        "Qwen3-0.6B Q8_0",
+        "Snowflake-Arctic-L-v2 Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.2538,
+        "BGE-M3 Q8_0": 0.4445,
+        "Jina-v3 Q8_0": 0.4158,
+        "Qwen3-0.6B Q8_0": 0.2559
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "fail",
+        "BGE-M3 Q8_0": "fail",
+        "Jina-v3 Q8_0": "fail",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0178",
+      "category": "temporal",
+      "failed_models": [
+        "BGE-M3 Q8_0",
+        "Jina-v3 Q8_0",
+        "Qwen3-0.6B Q8_0",
+        "Snowflake-Arctic-L-v2 Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.3217,
+        "BGE-M3 Q8_0": 0.4544,
+        "Jina-v3 Q8_0": 0.4665,
+        "Qwen3-0.6B Q8_0": 0.2098
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "fail",
+        "BGE-M3 Q8_0": "fail",
+        "Jina-v3 Q8_0": "fail",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0146",
+      "category": "turkish_chars",
+      "failed_models": [
+        "BGE-M3 Q8_0",
+        "Jina-v3 Q8_0",
+        "Qwen3-0.6B Q8_0",
+        "Snowflake-Arctic-L-v2 Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.2986,
+        "BGE-M3 Q8_0": 0.4027,
+        "Jina-v3 Q8_0": 0.4277,
+        "Qwen3-0.6B Q8_0": 0.3388
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "fail",
+        "BGE-M3 Q8_0": "fail",
+        "Jina-v3 Q8_0": "fail",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0147",
+      "category": "turkish_chars",
+      "failed_models": [
+        "BGE-M3 Q8_0",
+        "Jina-v3 Q8_0",
+        "Qwen3-0.6B Q8_0",
+        "Snowflake-Arctic-L-v2 Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.285,
+        "BGE-M3 Q8_0": 0.3638,
+        "Jina-v3 Q8_0": 0.4122,
+        "Qwen3-0.6B Q8_0": 0.434
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "fail",
+        "BGE-M3 Q8_0": "fail",
+        "Jina-v3 Q8_0": "fail",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0141",
+      "category": "turkish_chars",
+      "failed_models": [
+        "BGE-M3 Q8_0",
+        "Jina-v3 Q8_0",
+        "Qwen3-0.6B Q8_0",
+        "Snowflake-Arctic-L-v2 Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.3202,
+        "BGE-M3 Q8_0": 0.4129,
+        "Jina-v3 Q8_0": 0.3423,
+        "Qwen3-0.6B Q8_0": 0.4227
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "fail",
+        "BGE-M3 Q8_0": "fail",
+        "Jina-v3 Q8_0": "fail",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0196",
+      "category": "noise_typo",
+      "failed_models": [
+        "BGE-M3 Q8_0",
+        "Jina-v3 Q8_0",
+        "Qwen3-0.6B Q8_0",
+        "Snowflake-Arctic-L-v2 Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.3677,
+        "BGE-M3 Q8_0": 0.4661,
+        "Jina-v3 Q8_0": 0.4516,
+        "Qwen3-0.6B Q8_0": 0.3814
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "fail",
+        "BGE-M3 Q8_0": "fail",
+        "Jina-v3 Q8_0": "fail",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    }
+  ],
+  "qwen_only_rows": [
+    {
+      "id": "mammr-v0.1-0174",
+      "category": "temporal",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5216,
+        "BGE-M3 Q8_0": 0.5621,
+        "Jina-v3 Q8_0": 0.6202,
+        "Qwen3-0.6B Q8_0": 0.1504
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0259",
+      "category": "context_implicit",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7139,
+        "BGE-M3 Q8_0": 0.7649,
+        "Jina-v3 Q8_0": 0.8155,
+        "Qwen3-0.6B Q8_0": 0.1806
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0272",
+      "category": "partial_match",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5058,
+        "BGE-M3 Q8_0": 0.5259,
+        "Jina-v3 Q8_0": 0.6494,
+        "Qwen3-0.6B Q8_0": 0.198
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0009",
+      "category": "short_query_long_memory",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6991,
+        "BGE-M3 Q8_0": 0.7252,
+        "Jina-v3 Q8_0": 0.8152,
+        "Qwen3-0.6B Q8_0": 0.1992
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0234",
+      "category": "synonym_alias",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5316,
+        "BGE-M3 Q8_0": 0.5936,
+        "Jina-v3 Q8_0": 0.757,
+        "Qwen3-0.6B Q8_0": 0.2007
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0175",
+      "category": "temporal",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.658,
+        "BGE-M3 Q8_0": 0.7031,
+        "Jina-v3 Q8_0": 0.8131,
+        "Qwen3-0.6B Q8_0": 0.202
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0271",
+      "category": "partial_match",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5714,
+        "BGE-M3 Q8_0": 0.643,
+        "Jina-v3 Q8_0": 0.6812,
+        "Qwen3-0.6B Q8_0": 0.2048
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0274",
+      "category": "partial_match",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5721,
+        "BGE-M3 Q8_0": 0.6876,
+        "Jina-v3 Q8_0": 0.7499,
+        "Qwen3-0.6B Q8_0": 0.2054
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0131",
+      "category": "crosslingual",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7626,
+        "BGE-M3 Q8_0": 0.8666,
+        "Jina-v3 Q8_0": 0.903,
+        "Qwen3-0.6B Q8_0": 0.2119
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0204",
+      "category": "noise_typo",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7621,
+        "BGE-M3 Q8_0": 0.717,
+        "Jina-v3 Q8_0": 0.8131,
+        "Qwen3-0.6B Q8_0": 0.212
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0001",
+      "category": "short_query_long_memory",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5377,
+        "BGE-M3 Q8_0": 0.5448,
+        "Jina-v3 Q8_0": 0.6861,
+        "Qwen3-0.6B Q8_0": 0.225
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0117",
+      "category": "conversational_recall",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6445,
+        "BGE-M3 Q8_0": 0.66,
+        "Jina-v3 Q8_0": 0.7702,
+        "Qwen3-0.6B Q8_0": 0.2302
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0276",
+      "category": "partial_match",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6404,
+        "BGE-M3 Q8_0": 0.6216,
+        "Jina-v3 Q8_0": 0.7675,
+        "Qwen3-0.6B Q8_0": 0.2311
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0126",
+      "category": "crosslingual",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7646,
+        "BGE-M3 Q8_0": 0.8094,
+        "Jina-v3 Q8_0": 0.8482,
+        "Qwen3-0.6B Q8_0": 0.2313
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0134",
+      "category": "crosslingual",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6844,
+        "BGE-M3 Q8_0": 0.747,
+        "Jina-v3 Q8_0": 0.7637,
+        "Qwen3-0.6B Q8_0": 0.2315
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0038",
+      "category": "code_switching",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6792,
+        "BGE-M3 Q8_0": 0.6152,
+        "Jina-v3 Q8_0": 0.7663,
+        "Qwen3-0.6B Q8_0": 0.2316
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0005",
+      "category": "short_query_long_memory",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6,
+        "BGE-M3 Q8_0": 0.6211,
+        "Jina-v3 Q8_0": 0.7325,
+        "Qwen3-0.6B Q8_0": 0.2383
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0292",
+      "category": "code_to_description",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5379,
+        "BGE-M3 Q8_0": 0.6526,
+        "Jina-v3 Q8_0": 0.6846,
+        "Qwen3-0.6B Q8_0": 0.2403
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0089",
+      "category": "turkish_morphology",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7295,
+        "BGE-M3 Q8_0": 0.8883,
+        "Jina-v3 Q8_0": 0.8816,
+        "Qwen3-0.6B Q8_0": 0.2503
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0170",
+      "category": "paraphrase",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.693,
+        "BGE-M3 Q8_0": 0.663,
+        "Jina-v3 Q8_0": 0.6944,
+        "Qwen3-0.6B Q8_0": 0.2522
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0273",
+      "category": "partial_match",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5761,
+        "BGE-M3 Q8_0": 0.6679,
+        "Jina-v3 Q8_0": 0.8003,
+        "Qwen3-0.6B Q8_0": 0.2527
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0132",
+      "category": "crosslingual",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.9157,
+        "BGE-M3 Q8_0": 0.9574,
+        "Jina-v3 Q8_0": 0.9484,
+        "Qwen3-0.6B Q8_0": 0.2624
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0246",
+      "category": "synonym_alias",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7402,
+        "BGE-M3 Q8_0": 0.8994,
+        "Jina-v3 Q8_0": 0.8801,
+        "Qwen3-0.6B Q8_0": 0.2637
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0007",
+      "category": "short_query_long_memory",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6924,
+        "BGE-M3 Q8_0": 0.6411,
+        "Jina-v3 Q8_0": 0.6912,
+        "Qwen3-0.6B Q8_0": 0.2648
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0133",
+      "category": "crosslingual",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6984,
+        "BGE-M3 Q8_0": 0.7407,
+        "Jina-v3 Q8_0": 0.7988,
+        "Qwen3-0.6B Q8_0": 0.2668
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0130",
+      "category": "crosslingual",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5989,
+        "BGE-M3 Q8_0": 0.7849,
+        "Jina-v3 Q8_0": 0.6182,
+        "Qwen3-0.6B Q8_0": 0.279
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0261",
+      "category": "context_implicit",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5448,
+        "BGE-M3 Q8_0": 0.6253,
+        "Jina-v3 Q8_0": 0.6718,
+        "Qwen3-0.6B Q8_0": 0.2792
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0168",
+      "category": "paraphrase",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.8932,
+        "BGE-M3 Q8_0": 0.8427,
+        "Jina-v3 Q8_0": 0.7767,
+        "Qwen3-0.6B Q8_0": 0.2835
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0195",
+      "category": "noise_typo",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6766,
+        "BGE-M3 Q8_0": 0.6677,
+        "Jina-v3 Q8_0": 0.7004,
+        "Qwen3-0.6B Q8_0": 0.2879
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0287",
+      "category": "code_to_description",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5875,
+        "BGE-M3 Q8_0": 0.6395,
+        "Jina-v3 Q8_0": 0.7107,
+        "Qwen3-0.6B Q8_0": 0.2924
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0283",
+      "category": "code_to_description",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.633,
+        "BGE-M3 Q8_0": 0.6875,
+        "Jina-v3 Q8_0": 0.7411,
+        "Qwen3-0.6B Q8_0": 0.2925
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0243",
+      "category": "synonym_alias",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6397,
+        "BGE-M3 Q8_0": 0.6018,
+        "Jina-v3 Q8_0": 0.7222,
+        "Qwen3-0.6B Q8_0": 0.2935
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0003",
+      "category": "short_query_long_memory",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6554,
+        "BGE-M3 Q8_0": 0.6388,
+        "Jina-v3 Q8_0": 0.7332,
+        "Qwen3-0.6B Q8_0": 0.2945
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0171",
+      "category": "paraphrase",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7195,
+        "BGE-M3 Q8_0": 0.7572,
+        "Jina-v3 Q8_0": 0.7968,
+        "Qwen3-0.6B Q8_0": 0.297
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0279",
+      "category": "partial_match",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5593,
+        "BGE-M3 Q8_0": 0.6085,
+        "Jina-v3 Q8_0": 0.7043,
+        "Qwen3-0.6B Q8_0": 0.2982
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0253",
+      "category": "entity_confusion",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5595,
+        "BGE-M3 Q8_0": 0.7147,
+        "Jina-v3 Q8_0": 0.8526,
+        "Qwen3-0.6B Q8_0": 0.3018
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0285",
+      "category": "code_to_description",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7466,
+        "BGE-M3 Q8_0": 0.791,
+        "Jina-v3 Q8_0": 0.8589,
+        "Qwen3-0.6B Q8_0": 0.3045
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0199",
+      "category": "noise_typo",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.709,
+        "BGE-M3 Q8_0": 0.7167,
+        "Jina-v3 Q8_0": 0.7489,
+        "Qwen3-0.6B Q8_0": 0.3126
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0238",
+      "category": "synonym_alias",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5358,
+        "BGE-M3 Q8_0": 0.5569,
+        "Jina-v3 Q8_0": 0.5482,
+        "Qwen3-0.6B Q8_0": 0.3126
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0121",
+      "category": "conversational_recall",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.552,
+        "BGE-M3 Q8_0": 0.6027,
+        "Jina-v3 Q8_0": 0.6948,
+        "Qwen3-0.6B Q8_0": 0.3128
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0286",
+      "category": "code_to_description",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7108,
+        "BGE-M3 Q8_0": 0.7578,
+        "Jina-v3 Q8_0": 0.8324,
+        "Qwen3-0.6B Q8_0": 0.3146
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0192",
+      "category": "code_mixed",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7143,
+        "BGE-M3 Q8_0": 0.6896,
+        "Jina-v3 Q8_0": 0.8215,
+        "Qwen3-0.6B Q8_0": 0.315
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0000",
+      "category": "short_query_long_memory",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5789,
+        "BGE-M3 Q8_0": 0.6092,
+        "Jina-v3 Q8_0": 0.7114,
+        "Qwen3-0.6B Q8_0": 0.3157
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0011",
+      "category": "short_query_long_memory",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5617,
+        "BGE-M3 Q8_0": 0.6617,
+        "Jina-v3 Q8_0": 0.7235,
+        "Qwen3-0.6B Q8_0": 0.3181
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0043",
+      "category": "code_switching",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7569,
+        "BGE-M3 Q8_0": 0.6971,
+        "Jina-v3 Q8_0": 0.8569,
+        "Qwen3-0.6B Q8_0": 0.3201
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0106",
+      "category": "conversational_recall",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6917,
+        "BGE-M3 Q8_0": 0.6416,
+        "Jina-v3 Q8_0": 0.7311,
+        "Qwen3-0.6B Q8_0": 0.3248
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0169",
+      "category": "paraphrase",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5606,
+        "BGE-M3 Q8_0": 0.6296,
+        "Jina-v3 Q8_0": 0.7708,
+        "Qwen3-0.6B Q8_0": 0.3264
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0004",
+      "category": "short_query_long_memory",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6507,
+        "BGE-M3 Q8_0": 0.6152,
+        "Jina-v3 Q8_0": 0.7382,
+        "Qwen3-0.6B Q8_0": 0.3287
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0109",
+      "category": "conversational_recall",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5699,
+        "BGE-M3 Q8_0": 0.5974,
+        "Jina-v3 Q8_0": 0.6762,
+        "Qwen3-0.6B Q8_0": 0.3339
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0125",
+      "category": "crosslingual",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7408,
+        "BGE-M3 Q8_0": 0.8957,
+        "Jina-v3 Q8_0": 0.8926,
+        "Qwen3-0.6B Q8_0": 0.3347
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0113",
+      "category": "conversational_recall",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7139,
+        "BGE-M3 Q8_0": 0.7818,
+        "Jina-v3 Q8_0": 0.8988,
+        "Qwen3-0.6B Q8_0": 0.3363
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0128",
+      "category": "crosslingual",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7714,
+        "BGE-M3 Q8_0": 0.9359,
+        "Jina-v3 Q8_0": 0.8559,
+        "Qwen3-0.6B Q8_0": 0.3404
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0110",
+      "category": "conversational_recall",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5793,
+        "BGE-M3 Q8_0": 0.6699,
+        "Jina-v3 Q8_0": 0.7207,
+        "Qwen3-0.6B Q8_0": 0.3408
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0284",
+      "category": "code_to_description",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6468,
+        "BGE-M3 Q8_0": 0.7321,
+        "Jina-v3 Q8_0": 0.7389,
+        "Qwen3-0.6B Q8_0": 0.3424
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0088",
+      "category": "turkish_morphology",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5822,
+        "BGE-M3 Q8_0": 0.739,
+        "Jina-v3 Q8_0": 0.7147,
+        "Qwen3-0.6B Q8_0": 0.3441
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0176",
+      "category": "temporal",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5938,
+        "BGE-M3 Q8_0": 0.6992,
+        "Jina-v3 Q8_0": 0.6635,
+        "Qwen3-0.6B Q8_0": 0.3514
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0255",
+      "category": "entity_confusion",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5074,
+        "BGE-M3 Q8_0": 0.5195,
+        "Jina-v3 Q8_0": 0.6103,
+        "Qwen3-0.6B Q8_0": 0.3525
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0044",
+      "category": "code_switching",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5069,
+        "BGE-M3 Q8_0": 0.5755,
+        "Jina-v3 Q8_0": 0.5921,
+        "Qwen3-0.6B Q8_0": 0.3571
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0158",
+      "category": "specificity",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5263,
+        "BGE-M3 Q8_0": 0.5711,
+        "Jina-v3 Q8_0": 0.6017,
+        "Qwen3-0.6B Q8_0": 0.3604
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0041",
+      "category": "code_switching",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5412,
+        "BGE-M3 Q8_0": 0.6322,
+        "Jina-v3 Q8_0": 0.6793,
+        "Qwen3-0.6B Q8_0": 0.3616
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0144",
+      "category": "turkish_chars",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6033,
+        "BGE-M3 Q8_0": 0.5936,
+        "Jina-v3 Q8_0": 0.7825,
+        "Qwen3-0.6B Q8_0": 0.3623
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0129",
+      "category": "crosslingual",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.9449,
+        "BGE-M3 Q8_0": 0.9516,
+        "Jina-v3 Q8_0": 0.8949,
+        "Qwen3-0.6B Q8_0": 0.3632
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0162",
+      "category": "paraphrase",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7625,
+        "BGE-M3 Q8_0": 0.7244,
+        "Jina-v3 Q8_0": 0.6989,
+        "Qwen3-0.6B Q8_0": 0.3639
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0289",
+      "category": "code_to_description",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6774,
+        "BGE-M3 Q8_0": 0.7118,
+        "Jina-v3 Q8_0": 0.8224,
+        "Qwen3-0.6B Q8_0": 0.3676
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0290",
+      "category": "code_to_description",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5365,
+        "BGE-M3 Q8_0": 0.6393,
+        "Jina-v3 Q8_0": 0.7349,
+        "Qwen3-0.6B Q8_0": 0.3689
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0304",
+      "category": "adversarial",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.639,
+        "BGE-M3 Q8_0": 0.8868,
+        "Jina-v3 Q8_0": 0.878,
+        "Qwen3-0.6B Q8_0": 0.3715
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0138",
+      "category": "turkish_chars",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.8407,
+        "BGE-M3 Q8_0": 0.7787,
+        "Jina-v3 Q8_0": 0.8184,
+        "Qwen3-0.6B Q8_0": 0.3731
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0150",
+      "category": "specificity",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.666,
+        "BGE-M3 Q8_0": 0.6834,
+        "Jina-v3 Q8_0": 0.7727,
+        "Qwen3-0.6B Q8_0": 0.3737
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0291",
+      "category": "code_to_description",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5655,
+        "BGE-M3 Q8_0": 0.7048,
+        "Jina-v3 Q8_0": 0.7189,
+        "Qwen3-0.6B Q8_0": 0.3754
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0143",
+      "category": "turkish_chars",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7325,
+        "BGE-M3 Q8_0": 0.6636,
+        "Jina-v3 Q8_0": 0.598,
+        "Qwen3-0.6B Q8_0": 0.3915
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0152",
+      "category": "specificity",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6642,
+        "BGE-M3 Q8_0": 0.6652,
+        "Jina-v3 Q8_0": 0.7183,
+        "Qwen3-0.6B Q8_0": 0.3921
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0203",
+      "category": "noise_typo",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6456,
+        "BGE-M3 Q8_0": 0.5905,
+        "Jina-v3 Q8_0": 0.6892,
+        "Qwen3-0.6B Q8_0": 0.3932
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0046",
+      "category": "code_switching",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6307,
+        "BGE-M3 Q8_0": 0.6253,
+        "Jina-v3 Q8_0": 0.7196,
+        "Qwen3-0.6B Q8_0": 0.3937
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0164",
+      "category": "paraphrase",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6632,
+        "BGE-M3 Q8_0": 0.6643,
+        "Jina-v3 Q8_0": 0.7228,
+        "Qwen3-0.6B Q8_0": 0.3989
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0042",
+      "category": "code_switching",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7577,
+        "BGE-M3 Q8_0": 0.7285,
+        "Jina-v3 Q8_0": 0.7595,
+        "Qwen3-0.6B Q8_0": 0.4029
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0249",
+      "category": "entity_confusion",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5207,
+        "BGE-M3 Q8_0": 0.6319,
+        "Jina-v3 Q8_0": 0.6376,
+        "Qwen3-0.6B Q8_0": 0.4047
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0186",
+      "category": "code_mixed",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6654,
+        "BGE-M3 Q8_0": 0.6359,
+        "Jina-v3 Q8_0": 0.7762,
+        "Qwen3-0.6B Q8_0": 0.4186
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0187",
+      "category": "code_mixed",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6033,
+        "BGE-M3 Q8_0": 0.634,
+        "Jina-v3 Q8_0": 0.7013,
+        "Qwen3-0.6B Q8_0": 0.42
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0166",
+      "category": "paraphrase",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6606,
+        "BGE-M3 Q8_0": 0.6831,
+        "Jina-v3 Q8_0": 0.7261,
+        "Qwen3-0.6B Q8_0": 0.4208
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0137",
+      "category": "crosslingual",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.8756,
+        "BGE-M3 Q8_0": 0.8742,
+        "Jina-v3 Q8_0": 0.912,
+        "Qwen3-0.6B Q8_0": 0.4229
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0188",
+      "category": "code_mixed",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6187,
+        "BGE-M3 Q8_0": 0.7001,
+        "Jina-v3 Q8_0": 0.6966,
+        "Qwen3-0.6B Q8_0": 0.4231
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0303",
+      "category": "adversarial",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7074,
+        "BGE-M3 Q8_0": 0.8691,
+        "Jina-v3 Q8_0": 0.8891,
+        "Qwen3-0.6B Q8_0": 0.4309
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0154",
+      "category": "specificity",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6665,
+        "BGE-M3 Q8_0": 0.7118,
+        "Jina-v3 Q8_0": 0.8235,
+        "Qwen3-0.6B Q8_0": 0.4324
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0040",
+      "category": "code_switching",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7003,
+        "BGE-M3 Q8_0": 0.688,
+        "Jina-v3 Q8_0": 0.7232,
+        "Qwen3-0.6B Q8_0": 0.4354
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0086",
+      "category": "turkish_morphology",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.9132,
+        "BGE-M3 Q8_0": 0.8907,
+        "Jina-v3 Q8_0": 0.9378,
+        "Qwen3-0.6B Q8_0": 0.4357
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0127",
+      "category": "crosslingual",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.9263,
+        "BGE-M3 Q8_0": 0.9615,
+        "Jina-v3 Q8_0": 0.9386,
+        "Qwen3-0.6B Q8_0": 0.4358
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0202",
+      "category": "noise_typo",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.764,
+        "BGE-M3 Q8_0": 0.8374,
+        "Jina-v3 Q8_0": 0.8009,
+        "Qwen3-0.6B Q8_0": 0.4374
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0082",
+      "category": "turkish_morphology",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6329,
+        "BGE-M3 Q8_0": 0.6723,
+        "Jina-v3 Q8_0": 0.7332,
+        "Qwen3-0.6B Q8_0": 0.4379
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0288",
+      "category": "code_to_description",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5824,
+        "BGE-M3 Q8_0": 0.5909,
+        "Jina-v3 Q8_0": 0.7594,
+        "Qwen3-0.6B Q8_0": 0.4402
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0081",
+      "category": "turkish_morphology",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7859,
+        "BGE-M3 Q8_0": 0.8604,
+        "Jina-v3 Q8_0": 0.8696,
+        "Qwen3-0.6B Q8_0": 0.4593
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0247",
+      "category": "entity_confusion",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6136,
+        "BGE-M3 Q8_0": 0.6758,
+        "Jina-v3 Q8_0": 0.6619,
+        "Qwen3-0.6B Q8_0": 0.4639
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0111",
+      "category": "conversational_recall",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5038,
+        "BGE-M3 Q8_0": 0.5707,
+        "Jina-v3 Q8_0": 0.6652,
+        "Qwen3-0.6B Q8_0": 0.4677
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0185",
+      "category": "code_mixed",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.7983,
+        "BGE-M3 Q8_0": 0.764,
+        "Jina-v3 Q8_0": 0.8344,
+        "Qwen3-0.6B Q8_0": 0.4722
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0190",
+      "category": "code_mixed",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.5995,
+        "BGE-M3 Q8_0": 0.6395,
+        "Jina-v3 Q8_0": 0.7003,
+        "Qwen3-0.6B Q8_0": 0.4784
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0142",
+      "category": "turkish_chars",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.8802,
+        "BGE-M3 Q8_0": 0.909,
+        "Jina-v3 Q8_0": 0.9082,
+        "Qwen3-0.6B Q8_0": 0.4817
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0096",
+      "category": "turkish_morphology",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.8692,
+        "BGE-M3 Q8_0": 0.8815,
+        "Jina-v3 Q8_0": 0.9206,
+        "Qwen3-0.6B Q8_0": 0.4827
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    },
+    {
+      "id": "mammr-v0.1-0278",
+      "category": "partial_match",
+      "failed_models": [
+        "Qwen3-0.6B Q8_0"
+      ],
+      "similarities": {
+        "Snowflake-Arctic-L-v2 Q8_0": 0.6364,
+        "BGE-M3 Q8_0": 0.619,
+        "Jina-v3 Q8_0": 0.7198,
+        "Qwen3-0.6B Q8_0": 0.4919
+      },
+      "statuses": {
+        "Snowflake-Arctic-L-v2 Q8_0": "pass",
+        "BGE-M3 Q8_0": "pass",
+        "Jina-v3 Q8_0": "pass",
+        "Qwen3-0.6B Q8_0": "fail"
+      }
+    }
+  ]
+}

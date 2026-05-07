@@ -1,0 +1,21 @@
+{
+  "schema_version": "mammr-backend-metadata-v1",
+  "benchmark_role": "public_sanitized_rerun",
+  "hardware_class": "cpu_only_vps",
+  "backend_type": "llama.cpp_openai_compatible_embedding_server",
+  "backend_name": "llama-server",
+  "backend_version": "record exact version or commit hash",
+  "backend_binary_sha256": "record sha256 when local binary is used",
+  "model_name": "record model display name",
+  "model_file": "record public-safe model filename only",
+  "model_sha256": "record sha256 of model file",
+  "quantization": "record quantization such as Q8_0",
+  "pooling": "record pooling mode",
+  "dimensions": 1024,
+  "context_size": 8192,
+  "threads": 1,
+  "batch_size": 1,
+  "gpu_layers": 0,
+  "normalization": "record if known",
+  "notes": "do not include private paths, hostnames, IPs, or secrets"
+}

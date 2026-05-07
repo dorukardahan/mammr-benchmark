@@ -1,0 +1,28 @@
+MAMMR public v0.1 candidate release check
+Date: 2026-05-07
+
+Status: PASSED for scoped public v0.1 candidate review.
+
+Verified commands:
+- python3 scripts/public_release_preflight.py --clean
+- python3 scripts/public_release_preflight.py
+- python3 scripts/check_public_safety.py
+- python3 scripts/run_embedding_eval.py --dry-run
+- python3 scripts/bootstrap_pinned_scores.py
+- git diff --check
+
+Scope:
+- dataset and runner candidate
+- pinned four-model local-GGUF comparison
+- held-out mini-set retrieval evidence
+- full-corpus plus synthetic-distractor retrieval evidence
+- sanitized top-10 same-category reranker matrix
+
+Not claimed:
+- final universal leaderboard
+- human inter-annotator agreement
+- full production retrieval benchmark
+- reproduction of unreleased internal scores
+
+Public announcement still requires owner approval and a final exact-package
+preflight rerun.

@@ -1,0 +1,22 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local/unpublished benchmark outputs
+.tmp-*/
+.tmp-*
+data/cleanup_candidates*.json
+results/*.tmp.json
+results/private/
+vector-cache/
+*.sqlite
+*.db
+
+# Secrets and local env
+.env
+*.key
+*_key
+*_token
+.mammr-private-denylist.txt

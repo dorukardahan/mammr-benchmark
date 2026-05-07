@@ -1,0 +1,1401 @@
+{
+  "model": "bge-m3-Q8_0",
+  "timestamp": "2026-05-07T04:02:51.552599+00:00",
+  "dataset": "mammr_pairs_public.json",
+  "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+  "endpoint_label": "llama-server-openblas-cpu-vps",
+  "reranker_label": "cohere-4-pro",
+  "reranker_model": "cohere/rerank-4-pro",
+  "reranker_endpoint_label": "openrouter-rerank",
+  "unique_texts": 564,
+  "dimensions": 1024,
+  "embed_times_s": [],
+  "metrics": {
+    "pool": "same_category",
+    "top_n": 10,
+    "queries": 166,
+    "baseline": {
+      "mrr": 0.9134,
+      "recall_at_1": 0.8614,
+      "recall_at_3": 0.9518,
+      "recall_at_5": 0.9639,
+      "recall_at_10": 1.0
+    },
+    "reranked": {
+      "mrr": 0.9553,
+      "recall_at_1": 0.9217,
+      "recall_at_3": 0.994,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "avg_rerank_ms": 367.8,
+      "total_rerank_s": 61.05,
+      "queries_improved": 15,
+      "queries_degraded": 2,
+      "queries_unchanged": 149,
+      "target_outside_top_n": 0,
+      "rerank_errors": 0
+    },
+    "delta": {
+      "mrr": 0.042,
+      "recall_at_1": 0.0602,
+      "recall_at_3": 0.0422,
+      "recall_at_5": 0.0361,
+      "recall_at_10": 0.0
+    },
+    "per_pair_ranks": [
+      {
+        "id": "mammr-v0.1-0000",
+        "category": "short_query_long_memory",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0001",
+        "category": "short_query_long_memory",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0002",
+        "category": "short_query_long_memory",
+        "baseline_rank": 2,
+        "reranked_rank": 3,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0003",
+        "category": "short_query_long_memory",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0004",
+        "category": "short_query_long_memory",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0005",
+        "category": "short_query_long_memory",
+        "baseline_rank": 2,
+        "reranked_rank": 2,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0006",
+        "category": "short_query_long_memory",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0007",
+        "category": "short_query_long_memory",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0008",
+        "category": "short_query_long_memory",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0009",
+        "category": "short_query_long_memory",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0010",
+        "category": "short_query_long_memory",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0011",
+        "category": "short_query_long_memory",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0012",
+        "category": "short_query_long_memory",
+        "baseline_rank": 5,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0038",
+        "category": "code_switching",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0039",
+        "category": "code_switching",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0040",
+        "category": "code_switching",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0041",
+        "category": "code_switching",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0042",
+        "category": "code_switching",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0043",
+        "category": "code_switching",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0044",
+        "category": "code_switching",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0045",
+        "category": "code_switching",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0046",
+        "category": "code_switching",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0081",
+        "category": "turkish_morphology",
+        "baseline_rank": 2,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0082",
+        "category": "turkish_morphology",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0086",
+        "category": "turkish_morphology",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0087",
+        "category": "turkish_morphology",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0088",
+        "category": "turkish_morphology",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0089",
+        "category": "turkish_morphology",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0090",
+        "category": "turkish_morphology",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0091",
+        "category": "turkish_morphology",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0092",
+        "category": "turkish_morphology",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0093",
+        "category": "turkish_morphology",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0094",
+        "category": "turkish_morphology",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0096",
+        "category": "turkish_morphology",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0097",
+        "category": "turkish_morphology",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0098",
+        "category": "turkish_morphology",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0099",
+        "category": "turkish_morphology",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0100",
+        "category": "turkish_morphology",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0101",
+        "category": "turkish_morphology",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0106",
+        "category": "conversational_recall",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0107",
+        "category": "conversational_recall",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0108",
+        "category": "conversational_recall",
+        "baseline_rank": 6,
+        "reranked_rank": 3,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0109",
+        "category": "conversational_recall",
+        "baseline_rank": 2,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0110",
+        "category": "conversational_recall",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0111",
+        "category": "conversational_recall",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0112",
+        "category": "conversational_recall",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0113",
+        "category": "conversational_recall",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0114",
+        "category": "conversational_recall",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0115",
+        "category": "conversational_recall",
+        "baseline_rank": 2,
+        "reranked_rank": 2,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0116",
+        "category": "conversational_recall",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0117",
+        "category": "conversational_recall",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0121",
+        "category": "conversational_recall",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0122",
+        "category": "conversational_recall",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0125",
+        "category": "crosslingual",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0126",
+        "category": "crosslingual",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0127",
+        "category": "crosslingual",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0128",
+        "category": "crosslingual",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0129",
+        "category": "crosslingual",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0130",
+        "category": "crosslingual",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0131",
+        "category": "crosslingual",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0132",
+        "category": "crosslingual",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0133",
+        "category": "crosslingual",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0134",
+        "category": "crosslingual",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0137",
+        "category": "crosslingual",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0138",
+        "category": "turkish_chars",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0139",
+        "category": "turkish_chars",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0140",
+        "category": "turkish_chars",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0141",
+        "category": "turkish_chars",
+        "baseline_rank": 3,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0142",
+        "category": "turkish_chars",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0143",
+        "category": "turkish_chars",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0144",
+        "category": "turkish_chars",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0145",
+        "category": "turkish_chars",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0146",
+        "category": "turkish_chars",
+        "baseline_rank": 6,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0147",
+        "category": "turkish_chars",
+        "baseline_rank": 7,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0149",
+        "category": "turkish_chars",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0150",
+        "category": "specificity",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0152",
+        "category": "specificity",
+        "baseline_rank": 2,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0154",
+        "category": "specificity",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0156",
+        "category": "specificity",
+        "baseline_rank": 2,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0158",
+        "category": "specificity",
+        "baseline_rank": 2,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0160",
+        "category": "specificity",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0162",
+        "category": "paraphrase",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0163",
+        "category": "paraphrase",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0164",
+        "category": "paraphrase",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0165",
+        "category": "paraphrase",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0166",
+        "category": "paraphrase",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0167",
+        "category": "paraphrase",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0168",
+        "category": "paraphrase",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0169",
+        "category": "paraphrase",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0170",
+        "category": "paraphrase",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0171",
+        "category": "paraphrase",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0174",
+        "category": "temporal",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0175",
+        "category": "temporal",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0176",
+        "category": "temporal",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0177",
+        "category": "temporal",
+        "baseline_rank": 5,
+        "reranked_rank": 2,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0178",
+        "category": "temporal",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0180",
+        "category": "temporal",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0181",
+        "category": "temporal",
+        "baseline_rank": 6,
+        "reranked_rank": 4,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0184",
+        "category": "code_mixed",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0185",
+        "category": "code_mixed",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0186",
+        "category": "code_mixed",
+        "baseline_rank": 2,
+        "reranked_rank": 2,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0187",
+        "category": "code_mixed",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0188",
+        "category": "code_mixed",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0189",
+        "category": "code_mixed",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0190",
+        "category": "code_mixed",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0191",
+        "category": "code_mixed",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0192",
+        "category": "code_mixed",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0193",
+        "category": "code_mixed",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0195",
+        "category": "noise_typo",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0196",
+        "category": "noise_typo",
+        "baseline_rank": 2,
+        "reranked_rank": 2,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0197",
+        "category": "noise_typo",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0198",
+        "category": "noise_typo",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0199",
+        "category": "noise_typo",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0200",
+        "category": "noise_typo",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0201",
+        "category": "noise_typo",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0202",
+        "category": "noise_typo",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0203",
+        "category": "noise_typo",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0204",
+        "category": "noise_typo",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0234",
+        "category": "synonym_alias",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0236",
+        "category": "synonym_alias",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0237",
+        "category": "synonym_alias",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0238",
+        "category": "synonym_alias",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0239",
+        "category": "synonym_alias",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0240",
+        "category": "synonym_alias",
+        "baseline_rank": 2,
+        "reranked_rank": 3,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0241",
+        "category": "synonym_alias",
+        "baseline_rank": 7,
+        "reranked_rank": 3,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0242",
+        "category": "synonym_alias",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0243",
+        "category": "synonym_alias",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0246",
+        "category": "synonym_alias",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0247",
+        "category": "entity_confusion",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0249",
+        "category": "entity_confusion",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0251",
+        "category": "entity_confusion",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0253",
+        "category": "entity_confusion",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0255",
+        "category": "entity_confusion",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0257",
+        "category": "entity_confusion",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0259",
+        "category": "context_implicit",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0260",
+        "category": "context_implicit",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0261",
+        "category": "context_implicit",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0262",
+        "category": "context_implicit",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0263",
+        "category": "context_implicit",
+        "baseline_rank": 2,
+        "reranked_rank": 2,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0264",
+        "category": "context_implicit",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0265",
+        "category": "context_implicit",
+        "baseline_rank": 2,
+        "reranked_rank": 2,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0266",
+        "category": "context_implicit",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0267",
+        "category": "context_implicit",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0268",
+        "category": "context_implicit",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0271",
+        "category": "partial_match",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0272",
+        "category": "partial_match",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0273",
+        "category": "partial_match",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0274",
+        "category": "partial_match",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0275",
+        "category": "partial_match",
+        "baseline_rank": 10,
+        "reranked_rank": 2,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0276",
+        "category": "partial_match",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0277",
+        "category": "partial_match",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0278",
+        "category": "partial_match",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0279",
+        "category": "partial_match",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0280",
+        "category": "partial_match",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0283",
+        "category": "code_to_description",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0284",
+        "category": "code_to_description",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0285",
+        "category": "code_to_description",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0286",
+        "category": "code_to_description",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0287",
+        "category": "code_to_description",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0288",
+        "category": "code_to_description",
+        "baseline_rank": 2,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0289",
+        "category": "code_to_description",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0290",
+        "category": "code_to_description",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0291",
+        "category": "code_to_description",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0292",
+        "category": "code_to_description",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0303",
+        "category": "adversarial",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      },
+      {
+        "id": "mammr-v0.1-0304",
+        "category": "adversarial",
+        "baseline_rank": 1,
+        "reranked_rank": 1,
+        "target_outside_top_n": false,
+        "rerank_error": false
+      }
+    ]
+  },
+  "backend_metadata": {
+    "schema_version": "mammr-backend-metadata-v1",
+    "benchmark_role": "public_sanitized_rerun",
+    "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+    "hardware_class": "cpu_only_vps",
+    "backend_type": "llama.cpp_openai_compatible_embedding_server",
+    "backend_name": "llama-server-openblas",
+    "backend_version": "version: 1 (408225b)",
+    "backend_binary_sha256": "5f2609599bc72850fe0a5349502cdaa137c2477aa620e64eb53ae5c010b0fae7",
+    "model_name": "BGE-M3 Q8_0",
+    "model_file": "bge-m3-Q8_0.gguf",
+    "model_sha256": "950f4a8e5e19477a6d3c26d2f162233c20002c601f75e4b002e3239997821167",
+    "quantization": "Q8_0",
+    "pooling": "cls",
+    "context_size": 8192,
+    "threads": 1,
+    "threads_batch": 1,
+    "parallel": 1,
+    "batch_size": 1,
+    "llama_batch_size": 2048,
+    "llama_ubatch_size": 2048,
+    "gpu_layers": 0,
+    "notes": "Benchmark ran through an isolated local embedding endpoint. Public-safe metadata only.",
+    "endpoint_scope": "isolated loopback transient benchmark endpoint"
+  }
+}

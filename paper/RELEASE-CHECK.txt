@@ -1,0 +1,3 @@
+PASSED
+Paper-only release candidate built.
+Raw pair text, vector caches, DB exports, and VPS result directories are excluded.

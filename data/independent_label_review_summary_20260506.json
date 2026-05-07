@@ -1,0 +1,283 @@
+{
+  "reviewer": "codex",
+  "review_date": "2026-05-06",
+  "sample_seed": 20260506,
+  "sample_size": 100,
+  "agreement": {
+    "count": 80,
+    "rate": 0.8,
+    "disagreement_count": 20
+  },
+  "original_label_counts": {
+    "high": 57,
+    "low": 29,
+    "medium": 5,
+    "medium_high": 9
+  },
+  "reviewer_label_counts": {
+    "high": 52,
+    "low": 41,
+    "medium": 5,
+    "medium_high": 2
+  },
+  "label_transition_counts": {
+    "high->high": 52,
+    "high->medium": 3,
+    "high->medium_high": 2,
+    "low->low": 28,
+    "low->medium": 1,
+    "medium->low": 5,
+    "medium_high->low": 8,
+    "medium_high->medium": 1
+  },
+  "category_agreement": {
+    "adversarial": {
+      "total": 3,
+      "agree": 0,
+      "disagree": 3,
+      "agreement_rate": 0.0
+    },
+    "code_mixed": {
+      "total": 4,
+      "agree": 4,
+      "disagree": 0,
+      "agreement_rate": 1.0
+    },
+    "code_switching": {
+      "total": 3,
+      "agree": 3,
+      "disagree": 0,
+      "agreement_rate": 1.0
+    },
+    "code_to_description": {
+      "total": 3,
+      "agree": 3,
+      "disagree": 0,
+      "agreement_rate": 1.0
+    },
+    "context_implicit": {
+      "total": 4,
+      "agree": 4,
+      "disagree": 0,
+      "agreement_rate": 1.0
+    },
+    "conversational_recall": {
+      "total": 11,
+      "agree": 11,
+      "disagree": 0,
+      "agreement_rate": 1.0
+    },
+    "crosslingual": {
+      "total": 4,
+      "agree": 4,
+      "disagree": 0,
+      "agreement_rate": 1.0
+    },
+    "entity_confusion": {
+      "total": 7,
+      "agree": 5,
+      "disagree": 2,
+      "agreement_rate": 0.7143
+    },
+    "irrelevant": {
+      "total": 6,
+      "agree": 6,
+      "disagree": 0,
+      "agreement_rate": 1.0
+    },
+    "negative_control": {
+      "total": 9,
+      "agree": 9,
+      "disagree": 0,
+      "agreement_rate": 1.0
+    },
+    "noise_typo": {
+      "total": 5,
+      "agree": 5,
+      "disagree": 0,
+      "agreement_rate": 1.0
+    },
+    "paraphrase": {
+      "total": 2,
+      "agree": 2,
+      "disagree": 0,
+      "agreement_rate": 1.0
+    },
+    "partial_match": {
+      "total": 6,
+      "agree": 4,
+      "disagree": 2,
+      "agreement_rate": 0.6667
+    },
+    "same_topic_different_time": {
+      "total": 4,
+      "agree": 0,
+      "disagree": 4,
+      "agreement_rate": 0.0
+    },
+    "short_query_long_memory": {
+      "total": 5,
+      "agree": 5,
+      "disagree": 0,
+      "agreement_rate": 1.0
+    },
+    "similar_but_different": {
+      "total": 3,
+      "agree": 0,
+      "disagree": 3,
+      "agreement_rate": 0.0
+    },
+    "specificity": {
+      "total": 3,
+      "agree": 3,
+      "disagree": 0,
+      "agreement_rate": 1.0
+    },
+    "synonym_alias": {
+      "total": 3,
+      "agree": 2,
+      "disagree": 1,
+      "agreement_rate": 0.6667
+    },
+    "temporal": {
+      "total": 1,
+      "agree": 1,
+      "disagree": 0,
+      "agreement_rate": 1.0
+    },
+    "turkish_chars": {
+      "total": 4,
+      "agree": 4,
+      "disagree": 0,
+      "agreement_rate": 1.0
+    },
+    "turkish_morphology": {
+      "total": 10,
+      "agree": 5,
+      "disagree": 5,
+      "agreement_rate": 0.5
+    }
+  },
+  "disagreements": [
+    {
+      "id": "mammr-v0.1-0017",
+      "category": "similar_but_different",
+      "original_label": "medium_high",
+      "reviewer_label": "low"
+    },
+    {
+      "id": "mammr-v0.1-0018",
+      "category": "similar_but_different",
+      "original_label": "medium_high",
+      "reviewer_label": "low"
+    },
+    {
+      "id": "mammr-v0.1-0024",
+      "category": "similar_but_different",
+      "original_label": "medium_high",
+      "reviewer_label": "low"
+    },
+    {
+      "id": "mammr-v0.1-0028",
+      "category": "same_topic_different_time",
+      "original_label": "medium",
+      "reviewer_label": "low"
+    },
+    {
+      "id": "mammr-v0.1-0031",
+      "category": "same_topic_different_time",
+      "original_label": "medium",
+      "reviewer_label": "low"
+    },
+    {
+      "id": "mammr-v0.1-0032",
+      "category": "same_topic_different_time",
+      "original_label": "medium_high",
+      "reviewer_label": "low"
+    },
+    {
+      "id": "mammr-v0.1-0036",
+      "category": "same_topic_different_time",
+      "original_label": "medium_high",
+      "reviewer_label": "low"
+    },
+    {
+      "id": "mammr-v0.1-0085",
+      "category": "turkish_morphology",
+      "original_label": "medium_high",
+      "reviewer_label": "low"
+    },
+    {
+      "id": "mammr-v0.1-0095",
+      "category": "turkish_morphology",
+      "original_label": "medium_high",
+      "reviewer_label": "low"
+    },
+    {
+      "id": "mammr-v0.1-0096",
+      "category": "turkish_morphology",
+      "original_label": "high",
+      "reviewer_label": "medium"
+    },
+    {
+      "id": "mammr-v0.1-0098",
+      "category": "turkish_morphology",
+      "original_label": "high",
+      "reviewer_label": "medium"
+    },
+    {
+      "id": "mammr-v0.1-0103",
+      "category": "turkish_morphology",
+      "original_label": "medium_high",
+      "reviewer_label": "medium"
+    },
+    {
+      "id": "mammr-v0.1-0240",
+      "category": "synonym_alias",
+      "original_label": "high",
+      "reviewer_label": "medium"
+    },
+    {
+      "id": "mammr-v0.1-0248",
+      "category": "entity_confusion",
+      "original_label": "low",
+      "reviewer_label": "medium"
+    },
+    {
+      "id": "mammr-v0.1-0252",
+      "category": "entity_confusion",
+      "original_label": "medium_high",
+      "reviewer_label": "low"
+    },
+    {
+      "id": "mammr-v0.1-0271",
+      "category": "partial_match",
+      "original_label": "high",
+      "reviewer_label": "medium_high"
+    },
+    {
+      "id": "mammr-v0.1-0275",
+      "category": "partial_match",
+      "original_label": "high",
+      "reviewer_label": "medium_high"
+    },
+    {
+      "id": "mammr-v0.1-0295",
+      "category": "adversarial",
+      "original_label": "medium",
+      "reviewer_label": "low"
+    },
+    {
+      "id": "mammr-v0.1-0297",
+      "category": "adversarial",
+      "original_label": "medium",
+      "reviewer_label": "low"
+    },
+    {
+      "id": "mammr-v0.1-0301",
+      "category": "adversarial",
+      "original_label": "medium",
+      "reviewer_label": "low"
+    }
+  ]
+}

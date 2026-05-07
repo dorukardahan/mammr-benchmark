@@ -1,0 +1,162 @@
+[
+  {
+    "id": "mammr-v0.1-0252",
+    "category": "entity_confusion",
+    "original_label": "medium_high",
+    "reviewer_label": "low",
+    "priority": "high",
+    "suggested_action": "Check if original label is too generous."
+  },
+  {
+    "id": "mammr-v0.1-0032",
+    "category": "same_topic_different_time",
+    "original_label": "medium_high",
+    "reviewer_label": "low",
+    "priority": "high",
+    "suggested_action": "Check if original label is too generous."
+  },
+  {
+    "id": "mammr-v0.1-0036",
+    "category": "same_topic_different_time",
+    "original_label": "medium_high",
+    "reviewer_label": "low",
+    "priority": "high",
+    "suggested_action": "Check if original label is too generous."
+  },
+  {
+    "id": "mammr-v0.1-0017",
+    "category": "similar_but_different",
+    "original_label": "medium_high",
+    "reviewer_label": "low",
+    "priority": "high",
+    "suggested_action": "Check if original label is too generous."
+  },
+  {
+    "id": "mammr-v0.1-0018",
+    "category": "similar_but_different",
+    "original_label": "medium_high",
+    "reviewer_label": "low",
+    "priority": "high",
+    "suggested_action": "Check if original label is too generous."
+  },
+  {
+    "id": "mammr-v0.1-0024",
+    "category": "similar_but_different",
+    "original_label": "medium_high",
+    "reviewer_label": "low",
+    "priority": "high",
+    "suggested_action": "Check if original label is too generous."
+  },
+  {
+    "id": "mammr-v0.1-0240",
+    "category": "synonym_alias",
+    "original_label": "high",
+    "reviewer_label": "medium",
+    "priority": "high",
+    "suggested_action": "Check if original label is too generous."
+  },
+  {
+    "id": "mammr-v0.1-0085",
+    "category": "turkish_morphology",
+    "original_label": "medium_high",
+    "reviewer_label": "low",
+    "priority": "high",
+    "suggested_action": "Check if original label is too generous."
+  },
+  {
+    "id": "mammr-v0.1-0095",
+    "category": "turkish_morphology",
+    "original_label": "medium_high",
+    "reviewer_label": "low",
+    "priority": "high",
+    "suggested_action": "Check if original label is too generous."
+  },
+  {
+    "id": "mammr-v0.1-0096",
+    "category": "turkish_morphology",
+    "original_label": "high",
+    "reviewer_label": "medium",
+    "priority": "high",
+    "suggested_action": "Check if original label is too generous."
+  },
+  {
+    "id": "mammr-v0.1-0098",
+    "category": "turkish_morphology",
+    "original_label": "high",
+    "reviewer_label": "medium",
+    "priority": "high",
+    "suggested_action": "Check if original label is too generous."
+  },
+  {
+    "id": "mammr-v0.1-0271",
+    "category": "partial_match",
+    "original_label": "high",
+    "reviewer_label": "medium_high",
+    "priority": "medium",
+    "suggested_action": "Check boundary between adjacent relevance labels."
+  },
+  {
+    "id": "mammr-v0.1-0275",
+    "category": "partial_match",
+    "original_label": "high",
+    "reviewer_label": "medium_high",
+    "priority": "medium",
+    "suggested_action": "Check boundary between adjacent relevance labels."
+  },
+  {
+    "id": "mammr-v0.1-0295",
+    "category": "adversarial",
+    "original_label": "medium",
+    "reviewer_label": "low",
+    "priority": "low",
+    "suggested_action": "Check boundary between adjacent relevance labels."
+  },
+  {
+    "id": "mammr-v0.1-0297",
+    "category": "adversarial",
+    "original_label": "medium",
+    "reviewer_label": "low",
+    "priority": "low",
+    "suggested_action": "Check boundary between adjacent relevance labels."
+  },
+  {
+    "id": "mammr-v0.1-0301",
+    "category": "adversarial",
+    "original_label": "medium",
+    "reviewer_label": "low",
+    "priority": "low",
+    "suggested_action": "Check boundary between adjacent relevance labels."
+  },
+  {
+    "id": "mammr-v0.1-0248",
+    "category": "entity_confusion",
+    "original_label": "low",
+    "reviewer_label": "medium",
+    "priority": "low",
+    "suggested_action": "Check whether partial relevance deserves a higher label."
+  },
+  {
+    "id": "mammr-v0.1-0028",
+    "category": "same_topic_different_time",
+    "original_label": "medium",
+    "reviewer_label": "low",
+    "priority": "low",
+    "suggested_action": "Check boundary between adjacent relevance labels."
+  },
+  {
+    "id": "mammr-v0.1-0031",
+    "category": "same_topic_different_time",
+    "original_label": "medium",
+    "reviewer_label": "low",
+    "priority": "low",
+    "suggested_action": "Check boundary between adjacent relevance labels."
+  },
+  {
+    "id": "mammr-v0.1-0103",
+    "category": "turkish_morphology",
+    "original_label": "medium_high",
+    "reviewer_label": "medium",
+    "priority": "low",
+    "suggested_action": "Check boundary between adjacent relevance labels."
+  }
+]

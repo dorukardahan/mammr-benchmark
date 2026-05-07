@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use MAMMR, please cite this repository."
+title: "MAMMR: Multilingual Agent Memory Model Ranking"
+authors:
+  - family-names: "Ardahan"
+    given-names: "Doruk"
+date-released: "2026-05-06"
+version: "0.1.0-candidate"
+license: "CC-BY-4.0"
+repository-code: "https://github.com/dorukardahan/mammr-benchmark"
+abstract: "A production-informed benchmark for multilingual agent memory retrieval, with a sanitized public candidate dataset, held-out mini-set, full-corpus retrieval checks, reranker evidence, and OpenAI-compatible runners."

@@ -1,0 +1,3247 @@
+{
+  "model": "Qwen3-Embedding-0.6B-Q8_0",
+  "timestamp": "2026-05-05T20:05:55.503519+00:00",
+  "dataset": "mammr_pairs_public.json",
+  "dataset_sha256": "68743ae59481807ce00ed1f218831f98d3d4ade62d064dd1dde4be2c676c2ff8",
+  "endpoint_label": "diagnostic-qwen3-openblas-408225b-rerun-20260505",
+  "batch_size": 1,
+  "timeout_s": 90.0,
+  "unique_texts": 563,
+  "dimensions": 1024,
+  "total_pairs": 305,
+  "total_pass": 114,
+  "total_fail": 191,
+  "categories": {
+    "short_query_long_memory": {
+      "total": 15,
+      "pass": 2,
+      "fail": 13,
+      "weight": 10,
+      "accuracy": 0.1333,
+      "avg_sim": 0.3582,
+      "min_sim": 0.1285,
+      "max_sim": 0.5484
+    },
+    "similar_but_different": {
+      "total": 12,
+      "pass": 9,
+      "fail": 3,
+      "weight": 8,
+      "accuracy": 0.75,
+      "avg_sim": 0.4998,
+      "min_sim": 0.2306,
+      "max_sim": 0.7015
+    },
+    "same_topic_different_time": {
+      "total": 11,
+      "pass": 9,
+      "fail": 2,
+      "weight": 5,
+      "accuracy": 0.8182,
+      "avg_sim": 0.4695,
+      "min_sim": 0.3505,
+      "max_sim": 0.6506
+    },
+    "code_switching": {
+      "total": 11,
+      "pass": 1,
+      "fail": 10,
+      "weight": 9,
+      "accuracy": 0.0909,
+      "avg_sim": 0.3693,
+      "min_sim": 0.1788,
+      "max_sim": 0.4556
+    },
+    "negative_control": {
+      "total": 27,
+      "pass": 19,
+      "fail": 8,
+      "weight": 9,
+      "accuracy": 0.7037,
+      "avg_sim": 0.2966,
+      "min_sim": 0.1244,
+      "max_sim": 0.5006
+    },
+    "turkish_morphology": {
+      "total": 30,
+      "pass": 8,
+      "fail": 22,
+      "weight": 6,
+      "accuracy": 0.2667,
+      "avg_sim": 0.4809,
+      "min_sim": 0.1813,
+      "max_sim": 0.7703
+    },
+    "conversational_recall": {
+      "total": 19,
+      "pass": 4,
+      "fail": 15,
+      "weight": 8,
+      "accuracy": 0.2105,
+      "avg_sim": 0.3327,
+      "min_sim": 0.2121,
+      "max_sim": 0.4676
+    },
+    "crosslingual": {
+      "total": 13,
+      "pass": 2,
+      "fail": 11,
+      "weight": 7,
+      "accuracy": 0.1538,
+      "avg_sim": 0.3093,
+      "min_sim": 0.2119,
+      "max_sim": 0.4358
+    },
+    "turkish_chars": {
+      "total": 12,
+      "pass": 3,
+      "fail": 9,
+      "weight": 4,
+      "accuracy": 0.25,
+      "avg_sim": 0.4366,
+      "min_sim": 0.2995,
+      "max_sim": 0.6583
+    },
+    "specificity": {
+      "total": 12,
+      "pass": 4,
+      "fail": 8,
+      "weight": 9,
+      "accuracy": 0.3333,
+      "avg_sim": 0.3373,
+      "min_sim": 0.1539,
+      "max_sim": 0.4575
+    },
+    "paraphrase": {
+      "total": 12,
+      "pass": 2,
+      "fail": 10,
+      "weight": 8,
+      "accuracy": 0.1667,
+      "avg_sim": 0.3489,
+      "min_sim": 0.2522,
+      "max_sim": 0.5302
+    },
+    "temporal": {
+      "total": 10,
+      "pass": 3,
+      "fail": 7,
+      "weight": 6,
+      "accuracy": 0.3,
+      "avg_sim": 0.2768,
+      "min_sim": 0.2045,
+      "max_sim": 0.3571
+    },
+    "code_mixed": {
+      "total": 11,
+      "pass": 3,
+      "fail": 8,
+      "weight": 5,
+      "accuracy": 0.2727,
+      "avg_sim": 0.4107,
+      "min_sim": 0.2369,
+      "max_sim": 0.5492
+    },
+    "noise_typo": {
+      "total": 11,
+      "pass": 4,
+      "fail": 7,
+      "weight": 4,
+      "accuracy": 0.3636,
+      "avg_sim": 0.4024,
+      "min_sim": 0.2085,
+      "max_sim": 0.6438
+    },
+    "irrelevant": {
+      "total": 28,
+      "pass": 26,
+      "fail": 2,
+      "weight": 9,
+      "accuracy": 0.9286,
+      "avg_sim": 0.2246,
+      "min_sim": 0.0602,
+      "max_sim": 0.3768
+    },
+    "synonym_alias": {
+      "total": 13,
+      "pass": 2,
+      "fail": 11,
+      "weight": 5,
+      "accuracy": 0.1538,
+      "avg_sim": 0.2972,
+      "min_sim": 0.2125,
+      "max_sim": 0.4335
+    },
+    "entity_confusion": {
+      "total": 12,
+      "pass": 3,
+      "fail": 9,
+      "weight": 6,
+      "accuracy": 0.25,
+      "avg_sim": 0.2871,
+      "min_sim": 0.201,
+      "max_sim": 0.4637
+    },
+    "context_implicit": {
+      "total": 12,
+      "pass": 0,
+      "fail": 12,
+      "weight": 5,
+      "accuracy": 0.0,
+      "avg_sim": 0.3322,
+      "min_sim": 0.2162,
+      "max_sim": 0.4696
+    },
+    "partial_match": {
+      "total": 12,
+      "pass": 1,
+      "fail": 11,
+      "weight": 5,
+      "accuracy": 0.0833,
+      "avg_sim": 0.3118,
+      "min_sim": 0.1643,
+      "max_sim": 0.429
+    },
+    "code_to_description": {
+      "total": 12,
+      "pass": 2,
+      "fail": 10,
+      "weight": 7,
+      "accuracy": 0.1667,
+      "avg_sim": 0.3019,
+      "min_sim": 0.1951,
+      "max_sim": 0.3816
+    },
+    "adversarial": {
+      "total": 10,
+      "pass": 7,
+      "fail": 3,
+      "weight": 8,
+      "accuracy": 0.7,
+      "avg_sim": 0.2953,
+      "min_sim": 0.128,
+      "max_sim": 0.4309
+    }
+  },
+  "pairs": [
+    {
+      "id": "mammr-v0.1-0000",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.5484,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0001",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.4963,
+      "status": "fail",
+      "margin": 0.0037
+    },
+    {
+      "id": "mammr-v0.1-0002",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.2911,
+      "status": "fail",
+      "margin": 0.2089
+    },
+    {
+      "id": "mammr-v0.1-0003",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.3757,
+      "status": "fail",
+      "margin": 0.1243
+    },
+    {
+      "id": "mammr-v0.1-0004",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.2627,
+      "status": "fail",
+      "margin": 0.2373
+    },
+    {
+      "id": "mammr-v0.1-0005",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.2525,
+      "status": "fail",
+      "margin": 0.2475
+    },
+    {
+      "id": "mammr-v0.1-0006",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.4558,
+      "status": "fail",
+      "margin": 0.0442
+    },
+    {
+      "id": "mammr-v0.1-0007",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.3894,
+      "status": "fail",
+      "margin": 0.1106
+    },
+    {
+      "id": "mammr-v0.1-0008",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.3831,
+      "status": "fail",
+      "margin": 0.1169
+    },
+    {
+      "id": "mammr-v0.1-0009",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.1992,
+      "status": "fail",
+      "margin": 0.3008
+    },
+    {
+      "id": "mammr-v0.1-0010",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.43,
+      "status": "fail",
+      "margin": 0.07
+    },
+    {
+      "id": "mammr-v0.1-0011",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.4416,
+      "status": "fail",
+      "margin": 0.0584
+    },
+    {
+      "id": "mammr-v0.1-0012",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.3209,
+      "status": "fail",
+      "margin": 0.1791
+    },
+    {
+      "id": "mammr-v0.1-0013",
+      "category": "short_query_long_memory",
+      "expected": "low",
+      "similarity": 0.1285,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0014",
+      "category": "short_query_long_memory",
+      "expected": "low",
+      "similarity": 0.3975,
+      "status": "fail",
+      "margin": 0.0475
+    },
+    {
+      "id": "mammr-v0.1-0015",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.4836,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0016",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.3963,
+      "status": "fail",
+      "margin": 0.0037
+    },
+    {
+      "id": "mammr-v0.1-0017",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.6516,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0018",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.3414,
+      "status": "fail",
+      "margin": 0.0586
+    },
+    {
+      "id": "mammr-v0.1-0019",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.4676,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0020",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.6205,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0021",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.5266,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0022",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.7015,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0023",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.595,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0024",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.4842,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0025",
+      "category": "similar_but_different",
+      "expected": "low",
+      "similarity": 0.2306,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0026",
+      "category": "similar_but_different",
+      "expected": "low",
+      "similarity": 0.499,
+      "status": "fail",
+      "margin": 0.149
+    },
+    {
+      "id": "mammr-v0.1-0027",
+      "category": "same_topic_different_time",
+      "expected": "medium",
+      "similarity": 0.4285,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0028",
+      "category": "same_topic_different_time",
+      "expected": "medium",
+      "similarity": 0.4112,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0029",
+      "category": "same_topic_different_time",
+      "expected": "medium",
+      "similarity": 0.3992,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0030",
+      "category": "same_topic_different_time",
+      "expected": "medium",
+      "similarity": 0.3925,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0031",
+      "category": "same_topic_different_time",
+      "expected": "medium",
+      "similarity": 0.4316,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0032",
+      "category": "same_topic_different_time",
+      "expected": "medium_high",
+      "similarity": 0.5268,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0033",
+      "category": "same_topic_different_time",
+      "expected": "medium_high",
+      "similarity": 0.6506,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0034",
+      "category": "same_topic_different_time",
+      "expected": "medium_high",
+      "similarity": 0.5882,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0035",
+      "category": "same_topic_different_time",
+      "expected": "medium_high",
+      "similarity": 0.4946,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0036",
+      "category": "same_topic_different_time",
+      "expected": "medium_high",
+      "similarity": 0.3505,
+      "status": "fail",
+      "margin": 0.0495
+    },
+    {
+      "id": "mammr-v0.1-0037",
+      "category": "same_topic_different_time",
+      "expected": "low",
+      "similarity": 0.4907,
+      "status": "fail",
+      "margin": 0.1407
+    },
+    {
+      "id": "mammr-v0.1-0038",
+      "category": "code_switching",
+      "expected": "high",
+      "similarity": 0.4171,
+      "status": "fail",
+      "margin": 0.0829
+    },
+    {
+      "id": "mammr-v0.1-0039",
+      "category": "code_switching",
+      "expected": "high",
+      "similarity": 0.4237,
+      "status": "fail",
+      "margin": 0.0763
+    },
+    {
+      "id": "mammr-v0.1-0040",
+      "category": "code_switching",
+      "expected": "high",
+      "similarity": 0.3797,
+      "status": "fail",
+      "margin": 0.1203
+    },
+    {
+      "id": "mammr-v0.1-0041",
+      "category": "code_switching",
+      "expected": "high",
+      "similarity": 0.3123,
+      "status": "fail",
+      "margin": 0.1877
+    },
+    {
+      "id": "mammr-v0.1-0042",
+      "category": "code_switching",
+      "expected": "high",
+      "similarity": 0.4556,
+      "status": "fail",
+      "margin": 0.0444
+    },
+    {
+      "id": "mammr-v0.1-0043",
+      "category": "code_switching",
+      "expected": "high",
+      "similarity": 0.3726,
+      "status": "fail",
+      "margin": 0.1274
+    },
+    {
+      "id": "mammr-v0.1-0044",
+      "category": "code_switching",
+      "expected": "high",
+      "similarity": 0.3308,
+      "status": "fail",
+      "margin": 0.1692
+    },
+    {
+      "id": "mammr-v0.1-0045",
+      "category": "code_switching",
+      "expected": "high",
+      "similarity": 0.3986,
+      "status": "fail",
+      "margin": 0.1014
+    },
+    {
+      "id": "mammr-v0.1-0046",
+      "category": "code_switching",
+      "expected": "high",
+      "similarity": 0.4035,
+      "status": "fail",
+      "margin": 0.0965
+    },
+    {
+      "id": "mammr-v0.1-0047",
+      "category": "code_switching",
+      "expected": "low",
+      "similarity": 0.3897,
+      "status": "fail",
+      "margin": 0.0397
+    },
+    {
+      "id": "mammr-v0.1-0048",
+      "category": "code_switching",
+      "expected": "low",
+      "similarity": 0.1788,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0049",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.1655,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0050",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.2779,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0051",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.5006,
+      "status": "fail",
+      "margin": 0.1506
+    },
+    {
+      "id": "mammr-v0.1-0052",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.2287,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0053",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.3118,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0054",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.3979,
+      "status": "fail",
+      "margin": 0.0479
+    },
+    {
+      "id": "mammr-v0.1-0055",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.2141,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0056",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.2559,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0057",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.2455,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0058",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.1244,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0059",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.3068,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0060",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.4205,
+      "status": "fail",
+      "margin": 0.0705
+    },
+    {
+      "id": "mammr-v0.1-0061",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.264,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0062",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.3657,
+      "status": "fail",
+      "margin": 0.0157
+    },
+    {
+      "id": "mammr-v0.1-0063",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.3108,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0064",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.2023,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0065",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.3742,
+      "status": "fail",
+      "margin": 0.0242
+    },
+    {
+      "id": "mammr-v0.1-0066",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.3524,
+      "status": "fail",
+      "margin": 0.0024
+    },
+    {
+      "id": "mammr-v0.1-0067",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.3305,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0068",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.1887,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0069",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.4651,
+      "status": "fail",
+      "margin": 0.1151
+    },
+    {
+      "id": "mammr-v0.1-0070",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.2868,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0071",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.2511,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0072",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.2755,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0073",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.448,
+      "status": "fail",
+      "margin": 0.098
+    },
+    {
+      "id": "mammr-v0.1-0074",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.2797,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0075",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.1638,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0076",
+      "category": "turkish_morphology",
+      "expected": "low",
+      "similarity": 0.5658,
+      "status": "fail",
+      "margin": 0.2158
+    },
+    {
+      "id": "mammr-v0.1-0077",
+      "category": "turkish_morphology",
+      "expected": "low",
+      "similarity": 0.7703,
+      "status": "fail",
+      "margin": 0.4203
+    },
+    {
+      "id": "mammr-v0.1-0078",
+      "category": "turkish_morphology",
+      "expected": "low",
+      "similarity": 0.7615,
+      "status": "fail",
+      "margin": 0.4115
+    },
+    {
+      "id": "mammr-v0.1-0079",
+      "category": "turkish_morphology",
+      "expected": "low",
+      "similarity": 0.5413,
+      "status": "fail",
+      "margin": 0.1913
+    },
+    {
+      "id": "mammr-v0.1-0080",
+      "category": "turkish_morphology",
+      "expected": "low",
+      "similarity": 0.4952,
+      "status": "fail",
+      "margin": 0.1452
+    },
+    {
+      "id": "mammr-v0.1-0081",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.3184,
+      "status": "fail",
+      "margin": 0.1816
+    },
+    {
+      "id": "mammr-v0.1-0082",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.3985,
+      "status": "fail",
+      "margin": 0.1015
+    },
+    {
+      "id": "mammr-v0.1-0083",
+      "category": "turkish_morphology",
+      "expected": "medium_high",
+      "similarity": 0.2811,
+      "status": "fail",
+      "margin": 0.1189
+    },
+    {
+      "id": "mammr-v0.1-0084",
+      "category": "turkish_morphology",
+      "expected": "medium_high",
+      "similarity": 0.1813,
+      "status": "fail",
+      "margin": 0.2187
+    },
+    {
+      "id": "mammr-v0.1-0085",
+      "category": "turkish_morphology",
+      "expected": "medium_high",
+      "similarity": 0.2291,
+      "status": "fail",
+      "margin": 0.1709
+    },
+    {
+      "id": "mammr-v0.1-0086",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.4357,
+      "status": "fail",
+      "margin": 0.0643
+    },
+    {
+      "id": "mammr-v0.1-0087",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.5316,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0088",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.3441,
+      "status": "fail",
+      "margin": 0.1559
+    },
+    {
+      "id": "mammr-v0.1-0089",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.2503,
+      "status": "fail",
+      "margin": 0.2497
+    },
+    {
+      "id": "mammr-v0.1-0090",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.5602,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0091",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.4916,
+      "status": "fail",
+      "margin": 0.0084
+    },
+    {
+      "id": "mammr-v0.1-0092",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.3814,
+      "status": "fail",
+      "margin": 0.1186
+    },
+    {
+      "id": "mammr-v0.1-0093",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.4718,
+      "status": "fail",
+      "margin": 0.0282
+    },
+    {
+      "id": "mammr-v0.1-0094",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.6136,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0095",
+      "category": "turkish_morphology",
+      "expected": "medium_high",
+      "similarity": 0.5487,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0096",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.4827,
+      "status": "fail",
+      "margin": 0.0173
+    },
+    {
+      "id": "mammr-v0.1-0097",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.4498,
+      "status": "fail",
+      "margin": 0.0502
+    },
+    {
+      "id": "mammr-v0.1-0098",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.6598,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0099",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.7048,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0100",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.4476,
+      "status": "fail",
+      "margin": 0.0524
+    },
+    {
+      "id": "mammr-v0.1-0101",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.5071,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0102",
+      "category": "turkish_morphology",
+      "expected": "medium_high",
+      "similarity": 0.3914,
+      "status": "fail",
+      "margin": 0.0086
+    },
+    {
+      "id": "mammr-v0.1-0103",
+      "category": "turkish_morphology",
+      "expected": "medium_high",
+      "similarity": 0.4735,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0104",
+      "category": "turkish_morphology",
+      "expected": "low",
+      "similarity": 0.5348,
+      "status": "fail",
+      "margin": 0.1848
+    },
+    {
+      "id": "mammr-v0.1-0105",
+      "category": "turkish_morphology",
+      "expected": "low",
+      "similarity": 0.6053,
+      "status": "fail",
+      "margin": 0.2553
+    },
+    {
+      "id": "mammr-v0.1-0106",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.3093,
+      "status": "fail",
+      "margin": 0.1907
+    },
+    {
+      "id": "mammr-v0.1-0107",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.2968,
+      "status": "fail",
+      "margin": 0.2032
+    },
+    {
+      "id": "mammr-v0.1-0108",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.3003,
+      "status": "fail",
+      "margin": 0.1997
+    },
+    {
+      "id": "mammr-v0.1-0109",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.406,
+      "status": "fail",
+      "margin": 0.094
+    },
+    {
+      "id": "mammr-v0.1-0110",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.3681,
+      "status": "fail",
+      "margin": 0.1319
+    },
+    {
+      "id": "mammr-v0.1-0111",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.3076,
+      "status": "fail",
+      "margin": 0.1924
+    },
+    {
+      "id": "mammr-v0.1-0112",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.4676,
+      "status": "fail",
+      "margin": 0.0324
+    },
+    {
+      "id": "mammr-v0.1-0113",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.2822,
+      "status": "fail",
+      "margin": 0.2178
+    },
+    {
+      "id": "mammr-v0.1-0114",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.2121,
+      "status": "fail",
+      "margin": 0.2879
+    },
+    {
+      "id": "mammr-v0.1-0115",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.4628,
+      "status": "fail",
+      "margin": 0.0372
+    },
+    {
+      "id": "mammr-v0.1-0116",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.3289,
+      "status": "fail",
+      "margin": 0.1711
+    },
+    {
+      "id": "mammr-v0.1-0117",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.251,
+      "status": "fail",
+      "margin": 0.249
+    },
+    {
+      "id": "mammr-v0.1-0118",
+      "category": "conversational_recall",
+      "expected": "low",
+      "similarity": 0.3096,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0119",
+      "category": "conversational_recall",
+      "expected": "low",
+      "similarity": 0.2746,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0120",
+      "category": "conversational_recall",
+      "expected": "low",
+      "similarity": 0.3296,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0121",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.3128,
+      "status": "fail",
+      "margin": 0.1872
+    },
+    {
+      "id": "mammr-v0.1-0122",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.3669,
+      "status": "fail",
+      "margin": 0.1331
+    },
+    {
+      "id": "mammr-v0.1-0123",
+      "category": "conversational_recall",
+      "expected": "low",
+      "similarity": 0.3295,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0124",
+      "category": "conversational_recall",
+      "expected": "low",
+      "similarity": 0.4063,
+      "status": "fail",
+      "margin": 0.0563
+    },
+    {
+      "id": "mammr-v0.1-0125",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.3347,
+      "status": "fail",
+      "margin": 0.1653
+    },
+    {
+      "id": "mammr-v0.1-0126",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.2313,
+      "status": "fail",
+      "margin": 0.2687
+    },
+    {
+      "id": "mammr-v0.1-0127",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.4358,
+      "status": "fail",
+      "margin": 0.0642
+    },
+    {
+      "id": "mammr-v0.1-0128",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.3404,
+      "status": "fail",
+      "margin": 0.1596
+    },
+    {
+      "id": "mammr-v0.1-0129",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.3632,
+      "status": "fail",
+      "margin": 0.1368
+    },
+    {
+      "id": "mammr-v0.1-0130",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.279,
+      "status": "fail",
+      "margin": 0.221
+    },
+    {
+      "id": "mammr-v0.1-0131",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.2119,
+      "status": "fail",
+      "margin": 0.2881
+    },
+    {
+      "id": "mammr-v0.1-0132",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.3123,
+      "status": "fail",
+      "margin": 0.1877
+    },
+    {
+      "id": "mammr-v0.1-0133",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.2668,
+      "status": "fail",
+      "margin": 0.2332
+    },
+    {
+      "id": "mammr-v0.1-0134",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.2315,
+      "status": "fail",
+      "margin": 0.2685
+    },
+    {
+      "id": "mammr-v0.1-0135",
+      "category": "crosslingual",
+      "expected": "low",
+      "similarity": 0.2923,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0136",
+      "category": "crosslingual",
+      "expected": "low",
+      "similarity": 0.299,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0137",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.4229,
+      "status": "fail",
+      "margin": 0.0771
+    },
+    {
+      "id": "mammr-v0.1-0138",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.2995,
+      "status": "fail",
+      "margin": 0.2005
+    },
+    {
+      "id": "mammr-v0.1-0139",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.4097,
+      "status": "fail",
+      "margin": 0.0903
+    },
+    {
+      "id": "mammr-v0.1-0140",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.6583,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0141",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.4227,
+      "status": "fail",
+      "margin": 0.0773
+    },
+    {
+      "id": "mammr-v0.1-0142",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.4817,
+      "status": "fail",
+      "margin": 0.0183
+    },
+    {
+      "id": "mammr-v0.1-0143",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.3915,
+      "status": "fail",
+      "margin": 0.1085
+    },
+    {
+      "id": "mammr-v0.1-0144",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.3623,
+      "status": "fail",
+      "margin": 0.1377
+    },
+    {
+      "id": "mammr-v0.1-0145",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.5136,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0146",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.3388,
+      "status": "fail",
+      "margin": 0.1612
+    },
+    {
+      "id": "mammr-v0.1-0147",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.434,
+      "status": "fail",
+      "margin": 0.066
+    },
+    {
+      "id": "mammr-v0.1-0148",
+      "category": "turkish_chars",
+      "expected": "low",
+      "similarity": 0.3915,
+      "status": "fail",
+      "margin": 0.0415
+    },
+    {
+      "id": "mammr-v0.1-0149",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.5357,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0150",
+      "category": "specificity",
+      "expected": "high",
+      "similarity": 0.3054,
+      "status": "fail",
+      "margin": 0.1946
+    },
+    {
+      "id": "mammr-v0.1-0151",
+      "category": "specificity",
+      "expected": "low",
+      "similarity": 0.1539,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0152",
+      "category": "specificity",
+      "expected": "high",
+      "similarity": 0.3605,
+      "status": "fail",
+      "margin": 0.1395
+    },
+    {
+      "id": "mammr-v0.1-0153",
+      "category": "specificity",
+      "expected": "low",
+      "similarity": 0.2295,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0154",
+      "category": "specificity",
+      "expected": "high",
+      "similarity": 0.435,
+      "status": "fail",
+      "margin": 0.065
+    },
+    {
+      "id": "mammr-v0.1-0155",
+      "category": "specificity",
+      "expected": "medium",
+      "similarity": 0.4208,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0156",
+      "category": "specificity",
+      "expected": "high",
+      "similarity": 0.2769,
+      "status": "fail",
+      "margin": 0.2231
+    },
+    {
+      "id": "mammr-v0.1-0157",
+      "category": "specificity",
+      "expected": "low",
+      "similarity": 0.2153,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0158",
+      "category": "specificity",
+      "expected": "high",
+      "similarity": 0.4113,
+      "status": "fail",
+      "margin": 0.0887
+    },
+    {
+      "id": "mammr-v0.1-0159",
+      "category": "specificity",
+      "expected": "low",
+      "similarity": 0.4575,
+      "status": "fail",
+      "margin": 0.1075
+    },
+    {
+      "id": "mammr-v0.1-0160",
+      "category": "specificity",
+      "expected": "high",
+      "similarity": 0.4282,
+      "status": "fail",
+      "margin": 0.0718
+    },
+    {
+      "id": "mammr-v0.1-0161",
+      "category": "specificity",
+      "expected": "low",
+      "similarity": 0.3533,
+      "status": "fail",
+      "margin": 0.0033
+    },
+    {
+      "id": "mammr-v0.1-0162",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.3639,
+      "status": "fail",
+      "margin": 0.1361
+    },
+    {
+      "id": "mammr-v0.1-0163",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.5302,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0164",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.3989,
+      "status": "fail",
+      "margin": 0.1011
+    },
+    {
+      "id": "mammr-v0.1-0165",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.3195,
+      "status": "fail",
+      "margin": 0.1805
+    },
+    {
+      "id": "mammr-v0.1-0166",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.4208,
+      "status": "fail",
+      "margin": 0.0792
+    },
+    {
+      "id": "mammr-v0.1-0167",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.2819,
+      "status": "fail",
+      "margin": 0.2181
+    },
+    {
+      "id": "mammr-v0.1-0168",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.2835,
+      "status": "fail",
+      "margin": 0.2165
+    },
+    {
+      "id": "mammr-v0.1-0169",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.3264,
+      "status": "fail",
+      "margin": 0.1736
+    },
+    {
+      "id": "mammr-v0.1-0170",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.2522,
+      "status": "fail",
+      "margin": 0.2478
+    },
+    {
+      "id": "mammr-v0.1-0171",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.297,
+      "status": "fail",
+      "margin": 0.203
+    },
+    {
+      "id": "mammr-v0.1-0172",
+      "category": "paraphrase",
+      "expected": "low",
+      "similarity": 0.3836,
+      "status": "fail",
+      "margin": 0.0336
+    },
+    {
+      "id": "mammr-v0.1-0173",
+      "category": "paraphrase",
+      "expected": "low",
+      "similarity": 0.3291,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0174",
+      "category": "temporal",
+      "expected": "high",
+      "similarity": 0.2198,
+      "status": "fail",
+      "margin": 0.2802
+    },
+    {
+      "id": "mammr-v0.1-0175",
+      "category": "temporal",
+      "expected": "high",
+      "similarity": 0.2978,
+      "status": "fail",
+      "margin": 0.2022
+    },
+    {
+      "id": "mammr-v0.1-0176",
+      "category": "temporal",
+      "expected": "high",
+      "similarity": 0.3443,
+      "status": "fail",
+      "margin": 0.1557
+    },
+    {
+      "id": "mammr-v0.1-0177",
+      "category": "temporal",
+      "expected": "high",
+      "similarity": 0.2374,
+      "status": "fail",
+      "margin": 0.2626
+    },
+    {
+      "id": "mammr-v0.1-0178",
+      "category": "temporal",
+      "expected": "high",
+      "similarity": 0.2045,
+      "status": "fail",
+      "margin": 0.2955
+    },
+    {
+      "id": "mammr-v0.1-0179",
+      "category": "temporal",
+      "expected": "low",
+      "similarity": 0.3048,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0180",
+      "category": "temporal",
+      "expected": "high",
+      "similarity": 0.3571,
+      "status": "fail",
+      "margin": 0.1429
+    },
+    {
+      "id": "mammr-v0.1-0181",
+      "category": "temporal",
+      "expected": "high",
+      "similarity": 0.264,
+      "status": "fail",
+      "margin": 0.236
+    },
+    {
+      "id": "mammr-v0.1-0182",
+      "category": "temporal",
+      "expected": "low",
+      "similarity": 0.2104,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0183",
+      "category": "temporal",
+      "expected": "low",
+      "similarity": 0.3277,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0184",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.5267,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0185",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.4722,
+      "status": "fail",
+      "margin": 0.0278
+    },
+    {
+      "id": "mammr-v0.1-0186",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.4186,
+      "status": "fail",
+      "margin": 0.0814
+    },
+    {
+      "id": "mammr-v0.1-0187",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.3087,
+      "status": "fail",
+      "margin": 0.1913
+    },
+    {
+      "id": "mammr-v0.1-0188",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.4469,
+      "status": "fail",
+      "margin": 0.0531
+    },
+    {
+      "id": "mammr-v0.1-0189",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.5492,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0190",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.411,
+      "status": "fail",
+      "margin": 0.089
+    },
+    {
+      "id": "mammr-v0.1-0191",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.412,
+      "status": "fail",
+      "margin": 0.088
+    },
+    {
+      "id": "mammr-v0.1-0192",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.4189,
+      "status": "fail",
+      "margin": 0.0811
+    },
+    {
+      "id": "mammr-v0.1-0193",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.2369,
+      "status": "fail",
+      "margin": 0.2631
+    },
+    {
+      "id": "mammr-v0.1-0194",
+      "category": "code_mixed",
+      "expected": "low",
+      "similarity": 0.3162,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0195",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.252,
+      "status": "fail",
+      "margin": 0.248
+    },
+    {
+      "id": "mammr-v0.1-0196",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.314,
+      "status": "fail",
+      "margin": 0.186
+    },
+    {
+      "id": "mammr-v0.1-0197",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.47,
+      "status": "fail",
+      "margin": 0.03
+    },
+    {
+      "id": "mammr-v0.1-0198",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.5254,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0199",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.5713,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0200",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.3748,
+      "status": "fail",
+      "margin": 0.1252
+    },
+    {
+      "id": "mammr-v0.1-0201",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.6438,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0202",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.4374,
+      "status": "fail",
+      "margin": 0.0626
+    },
+    {
+      "id": "mammr-v0.1-0203",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.3226,
+      "status": "fail",
+      "margin": 0.1774
+    },
+    {
+      "id": "mammr-v0.1-0204",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.2085,
+      "status": "fail",
+      "margin": 0.2915
+    },
+    {
+      "id": "mammr-v0.1-0205",
+      "category": "noise_typo",
+      "expected": "low",
+      "similarity": 0.3067,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0206",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2815,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0207",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.1338,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0208",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2924,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0209",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2406,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0210",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2438,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0211",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.3768,
+      "status": "fail",
+      "margin": 0.0268
+    },
+    {
+      "id": "mammr-v0.1-0212",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.1738,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0213",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2357,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0214",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.161,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0215",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2735,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0216",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2871,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0217",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.3397,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0218",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.3321,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0219",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.3059,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0220",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.1357,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0221",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.1644,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0222",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.1259,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0223",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2559,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0224",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.3764,
+      "status": "fail",
+      "margin": 0.0264
+    },
+    {
+      "id": "mammr-v0.1-0225",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.263,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0226",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.0602,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0227",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.1204,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0228",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2356,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0229",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.1005,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0230",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.1494,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0231",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2292,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0232",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.1442,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0233",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2496,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0234",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.4335,
+      "status": "fail",
+      "margin": 0.0665
+    },
+    {
+      "id": "mammr-v0.1-0235",
+      "category": "synonym_alias",
+      "expected": "medium_high",
+      "similarity": 0.3846,
+      "status": "fail",
+      "margin": 0.0154
+    },
+    {
+      "id": "mammr-v0.1-0236",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.2125,
+      "status": "fail",
+      "margin": 0.2875
+    },
+    {
+      "id": "mammr-v0.1-0237",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.2436,
+      "status": "fail",
+      "margin": 0.2564
+    },
+    {
+      "id": "mammr-v0.1-0238",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.3126,
+      "status": "fail",
+      "margin": 0.1874
+    },
+    {
+      "id": "mammr-v0.1-0239",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.3548,
+      "status": "fail",
+      "margin": 0.1452
+    },
+    {
+      "id": "mammr-v0.1-0240",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.328,
+      "status": "fail",
+      "margin": 0.172
+    },
+    {
+      "id": "mammr-v0.1-0241",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.2299,
+      "status": "fail",
+      "margin": 0.2701
+    },
+    {
+      "id": "mammr-v0.1-0242",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.2563,
+      "status": "fail",
+      "margin": 0.2437
+    },
+    {
+      "id": "mammr-v0.1-0243",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.2935,
+      "status": "fail",
+      "margin": 0.2065
+    },
+    {
+      "id": "mammr-v0.1-0244",
+      "category": "synonym_alias",
+      "expected": "low",
+      "similarity": 0.2953,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0245",
+      "category": "synonym_alias",
+      "expected": "low",
+      "similarity": 0.2547,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0246",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.2637,
+      "status": "fail",
+      "margin": 0.2363
+    },
+    {
+      "id": "mammr-v0.1-0247",
+      "category": "entity_confusion",
+      "expected": "high",
+      "similarity": 0.2525,
+      "status": "fail",
+      "margin": 0.2475
+    },
+    {
+      "id": "mammr-v0.1-0248",
+      "category": "entity_confusion",
+      "expected": "low",
+      "similarity": 0.3349,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0249",
+      "category": "entity_confusion",
+      "expected": "high",
+      "similarity": 0.2362,
+      "status": "fail",
+      "margin": 0.2638
+    },
+    {
+      "id": "mammr-v0.1-0250",
+      "category": "entity_confusion",
+      "expected": "medium_high",
+      "similarity": 0.201,
+      "status": "fail",
+      "margin": 0.199
+    },
+    {
+      "id": "mammr-v0.1-0251",
+      "category": "entity_confusion",
+      "expected": "high",
+      "similarity": 0.4637,
+      "status": "fail",
+      "margin": 0.0363
+    },
+    {
+      "id": "mammr-v0.1-0252",
+      "category": "entity_confusion",
+      "expected": "medium_high",
+      "similarity": 0.2575,
+      "status": "fail",
+      "margin": 0.1425
+    },
+    {
+      "id": "mammr-v0.1-0253",
+      "category": "entity_confusion",
+      "expected": "high",
+      "similarity": 0.237,
+      "status": "fail",
+      "margin": 0.263
+    },
+    {
+      "id": "mammr-v0.1-0254",
+      "category": "entity_confusion",
+      "expected": "low",
+      "similarity": 0.3131,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0255",
+      "category": "entity_confusion",
+      "expected": "high",
+      "similarity": 0.3971,
+      "status": "fail",
+      "margin": 0.1029
+    },
+    {
+      "id": "mammr-v0.1-0256",
+      "category": "entity_confusion",
+      "expected": "low",
+      "similarity": 0.2587,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0257",
+      "category": "entity_confusion",
+      "expected": "high",
+      "similarity": 0.2729,
+      "status": "fail",
+      "margin": 0.2271
+    },
+    {
+      "id": "mammr-v0.1-0258",
+      "category": "entity_confusion",
+      "expected": "medium_high",
+      "similarity": 0.2202,
+      "status": "fail",
+      "margin": 0.1798
+    },
+    {
+      "id": "mammr-v0.1-0259",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.3599,
+      "status": "fail",
+      "margin": 0.1401
+    },
+    {
+      "id": "mammr-v0.1-0260",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.3058,
+      "status": "fail",
+      "margin": 0.1942
+    },
+    {
+      "id": "mammr-v0.1-0261",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.3007,
+      "status": "fail",
+      "margin": 0.1993
+    },
+    {
+      "id": "mammr-v0.1-0262",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.3209,
+      "status": "fail",
+      "margin": 0.1791
+    },
+    {
+      "id": "mammr-v0.1-0263",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.2162,
+      "status": "fail",
+      "margin": 0.2838
+    },
+    {
+      "id": "mammr-v0.1-0264",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.3181,
+      "status": "fail",
+      "margin": 0.1819
+    },
+    {
+      "id": "mammr-v0.1-0265",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.2761,
+      "status": "fail",
+      "margin": 0.2239
+    },
+    {
+      "id": "mammr-v0.1-0266",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.278,
+      "status": "fail",
+      "margin": 0.222
+    },
+    {
+      "id": "mammr-v0.1-0267",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.4696,
+      "status": "fail",
+      "margin": 0.0304
+    },
+    {
+      "id": "mammr-v0.1-0268",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.3683,
+      "status": "fail",
+      "margin": 0.1317
+    },
+    {
+      "id": "mammr-v0.1-0269",
+      "category": "context_implicit",
+      "expected": "low",
+      "similarity": 0.3533,
+      "status": "fail",
+      "margin": 0.0033
+    },
+    {
+      "id": "mammr-v0.1-0270",
+      "category": "context_implicit",
+      "expected": "low",
+      "similarity": 0.419,
+      "status": "fail",
+      "margin": 0.069
+    },
+    {
+      "id": "mammr-v0.1-0271",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.2435,
+      "status": "fail",
+      "margin": 0.2565
+    },
+    {
+      "id": "mammr-v0.1-0272",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.3249,
+      "status": "fail",
+      "margin": 0.1751
+    },
+    {
+      "id": "mammr-v0.1-0273",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.3818,
+      "status": "fail",
+      "margin": 0.1182
+    },
+    {
+      "id": "mammr-v0.1-0274",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.2103,
+      "status": "fail",
+      "margin": 0.2897
+    },
+    {
+      "id": "mammr-v0.1-0275",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.3656,
+      "status": "fail",
+      "margin": 0.1344
+    },
+    {
+      "id": "mammr-v0.1-0276",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.3291,
+      "status": "fail",
+      "margin": 0.1709
+    },
+    {
+      "id": "mammr-v0.1-0277",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.2692,
+      "status": "fail",
+      "margin": 0.2308
+    },
+    {
+      "id": "mammr-v0.1-0278",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.3419,
+      "status": "fail",
+      "margin": 0.1581
+    },
+    {
+      "id": "mammr-v0.1-0279",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.2966,
+      "status": "fail",
+      "margin": 0.2034
+    },
+    {
+      "id": "mammr-v0.1-0280",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.429,
+      "status": "fail",
+      "margin": 0.071
+    },
+    {
+      "id": "mammr-v0.1-0281",
+      "category": "partial_match",
+      "expected": "low",
+      "similarity": 0.1643,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0282",
+      "category": "partial_match",
+      "expected": "low",
+      "similarity": 0.3851,
+      "status": "fail",
+      "margin": 0.0351
+    },
+    {
+      "id": "mammr-v0.1-0283",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.3763,
+      "status": "fail",
+      "margin": 0.1237
+    },
+    {
+      "id": "mammr-v0.1-0284",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.3816,
+      "status": "fail",
+      "margin": 0.1184
+    },
+    {
+      "id": "mammr-v0.1-0285",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.2903,
+      "status": "fail",
+      "margin": 0.2097
+    },
+    {
+      "id": "mammr-v0.1-0286",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.2194,
+      "status": "fail",
+      "margin": 0.2806
+    },
+    {
+      "id": "mammr-v0.1-0287",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.2096,
+      "status": "fail",
+      "margin": 0.2904
+    },
+    {
+      "id": "mammr-v0.1-0288",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.3325,
+      "status": "fail",
+      "margin": 0.1675
+    },
+    {
+      "id": "mammr-v0.1-0289",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.3676,
+      "status": "fail",
+      "margin": 0.1324
+    },
+    {
+      "id": "mammr-v0.1-0290",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.3689,
+      "status": "fail",
+      "margin": 0.1311
+    },
+    {
+      "id": "mammr-v0.1-0291",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.3754,
+      "status": "fail",
+      "margin": 0.1246
+    },
+    {
+      "id": "mammr-v0.1-0292",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.2708,
+      "status": "fail",
+      "margin": 0.2292
+    },
+    {
+      "id": "mammr-v0.1-0293",
+      "category": "code_to_description",
+      "expected": "low",
+      "similarity": 0.2347,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0294",
+      "category": "code_to_description",
+      "expected": "low",
+      "similarity": 0.1951,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0295",
+      "category": "adversarial",
+      "expected": "medium",
+      "similarity": 0.3666,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0296",
+      "category": "adversarial",
+      "expected": "medium",
+      "similarity": 0.3395,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0297",
+      "category": "adversarial",
+      "expected": "medium",
+      "similarity": 0.3475,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0298",
+      "category": "adversarial",
+      "expected": "low",
+      "similarity": 0.2077,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0299",
+      "category": "adversarial",
+      "expected": "low",
+      "similarity": 0.2003,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0300",
+      "category": "adversarial",
+      "expected": "medium",
+      "similarity": 0.128,
+      "status": "fail",
+      "margin": 0.122
+    },
+    {
+      "id": "mammr-v0.1-0301",
+      "category": "adversarial",
+      "expected": "medium",
+      "similarity": 0.2614,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0302",
+      "category": "adversarial",
+      "expected": "low",
+      "similarity": 0.2993,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0303",
+      "category": "adversarial",
+      "expected": "high",
+      "similarity": 0.4309,
+      "status": "fail",
+      "margin": 0.0691
+    },
+    {
+      "id": "mammr-v0.1-0304",
+      "category": "adversarial",
+      "expected": "high",
+      "similarity": 0.3715,
+      "status": "fail",
+      "margin": 0.1285
+    }
+  ],
+  "embed_times_s": [
+    0.5057,
+    3.8358,
+    0.3913,
+    3.0809,
+    0.3138,
+    5.047,
+    0.4292,
+    3.4019,
+    0.562,
+    4.1181,
+    0.3864,
+    3.4678,
+    0.3271,
+    2.8925,
+    0.394,
+    3.1295,
+    0.4392,
+    4.4527,
+    0.8061,
+    3.6199,
+    0.6066,
+    2.4915,
+    0.3717,
+    2.3936,
+    0.4503,
+    2.8694,
+    1.7111,
+    1.7942,
+    2.6979,
+    2.1802,
+    2.5324,
+    2.5234,
+    2.5808,
+    2.9364,
+    1.0423,
+    1.3465,
+    1.5492,
+    1.1616,
+    1.0252,
+    1.3169,
+    1.1209,
+    1.503,
+    1.0865,
+    1.0015,
+    1.0759,
+    1.1107,
+    1.1736,
+    4.1042,
+    2.9587,
+    1.3399,
+    1.331,
+    4.7634,
+    3.3905,
+    2.0907,
+    2.2055,
+    2.2913,
+    2.4293,
+    2.058,
+    3.3955,
+    2.273,
+    2.2068,
+    2.135,
+    2.1139,
+    2.2787,
+    1.9837,
+    1.9208,
+    1.3557,
+    1.3668,
+    1.7999,
+    1.12,
+    2.0153,
+    1.126,
+    0.8886,
+    0.575,
+    3.3102,
+    0.4951,
+    3.0273,
+    0.6449,
+    2.3804,
+    0.4433,
+    3.7132,
+    0.5383,
+    2.7007,
+    0.5597,
+    2.3318,
+    0.4842,
+    2.4517,
+    0.7288,
+    2.555,
+    0.4873,
+    2.7993,
+    0.6334,
+    0.7255,
+    0.55,
+    0.5951,
+    3.4034,
+    3.1947,
+    3.7457,
+    0.6955,
+    2.2896,
+    0.3905,
+    2.3227,
+    0.5631,
+    1.3043,
+    1.0128,
+    0.5329,
+    4.0596,
+    0.3338,
+    0.7338,
+    0.3296,
+    0.8917,
+    0.4218,
+    0.7828,
+    0.5723,
+    0.8913,
+    0.6485,
+    0.6556,
+    0.9196,
+    0.5933,
+    0.6408,
+    0.767,
+    0.7769,
+    1.0541,
+    0.3829,
+    0.6811,
+    0.4631,
+    1.0913,
+    0.4315,
+    0.5982,
+    0.3429,
+    0.6406,
+    0.6841,
+    1.3601,
+    1.1572,
+    1.0052,
+    0.3633,
+    0.5421,
+    0.7707,
+    0.7752,
+    0.7367,
+    1.0299,
+    0.5549,
+    0.8013,
+    0.5831,
+    0.731,
+    0.438,
+    0.7962,
+    0.4789,
+    0.4962,
+    0.8207,
+    0.5281,
+    0.7795,
+    0.5141,
+    0.6605,
+    0.4307,
+    0.4373,
+    0.5352,
+    0.3124,
+    0.5041,
+    0.2684,
+    0.4525,
+    0.4233,
+    0.2672,
+    0.3484,
+    0.4055,
+    0.5107,
+    0.4468,
+    0.4631,
+    0.3946,
+    0.3522,
+    0.3654,
+    0.4674,
+    0.5275,
+    0.4576,
+    0.5609,
+    0.4439,
+    0.4663,
+    0.4886,
+    0.6052,
+    0.4334,
+    0.4735,
+    0.4273,
+    0.422,
+    0.4277,
+    0.4383,
+    0.3792,
+    0.4651,
+    0.6053,
+    0.3324,
+    0.4725,
+    0.4435,
+    0.4134,
+    0.53,
+    0.4898,
+    0.396,
+    0.2783,
+    0.3865,
+    0.4869,
+    0.4437,
+    0.3615,
+    0.8767,
+    0.4181,
+    0.3986,
+    2.2881,
+    0.3614,
+    2.0564,
+    0.3291,
+    1.9549,
+    0.4687,
+    2.4436,
+    0.4652,
+    2.2658,
+    0.5454,
+    2.1935,
+    0.4768,
+    2.7148,
+    0.4327,
+    3.1387,
+    0.5738,
+    2.5475,
+    4.5694,
+    3.7853,
+    4.816,
+    4.0896,
+    0.4513,
+    2.5356,
+    2.7136,
+    1.2872,
+    1.1559,
+    0.4451,
+    3.1344,
+    0.555,
+    2.556,
+    1.1803,
+    1.175,
+    0.342,
+    0.3393,
+    0.289,
+    0.6201,
+    0.6446,
+    0.5335,
+    0.462,
+    0.476,
+    0.6812,
+    0.5724,
+    0.4205,
+    0.9407,
+    0.4939,
+    0.5534,
+    0.549,
+    0.5322,
+    0.4743,
+    2.5524,
+    0.8692,
+    1.1623,
+    0.7497,
+    0.5078,
+    0.7904,
+    0.5595,
+    1.0103,
+    0.4733,
+    0.7806,
+    0.3954,
+    0.4819,
+    0.6355,
+    0.5577,
+    0.3634,
+    0.4998,
+    1.7505,
+    0.8865,
+    0.57,
+    0.5879,
+    0.4745,
+    0.695,
+    0.5366,
+    0.6776,
+    0.5338,
+    0.5908,
+    1.0803,
+    0.7338,
+    0.8791,
+    0.6856,
+    0.5365,
+    0.4617,
+    2.4704,
+    0.8284,
+    0.5245,
+    2.7196,
+    1.0186,
+    0.3785,
+    2.3932,
+    1.889,
+    0.6406,
+    2.9662,
+    2.2852,
+    0.5667,
+    2.0102,
+    6.3974,
+    0.4029,
+    2.0092,
+    1.0407,
+    0.8426,
+    0.6897,
+    0.6733,
+    1.0826,
+    0.6708,
+    0.5394,
+    0.6116,
+    0.5076,
+    0.7259,
+    0.487,
+    0.7056,
+    0.3542,
+    0.919,
+    0.5253,
+    0.7467,
+    0.3428,
+    0.6906,
+    1.042,
+    0.7548,
+    0.6532,
+    1.0644,
+    1.1229,
+    0.561,
+    0.9211,
+    0.5027,
+    2.568,
+    0.5828,
+    3.0846,
+    0.5194,
+    2.027,
+    0.7661,
+    2.4627,
+    1.3405,
+    0.4265,
+    1.9947,
+    0.4391,
+    2.3047,
+    2.1993,
+    1.1003,
+    0.4694,
+    1.7859,
+    0.5854,
+    1.8809,
+    0.5299,
+    1.2556,
+    0.8816,
+    1.6145,
+    0.4577,
+    1.383,
+    0.6854,
+    2.148,
+    0.4685,
+    0.9265,
+    0.8183,
+    1.2832,
+    0.8127,
+    1.1381,
+    0.8862,
+    2.1922,
+    0.8227,
+    0.4153,
+    0.534,
+    0.2619,
+    0.4925,
+    0.4179,
+    0.4863,
+    0.4208,
+    0.6037,
+    0.5743,
+    0.5646,
+    0.5319,
+    0.5479,
+    0.4217,
+    0.494,
+    0.486,
+    0.5315,
+    0.3521,
+    0.6188,
+    0.362,
+    2.3668,
+    0.5367,
+    0.5577,
+    0.6572,
+    0.3517,
+    0.6871,
+    0.3781,
+    0.9395,
+    0.5737,
+    0.9255,
+    1.4112,
+    1.0121,
+    0.5611,
+    0.651,
+    0.3811,
+    0.6924,
+    0.5732,
+    0.4743,
+    0.4865,
+    0.8934,
+    0.82,
+    0.6845,
+    0.6898,
+    0.697,
+    0.6836,
+    0.5617,
+    0.438,
+    1.0701,
+    0.8673,
+    1.0425,
+    0.4266,
+    0.8647,
+    0.5466,
+    1.1196,
+    0.3331,
+    0.6188,
+    0.6026,
+    0.7643,
+    0.6775,
+    0.8007,
+    0.4689,
+    0.8821,
+    0.4842,
+    0.9038,
+    0.445,
+    0.8486,
+    0.5491,
+    1.1301,
+    0.5223,
+    0.6023,
+    0.4751,
+    0.8674,
+    0.3992,
+    1.0142,
+    0.4871,
+    1.0489,
+    0.5541,
+    0.5278,
+    0.4366,
+    0.3247,
+    0.4552,
+    0.9609,
+    0.4619,
+    0.2294,
+    0.5267,
+    0.5318,
+    0.9196,
+    0.4939,
+    0.3451,
+    0.3477,
+    0.39,
+    0.3826,
+    0.2781,
+    0.3658,
+    0.3526,
+    0.3081,
+    0.3638,
+    2.2451,
+    0.2775,
+    0.5963,
+    0.3034,
+    0.4037,
+    0.3296,
+    0.9103,
+    1.3296,
+    1.0879,
+    0.4085,
+    1.8968,
+    2.2706,
+    0.4938,
+    1.3791,
+    1.0845,
+    0.4736,
+    2.5404,
+    1.8568,
+    1.3204,
+    1.2117,
+    0.3548,
+    1.188,
+    2.4021,
+    0.5894,
+    2.9041,
+    0.4548,
+    1.381,
+    0.908,
+    3.8215,
+    0.5071,
+    2.3251,
+    0.4501,
+    2.7539,
+    0.4402,
+    1.3621,
+    0.6234,
+    1.2574,
+    0.5229,
+    2.9356,
+    0.4271,
+    2.9136,
+    0.8072,
+    2.349,
+    0.8558,
+    0.832,
+    0.3001,
+    2.0043,
+    0.5646,
+    2.1577,
+    2.6166,
+    0.2809,
+    2.3393,
+    0.214,
+    5.073,
+    0.4003,
+    1.9156,
+    6.591,
+    1.0618,
+    0.3137,
+    1.1341,
+    0.2972,
+    2.9665,
+    0.2906,
+    1.0737,
+    0.6005,
+    0.586,
+    2.4367,
+    0.6872,
+    2.093,
+    1.5889,
+    2.4194,
+    0.8779,
+    1.4433,
+    0.9285,
+    0.9272,
+    0.7902,
+    1.0155,
+    1.404,
+    0.9067,
+    0.7268,
+    0.4745,
+    0.9813,
+    1.2285,
+    0.8217,
+    1.6328,
+    0.8086,
+    0.7454,
+    0.7893,
+    0.4233,
+    1.2741,
+    0.7076,
+    0.5896,
+    0.6147,
+    0.7989,
+    0.2161,
+    0.6621,
+    0.2884,
+    0.5287,
+    4.2614,
+    0.7004,
+    0.268,
+    0.476,
+    0.3461,
+    0.511,
+    0.3857,
+    0.4429
+  ],
+  "weighted_score": 0.3545,
+  "unweighted_score": 0.3738,
+  "mrr": 0.3791,
+  "recall_at_5": 0.5964,
+  "retrieval_queries": 166,
+  "label_counts": {
+    "high": 166,
+    "low": 103,
+    "medium": 11,
+    "medium_high": 25
+  },
+  "result_scope": "historical_diagnostic",
+  "current_public_comparison": false,
+  "superseded_by": "results/qwen3-0.6b-q8_0-pinned-20260506.json"
+}

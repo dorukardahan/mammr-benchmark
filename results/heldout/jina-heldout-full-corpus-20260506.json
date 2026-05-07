@@ -1,0 +1,885 @@
+{
+  "model": "jina-v3-Q8_0",
+  "timestamp": "2026-05-07T04:20:30.815495+00:00",
+  "dataset": "heldout_mini_public.json",
+  "dataset_sha256": "48d97350d1ffaaa87834c31ffd3877ca94000665657cad5afb9d8979f9622c75",
+  "distractors": "synthetic_distractors_public.json",
+  "distractors_sha256": "4024f98fae0ed6d6ae4df2f99e0fd03087078813be83850df0c12afd9dd2b13d",
+  "endpoint_label": "llama-server-openblas-cpu-vps",
+  "batch_size": 1,
+  "timeout_s": 120.0,
+  "unique_texts": 195,
+  "dimensions": 1024,
+  "embed_times_s": [
+    0.5212,
+    1.6711,
+    0.2416,
+    0.7966,
+    0.2502,
+    1.1974,
+    0.2057,
+    0.6009,
+    0.6928,
+    0.4494,
+    0.2427,
+    0.9844,
+    0.3156,
+    1.0235,
+    0.1519,
+    0.5711,
+    0.3165,
+    0.8273,
+    0.6501,
+    0.4537,
+    0.2148,
+    0.4292,
+    0.3739,
+    0.5656,
+    0.1997,
+    0.299,
+    0.1938,
+    0.2481,
+    0.4758,
+    0.4986,
+    0.2313,
+    0.986,
+    0.2795,
+    0.8035,
+    1.1458,
+    1.2236,
+    0.224,
+    0.9762,
+    1.0213,
+    0.6044,
+    0.3642,
+    0.6277,
+    0.4267,
+    1.0035,
+    0.2729,
+    0.6018,
+    0.2706,
+    0.6351,
+    0.4431,
+    0.4045,
+    0.2917,
+    0.9168,
+    0.2213,
+    0.5872,
+    0.1933,
+    1.1099,
+    0.1613,
+    0.9168,
+    0.4309,
+    0.415,
+    0.2364,
+    1.9249,
+    0.8621,
+    0.5827,
+    0.518,
+    0.781,
+    0.565,
+    0.2455,
+    0.5091,
+    0.2741,
+    0.6711,
+    0.4437,
+    1.219,
+    0.2375,
+    0.4863,
+    0.2851,
+    0.7055,
+    0.412,
+    0.4212,
+    0.2548,
+    0.5415,
+    0.2682,
+    0.7477,
+    0.1879,
+    0.6168,
+    0.2177,
+    0.5866,
+    0.1986,
+    0.5432,
+    0.2015,
+    0.5249,
+    0.2242,
+    0.5413,
+    0.1631,
+    0.7878,
+    1.0143,
+    0.6492,
+    0.3929,
+    0.5641,
+    0.5521,
+    0.8764,
+    0.6146,
+    0.5799,
+    0.5624,
+    0.5184,
+    0.4672,
+    0.544,
+    0.7508,
+    1.228,
+    0.9437,
+    0.5377,
+    0.542,
+    1.0833,
+    0.7846,
+    0.7241,
+    0.7272,
+    0.5491,
+    0.5687,
+    1.0727,
+    0.6696,
+    0.767,
+    0.9951,
+    0.7006,
+    0.5789,
+    0.6978,
+    1.5495,
+    0.6449,
+    0.8429,
+    0.8571,
+    0.5734,
+    1.1606,
+    0.7145,
+    0.8938,
+    2.1731,
+    0.7198,
+    0.4365,
+    0.5237,
+    0.415,
+    0.6854,
+    0.6781,
+    0.6352,
+    0.8834,
+    0.7809,
+    0.4338,
+    0.478,
+    0.4452,
+    0.4871,
+    0.5132,
+    0.7099,
+    0.593,
+    0.7098,
+    0.501,
+    0.5709,
+    1.0787,
+    0.5532,
+    0.9727,
+    0.6348,
+    1.0217,
+    0.4945,
+    0.5604,
+    0.6551,
+    1.0426,
+    0.6297,
+    0.5193,
+    0.6218,
+    0.4971,
+    0.8084,
+    0.6499,
+    0.6492,
+    1.0692,
+    0.6348,
+    0.5979,
+    0.6153,
+    0.9124,
+    0.7977,
+    0.6427,
+    0.576,
+    0.4878,
+    0.5562,
+    0.5364,
+    0.5614,
+    0.4651,
+    0.5886,
+    0.6019,
+    0.8323,
+    0.4604,
+    0.483,
+    0.7358,
+    0.6936,
+    0.6514,
+    0.5572,
+    0.4956,
+    0.9313,
+    0.6285,
+    0.885
+  ],
+  "metrics": {
+    "same_category": {
+      "queries": 35,
+      "mrr": 0.8914,
+      "recall_at_1": 0.8286,
+      "recall_at_3": 0.9143,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "recall_at_20": 1.0,
+      "recall_at_50": 1.0,
+      "median_rank": 1,
+      "max_rank": 5,
+      "per_category": {
+        "code_mixed": {
+          "queries": 2,
+          "mrr": 0.75,
+          "recall_at_5": 1.0,
+          "median_rank": 2
+        },
+        "code_switching": {
+          "queries": 3,
+          "mrr": 1.0,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "code_to_description": {
+          "queries": 2,
+          "mrr": 1.0,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "context_implicit": {
+          "queries": 3,
+          "mrr": 0.75,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "conversational_recall": {
+          "queries": 5,
+          "mrr": 0.9,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "entity_confusion": {
+          "queries": 1,
+          "mrr": 1.0,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "paraphrase": {
+          "queries": 2,
+          "mrr": 1.0,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "short_query_long_memory": {
+          "queries": 2,
+          "mrr": 1.0,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "specificity": {
+          "queries": 3,
+          "mrr": 1.0,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "synonym_alias": {
+          "queries": 2,
+          "mrr": 0.75,
+          "recall_at_5": 1.0,
+          "median_rank": 2
+        },
+        "temporal": {
+          "queries": 5,
+          "mrr": 0.69,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "turkish_chars": {
+          "queries": 2,
+          "mrr": 1.0,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "turkish_morphology": {
+          "queries": 3,
+          "mrr": 1.0,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        }
+      },
+      "worst_ranked_high_pairs": [
+        {
+          "id": "mammr-heldout-v0.1-0006",
+          "category": "temporal",
+          "rank": 5,
+          "target_score": 0.3423
+        },
+        {
+          "id": "mammr-heldout-v0.1-0009",
+          "category": "temporal",
+          "rank": 4,
+          "target_score": 0.4166
+        },
+        {
+          "id": "mammr-heldout-v0.1-0053",
+          "category": "context_implicit",
+          "rank": 4,
+          "target_score": 0.4178
+        },
+        {
+          "id": "mammr-heldout-v0.1-0000",
+          "category": "conversational_recall",
+          "rank": 2,
+          "target_score": 0.6451
+        },
+        {
+          "id": "mammr-heldout-v0.1-0020",
+          "category": "code_mixed",
+          "rank": 2,
+          "target_score": 0.5106
+        },
+        {
+          "id": "mammr-heldout-v0.1-0043",
+          "category": "synonym_alias",
+          "rank": 2,
+          "target_score": 0.6714
+        },
+        {
+          "id": "mammr-heldout-v0.1-0001",
+          "category": "conversational_recall",
+          "rank": 1,
+          "target_score": 0.5335
+        },
+        {
+          "id": "mammr-heldout-v0.1-0002",
+          "category": "conversational_recall",
+          "rank": 1,
+          "target_score": 0.6861
+        },
+        {
+          "id": "mammr-heldout-v0.1-0003",
+          "category": "conversational_recall",
+          "rank": 1,
+          "target_score": 0.5253
+        },
+        {
+          "id": "mammr-heldout-v0.1-0007",
+          "category": "temporal",
+          "rank": 1,
+          "target_score": 0.5369
+        },
+        {
+          "id": "mammr-heldout-v0.1-0008",
+          "category": "temporal",
+          "rank": 1,
+          "target_score": 0.5487
+        },
+        {
+          "id": "mammr-heldout-v0.1-0012",
+          "category": "turkish_morphology",
+          "rank": 1,
+          "target_score": 0.7462
+        },
+        {
+          "id": "mammr-heldout-v0.1-0013",
+          "category": "turkish_morphology",
+          "rank": 1,
+          "target_score": 0.6815
+        },
+        {
+          "id": "mammr-heldout-v0.1-0014",
+          "category": "turkish_chars",
+          "rank": 1,
+          "target_score": 0.7169
+        },
+        {
+          "id": "mammr-heldout-v0.1-0015",
+          "category": "turkish_chars",
+          "rank": 1,
+          "target_score": 0.7156
+        },
+        {
+          "id": "mammr-heldout-v0.1-0018",
+          "category": "code_switching",
+          "rank": 1,
+          "target_score": 0.7281
+        },
+        {
+          "id": "mammr-heldout-v0.1-0019",
+          "category": "code_switching",
+          "rank": 1,
+          "target_score": 0.7185
+        },
+        {
+          "id": "mammr-heldout-v0.1-0021",
+          "category": "code_mixed",
+          "rank": 1,
+          "target_score": 0.6528
+        },
+        {
+          "id": "mammr-heldout-v0.1-0024",
+          "category": "code_to_description",
+          "rank": 1,
+          "target_score": 0.8382
+        },
+        {
+          "id": "mammr-heldout-v0.1-0025",
+          "category": "code_to_description",
+          "rank": 1,
+          "target_score": 0.6702
+        }
+      ]
+    },
+    "full_public_corpus": {
+      "queries": 35,
+      "mrr": 0.7161,
+      "recall_at_1": 0.6,
+      "recall_at_3": 0.8,
+      "recall_at_5": 0.8286,
+      "recall_at_10": 0.9143,
+      "recall_at_20": 0.9429,
+      "recall_at_50": 1.0,
+      "median_rank": 1,
+      "max_rank": 33,
+      "per_category": {
+        "code_mixed": {
+          "queries": 2,
+          "mrr": 0.5556,
+          "recall_at_5": 0.5,
+          "median_rank": 9
+        },
+        "code_switching": {
+          "queries": 3,
+          "mrr": 1.0,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "code_to_description": {
+          "queries": 2,
+          "mrr": 1.0,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "context_implicit": {
+          "queries": 3,
+          "mrr": 0.5115,
+          "recall_at_5": 0.6667,
+          "median_rank": 2
+        },
+        "conversational_recall": {
+          "queries": 5,
+          "mrr": 0.7,
+          "recall_at_5": 1.0,
+          "median_rank": 2
+        },
+        "entity_confusion": {
+          "queries": 1,
+          "mrr": 1.0,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "paraphrase": {
+          "queries": 2,
+          "mrr": 0.1214,
+          "recall_at_5": 0.0,
+          "median_rank": 10
+        },
+        "short_query_long_memory": {
+          "queries": 2,
+          "mrr": 0.75,
+          "recall_at_5": 1.0,
+          "median_rank": 2
+        },
+        "specificity": {
+          "queries": 3,
+          "mrr": 0.8333,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "synonym_alias": {
+          "queries": 2,
+          "mrr": 0.625,
+          "recall_at_5": 1.0,
+          "median_rank": 4
+        },
+        "temporal": {
+          "queries": 5,
+          "mrr": 0.4852,
+          "recall_at_5": 0.6,
+          "median_rank": 3
+        },
+        "turkish_chars": {
+          "queries": 2,
+          "mrr": 1.0,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "turkish_morphology": {
+          "queries": 3,
+          "mrr": 1.0,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        }
+      },
+      "worst_ranked_high_pairs": [
+        {
+          "id": "mammr-heldout-v0.1-0009",
+          "category": "temporal",
+          "rank": 33,
+          "target_score": 0.4166
+        },
+        {
+          "id": "mammr-heldout-v0.1-0053",
+          "category": "context_implicit",
+          "rank": 29,
+          "target_score": 0.4178
+        },
+        {
+          "id": "mammr-heldout-v0.1-0006",
+          "category": "temporal",
+          "rank": 16,
+          "target_score": 0.3423
+        },
+        {
+          "id": "mammr-heldout-v0.1-0054",
+          "category": "paraphrase",
+          "rank": 10,
+          "target_score": 0.5095
+        },
+        {
+          "id": "mammr-heldout-v0.1-0020",
+          "category": "code_mixed",
+          "rank": 9,
+          "target_score": 0.5106
+        },
+        {
+          "id": "mammr-heldout-v0.1-0042",
+          "category": "paraphrase",
+          "rank": 7,
+          "target_score": 0.5229
+        },
+        {
+          "id": "mammr-heldout-v0.1-0043",
+          "category": "synonym_alias",
+          "rank": 4,
+          "target_score": 0.6714
+        },
+        {
+          "id": "mammr-heldout-v0.1-0008",
+          "category": "temporal",
+          "rank": 3,
+          "target_score": 0.5487
+        },
+        {
+          "id": "mammr-heldout-v0.1-0000",
+          "category": "conversational_recall",
+          "rank": 2,
+          "target_score": 0.6451
+        },
+        {
+          "id": "mammr-heldout-v0.1-0001",
+          "category": "conversational_recall",
+          "rank": 2,
+          "target_score": 0.5335
+        },
+        {
+          "id": "mammr-heldout-v0.1-0003",
+          "category": "conversational_recall",
+          "rank": 2,
+          "target_score": 0.5253
+        },
+        {
+          "id": "mammr-heldout-v0.1-0026",
+          "category": "specificity",
+          "rank": 2,
+          "target_score": 0.6745
+        },
+        {
+          "id": "mammr-heldout-v0.1-0030",
+          "category": "context_implicit",
+          "rank": 2,
+          "target_score": 0.4426
+        },
+        {
+          "id": "mammr-heldout-v0.1-0033",
+          "category": "short_query_long_memory",
+          "rank": 2,
+          "target_score": 0.6257
+        },
+        {
+          "id": "mammr-heldout-v0.1-0002",
+          "category": "conversational_recall",
+          "rank": 1,
+          "target_score": 0.6861
+        },
+        {
+          "id": "mammr-heldout-v0.1-0007",
+          "category": "temporal",
+          "rank": 1,
+          "target_score": 0.5369
+        },
+        {
+          "id": "mammr-heldout-v0.1-0012",
+          "category": "turkish_morphology",
+          "rank": 1,
+          "target_score": 0.7462
+        },
+        {
+          "id": "mammr-heldout-v0.1-0013",
+          "category": "turkish_morphology",
+          "rank": 1,
+          "target_score": 0.6815
+        },
+        {
+          "id": "mammr-heldout-v0.1-0014",
+          "category": "turkish_chars",
+          "rank": 1,
+          "target_score": 0.7169
+        },
+        {
+          "id": "mammr-heldout-v0.1-0015",
+          "category": "turkish_chars",
+          "rank": 1,
+          "target_score": 0.7156
+        }
+      ]
+    },
+    "full_public_corpus_plus_distractors": {
+      "queries": 35,
+      "mrr": 0.7083,
+      "recall_at_1": 0.6,
+      "recall_at_3": 0.8,
+      "recall_at_5": 0.8286,
+      "recall_at_10": 0.9143,
+      "recall_at_20": 0.9143,
+      "recall_at_50": 0.9143,
+      "median_rank": 1,
+      "max_rank": 102,
+      "per_category": {
+        "code_mixed": {
+          "queries": 2,
+          "mrr": 0.5556,
+          "recall_at_5": 0.5,
+          "median_rank": 9
+        },
+        "code_switching": {
+          "queries": 3,
+          "mrr": 1.0,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "code_to_description": {
+          "queries": 2,
+          "mrr": 1.0,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "context_implicit": {
+          "queries": 3,
+          "mrr": 0.5039,
+          "recall_at_5": 0.6667,
+          "median_rank": 2
+        },
+        "conversational_recall": {
+          "queries": 5,
+          "mrr": 0.6667,
+          "recall_at_5": 1.0,
+          "median_rank": 2
+        },
+        "entity_confusion": {
+          "queries": 1,
+          "mrr": 1.0,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "paraphrase": {
+          "queries": 2,
+          "mrr": 0.1125,
+          "recall_at_5": 0.0,
+          "median_rank": 10
+        },
+        "short_query_long_memory": {
+          "queries": 2,
+          "mrr": 0.75,
+          "recall_at_5": 1.0,
+          "median_rank": 2
+        },
+        "specificity": {
+          "queries": 3,
+          "mrr": 0.8333,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "synonym_alias": {
+          "queries": 2,
+          "mrr": 0.625,
+          "recall_at_5": 1.0,
+          "median_rank": 4
+        },
+        "temporal": {
+          "queries": 5,
+          "mrr": 0.4719,
+          "recall_at_5": 0.6,
+          "median_rank": 3
+        },
+        "turkish_chars": {
+          "queries": 2,
+          "mrr": 1.0,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        },
+        "turkish_morphology": {
+          "queries": 3,
+          "mrr": 1.0,
+          "recall_at_5": 1.0,
+          "median_rank": 1
+        }
+      },
+      "worst_ranked_high_pairs": [
+        {
+          "id": "mammr-heldout-v0.1-0009",
+          "category": "temporal",
+          "rank": 102,
+          "target_score": 0.4166
+        },
+        {
+          "id": "mammr-heldout-v0.1-0053",
+          "category": "context_implicit",
+          "rank": 85,
+          "target_score": 0.4178
+        },
+        {
+          "id": "mammr-heldout-v0.1-0006",
+          "category": "temporal",
+          "rank": 61,
+          "target_score": 0.3423
+        },
+        {
+          "id": "mammr-heldout-v0.1-0054",
+          "category": "paraphrase",
+          "rank": 10,
+          "target_score": 0.5095
+        },
+        {
+          "id": "mammr-heldout-v0.1-0020",
+          "category": "code_mixed",
+          "rank": 9,
+          "target_score": 0.5106
+        },
+        {
+          "id": "mammr-heldout-v0.1-0042",
+          "category": "paraphrase",
+          "rank": 8,
+          "target_score": 0.5229
+        },
+        {
+          "id": "mammr-heldout-v0.1-0043",
+          "category": "synonym_alias",
+          "rank": 4,
+          "target_score": 0.6714
+        },
+        {
+          "id": "mammr-heldout-v0.1-0003",
+          "category": "conversational_recall",
+          "rank": 3,
+          "target_score": 0.5253
+        },
+        {
+          "id": "mammr-heldout-v0.1-0008",
+          "category": "temporal",
+          "rank": 3,
+          "target_score": 0.5487
+        },
+        {
+          "id": "mammr-heldout-v0.1-0000",
+          "category": "conversational_recall",
+          "rank": 2,
+          "target_score": 0.6451
+        },
+        {
+          "id": "mammr-heldout-v0.1-0001",
+          "category": "conversational_recall",
+          "rank": 2,
+          "target_score": 0.5335
+        },
+        {
+          "id": "mammr-heldout-v0.1-0026",
+          "category": "specificity",
+          "rank": 2,
+          "target_score": 0.6745
+        },
+        {
+          "id": "mammr-heldout-v0.1-0030",
+          "category": "context_implicit",
+          "rank": 2,
+          "target_score": 0.4426
+        },
+        {
+          "id": "mammr-heldout-v0.1-0033",
+          "category": "short_query_long_memory",
+          "rank": 2,
+          "target_score": 0.6257
+        },
+        {
+          "id": "mammr-heldout-v0.1-0002",
+          "category": "conversational_recall",
+          "rank": 1,
+          "target_score": 0.6861
+        },
+        {
+          "id": "mammr-heldout-v0.1-0007",
+          "category": "temporal",
+          "rank": 1,
+          "target_score": 0.5369
+        },
+        {
+          "id": "mammr-heldout-v0.1-0012",
+          "category": "turkish_morphology",
+          "rank": 1,
+          "target_score": 0.7462
+        },
+        {
+          "id": "mammr-heldout-v0.1-0013",
+          "category": "turkish_morphology",
+          "rank": 1,
+          "target_score": 0.6815
+        },
+        {
+          "id": "mammr-heldout-v0.1-0014",
+          "category": "turkish_chars",
+          "rank": 1,
+          "target_score": 0.7169
+        },
+        {
+          "id": "mammr-heldout-v0.1-0015",
+          "category": "turkish_chars",
+          "rank": 1,
+          "target_score": 0.7156
+        }
+      ]
+    },
+    "candidate_counts": {
+      "public_documents": 60,
+      "synthetic_distractors": 96,
+      "total_with_distractors": 156
+    }
+  },
+  "backend_metadata": {
+    "schema_version": "mammr-backend-metadata-v1",
+    "benchmark_role": "public_sanitized_rerun",
+    "dataset_sha256": "48d97350d1ffaaa87834c31ffd3877ca94000665657cad5afb9d8979f9622c75",
+    "hardware_class": "cpu_only_vps",
+    "backend_type": "llama.cpp_openai_compatible_embedding_server",
+    "backend_name": "llama-server-openblas",
+    "backend_version": "version: 1 (408225b)",
+    "backend_binary_sha256": "5f2609599bc72850fe0a5349502cdaa137c2477aa620e64eb53ae5c010b0fae7",
+    "model_name": "Jina-v3 Q8_0",
+    "model_file": "jina-embeddings-v3-Q8_0.gguf",
+    "model_sha256": "da95bb315ec9766aabfdfa920124a6997a5d9617bd7c9708c4195557136864e1",
+    "quantization": "Q8_0",
+    "pooling": "mean",
+    "context_size": 8192,
+    "threads": 1,
+    "threads_batch": 1,
+    "parallel": 1,
+    "batch_size": 1,
+    "llama_batch_size": 2048,
+    "llama_ubatch_size": 2048,
+    "gpu_layers": 0,
+    "notes": "Benchmark ran through an isolated local embedding endpoint. Public-safe metadata only.",
+    "endpoint_scope": "isolated loopback transient benchmark endpoint",
+    "metadata_source_dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545"
+  }
+}

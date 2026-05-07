@@ -1,0 +1,482 @@
+[
+  {
+    "id": "mammr-distractor-0000",
+    "topic": "frontend",
+    "text": "Context note: The settings panel now keeps the save button disabled until all required fields are valid."
+  },
+  {
+    "id": "mammr-distractor-0001",
+    "topic": "frontend",
+    "text": "Follow-up reminder: The settings panel now keeps the save button disabled until all required fields are valid."
+  },
+  {
+    "id": "mammr-distractor-0002",
+    "topic": "frontend",
+    "text": "Archived decision: The settings panel now keeps the save button disabled until all required fields are valid."
+  },
+  {
+    "id": "mammr-distractor-0003",
+    "topic": "frontend",
+    "text": "Operational aside: The settings panel now keeps the save button disabled until all required fields are valid."
+  },
+  {
+    "id": "mammr-distractor-0004",
+    "topic": "frontend",
+    "text": "Context note: The dashboard chart uses weekly aggregation and hides empty series by default."
+  },
+  {
+    "id": "mammr-distractor-0005",
+    "topic": "frontend",
+    "text": "Follow-up reminder: The dashboard chart uses weekly aggregation and hides empty series by default."
+  },
+  {
+    "id": "mammr-distractor-0006",
+    "topic": "frontend",
+    "text": "Archived decision: The dashboard chart uses weekly aggregation and hides empty series by default."
+  },
+  {
+    "id": "mammr-distractor-0007",
+    "topic": "frontend",
+    "text": "Operational aside: The dashboard chart uses weekly aggregation and hides empty series by default."
+  },
+  {
+    "id": "mammr-distractor-0008",
+    "topic": "frontend",
+    "text": "Context note: The onboarding modal should not reopen after the user completes the first checklist."
+  },
+  {
+    "id": "mammr-distractor-0009",
+    "topic": "frontend",
+    "text": "Follow-up reminder: The onboarding modal should not reopen after the user completes the first checklist."
+  },
+  {
+    "id": "mammr-distractor-0010",
+    "topic": "frontend",
+    "text": "Archived decision: The onboarding modal should not reopen after the user completes the first checklist."
+  },
+  {
+    "id": "mammr-distractor-0011",
+    "topic": "frontend",
+    "text": "Operational aside: The onboarding modal should not reopen after the user completes the first checklist."
+  },
+  {
+    "id": "mammr-distractor-0012",
+    "topic": "frontend",
+    "text": "Context note: The theme switcher stores its state in local browser storage and does not call the API."
+  },
+  {
+    "id": "mammr-distractor-0013",
+    "topic": "frontend",
+    "text": "Follow-up reminder: The theme switcher stores its state in local browser storage and does not call the API."
+  },
+  {
+    "id": "mammr-distractor-0014",
+    "topic": "frontend",
+    "text": "Archived decision: The theme switcher stores its state in local browser storage and does not call the API."
+  },
+  {
+    "id": "mammr-distractor-0015",
+    "topic": "frontend",
+    "text": "Operational aside: The theme switcher stores its state in local browser storage and does not call the API."
+  },
+  {
+    "id": "mammr-distractor-0016",
+    "topic": "backend",
+    "text": "Context note: The billing worker retries failed invoices three times before moving them to manual review."
+  },
+  {
+    "id": "mammr-distractor-0017",
+    "topic": "backend",
+    "text": "Follow-up reminder: The billing worker retries failed invoices three times before moving them to manual review."
+  },
+  {
+    "id": "mammr-distractor-0018",
+    "topic": "backend",
+    "text": "Archived decision: The billing worker retries failed invoices three times before moving them to manual review."
+  },
+  {
+    "id": "mammr-distractor-0019",
+    "topic": "backend",
+    "text": "Operational aside: The billing worker retries failed invoices three times before moving them to manual review."
+  },
+  {
+    "id": "mammr-distractor-0020",
+    "topic": "backend",
+    "text": "Context note: The notification queue uses exponential backoff when the email provider returns a temporary error."
+  },
+  {
+    "id": "mammr-distractor-0021",
+    "topic": "backend",
+    "text": "Follow-up reminder: The notification queue uses exponential backoff when the email provider returns a temporary error."
+  },
+  {
+    "id": "mammr-distractor-0022",
+    "topic": "backend",
+    "text": "Archived decision: The notification queue uses exponential backoff when the email provider returns a temporary error."
+  },
+  {
+    "id": "mammr-distractor-0023",
+    "topic": "backend",
+    "text": "Operational aside: The notification queue uses exponential backoff when the email provider returns a temporary error."
+  },
+  {
+    "id": "mammr-distractor-0024",
+    "topic": "backend",
+    "text": "Context note: The webhook receiver validates the event signature before writing the payload to the queue."
+  },
+  {
+    "id": "mammr-distractor-0025",
+    "topic": "backend",
+    "text": "Follow-up reminder: The webhook receiver validates the event signature before writing the payload to the queue."
+  },
+  {
+    "id": "mammr-distractor-0026",
+    "topic": "backend",
+    "text": "Archived decision: The webhook receiver validates the event signature before writing the payload to the queue."
+  },
+  {
+    "id": "mammr-distractor-0027",
+    "topic": "backend",
+    "text": "Operational aside: The webhook receiver validates the event signature before writing the payload to the queue."
+  },
+  {
+    "id": "mammr-distractor-0028",
+    "topic": "backend",
+    "text": "Context note: The export job writes CSV files to object storage and sends a download link when complete."
+  },
+  {
+    "id": "mammr-distractor-0029",
+    "topic": "backend",
+    "text": "Follow-up reminder: The export job writes CSV files to object storage and sends a download link when complete."
+  },
+  {
+    "id": "mammr-distractor-0030",
+    "topic": "backend",
+    "text": "Archived decision: The export job writes CSV files to object storage and sends a download link when complete."
+  },
+  {
+    "id": "mammr-distractor-0031",
+    "topic": "backend",
+    "text": "Operational aside: The export job writes CSV files to object storage and sends a download link when complete."
+  },
+  {
+    "id": "mammr-distractor-0032",
+    "topic": "database",
+    "text": "Context note: The customer table migration adds a nullable timezone column with no default value."
+  },
+  {
+    "id": "mammr-distractor-0033",
+    "topic": "database",
+    "text": "Follow-up reminder: The customer table migration adds a nullable timezone column with no default value."
+  },
+  {
+    "id": "mammr-distractor-0034",
+    "topic": "database",
+    "text": "Archived decision: The customer table migration adds a nullable timezone column with no default value."
+  },
+  {
+    "id": "mammr-distractor-0035",
+    "topic": "database",
+    "text": "Operational aside: The customer table migration adds a nullable timezone column with no default value."
+  },
+  {
+    "id": "mammr-distractor-0036",
+    "topic": "database",
+    "text": "Context note: The report cache should be invalidated when a saved filter changes."
+  },
+  {
+    "id": "mammr-distractor-0037",
+    "topic": "database",
+    "text": "Follow-up reminder: The report cache should be invalidated when a saved filter changes."
+  },
+  {
+    "id": "mammr-distractor-0038",
+    "topic": "database",
+    "text": "Archived decision: The report cache should be invalidated when a saved filter changes."
+  },
+  {
+    "id": "mammr-distractor-0039",
+    "topic": "database",
+    "text": "Operational aside: The report cache should be invalidated when a saved filter changes."
+  },
+  {
+    "id": "mammr-distractor-0040",
+    "topic": "database",
+    "text": "Context note: The analytics database keeps raw event rows for thirty days before compaction."
+  },
+  {
+    "id": "mammr-distractor-0041",
+    "topic": "database",
+    "text": "Follow-up reminder: The analytics database keeps raw event rows for thirty days before compaction."
+  },
+  {
+    "id": "mammr-distractor-0042",
+    "topic": "database",
+    "text": "Archived decision: The analytics database keeps raw event rows for thirty days before compaction."
+  },
+  {
+    "id": "mammr-distractor-0043",
+    "topic": "database",
+    "text": "Operational aside: The analytics database keeps raw event rows for thirty days before compaction."
+  },
+  {
+    "id": "mammr-distractor-0044",
+    "topic": "database",
+    "text": "Context note: The search index rebuild is safe to run while read traffic continues."
+  },
+  {
+    "id": "mammr-distractor-0045",
+    "topic": "database",
+    "text": "Follow-up reminder: The search index rebuild is safe to run while read traffic continues."
+  },
+  {
+    "id": "mammr-distractor-0046",
+    "topic": "database",
+    "text": "Archived decision: The search index rebuild is safe to run while read traffic continues."
+  },
+  {
+    "id": "mammr-distractor-0047",
+    "topic": "database",
+    "text": "Operational aside: The search index rebuild is safe to run while read traffic continues."
+  },
+  {
+    "id": "mammr-distractor-0048",
+    "topic": "ops",
+    "text": "Context note: The staging deploy uses a separate domain and must not share cookies with production."
+  },
+  {
+    "id": "mammr-distractor-0049",
+    "topic": "ops",
+    "text": "Follow-up reminder: The staging deploy uses a separate domain and must not share cookies with production."
+  },
+  {
+    "id": "mammr-distractor-0050",
+    "topic": "ops",
+    "text": "Archived decision: The staging deploy uses a separate domain and must not share cookies with production."
+  },
+  {
+    "id": "mammr-distractor-0051",
+    "topic": "ops",
+    "text": "Operational aside: The staging deploy uses a separate domain and must not share cookies with production."
+  },
+  {
+    "id": "mammr-distractor-0052",
+    "topic": "ops",
+    "text": "Context note: The health check endpoint returns build version, uptime, and dependency status."
+  },
+  {
+    "id": "mammr-distractor-0053",
+    "topic": "ops",
+    "text": "Follow-up reminder: The health check endpoint returns build version, uptime, and dependency status."
+  },
+  {
+    "id": "mammr-distractor-0054",
+    "topic": "ops",
+    "text": "Archived decision: The health check endpoint returns build version, uptime, and dependency status."
+  },
+  {
+    "id": "mammr-distractor-0055",
+    "topic": "ops",
+    "text": "Operational aside: The health check endpoint returns build version, uptime, and dependency status."
+  },
+  {
+    "id": "mammr-distractor-0056",
+    "topic": "ops",
+    "text": "Context note: The release script tags the container image before updating the deployment manifest."
+  },
+  {
+    "id": "mammr-distractor-0057",
+    "topic": "ops",
+    "text": "Follow-up reminder: The release script tags the container image before updating the deployment manifest."
+  },
+  {
+    "id": "mammr-distractor-0058",
+    "topic": "ops",
+    "text": "Archived decision: The release script tags the container image before updating the deployment manifest."
+  },
+  {
+    "id": "mammr-distractor-0059",
+    "topic": "ops",
+    "text": "Operational aside: The release script tags the container image before updating the deployment manifest."
+  },
+  {
+    "id": "mammr-distractor-0060",
+    "topic": "ops",
+    "text": "Context note: The incident channel should include timeline updates, owner, impact, and next action."
+  },
+  {
+    "id": "mammr-distractor-0061",
+    "topic": "ops",
+    "text": "Follow-up reminder: The incident channel should include timeline updates, owner, impact, and next action."
+  },
+  {
+    "id": "mammr-distractor-0062",
+    "topic": "ops",
+    "text": "Archived decision: The incident channel should include timeline updates, owner, impact, and next action."
+  },
+  {
+    "id": "mammr-distractor-0063",
+    "topic": "ops",
+    "text": "Operational aside: The incident channel should include timeline updates, owner, impact, and next action."
+  },
+  {
+    "id": "mammr-distractor-0064",
+    "topic": "ai",
+    "text": "Context note: The summarizer model should preserve user decisions and remove repeated small talk."
+  },
+  {
+    "id": "mammr-distractor-0065",
+    "topic": "ai",
+    "text": "Follow-up reminder: The summarizer model should preserve user decisions and remove repeated small talk."
+  },
+  {
+    "id": "mammr-distractor-0066",
+    "topic": "ai",
+    "text": "Archived decision: The summarizer model should preserve user decisions and remove repeated small talk."
+  },
+  {
+    "id": "mammr-distractor-0067",
+    "topic": "ai",
+    "text": "Operational aside: The summarizer model should preserve user decisions and remove repeated small talk."
+  },
+  {
+    "id": "mammr-distractor-0068",
+    "topic": "ai",
+    "text": "Context note: The classifier falls back to the default route when confidence is below the threshold."
+  },
+  {
+    "id": "mammr-distractor-0069",
+    "topic": "ai",
+    "text": "Follow-up reminder: The classifier falls back to the default route when confidence is below the threshold."
+  },
+  {
+    "id": "mammr-distractor-0070",
+    "topic": "ai",
+    "text": "Archived decision: The classifier falls back to the default route when confidence is below the threshold."
+  },
+  {
+    "id": "mammr-distractor-0071",
+    "topic": "ai",
+    "text": "Operational aside: The classifier falls back to the default route when confidence is below the threshold."
+  },
+  {
+    "id": "mammr-distractor-0072",
+    "topic": "ai",
+    "text": "Context note: The prompt evaluator checks instruction leakage, missing context, and malformed JSON."
+  },
+  {
+    "id": "mammr-distractor-0073",
+    "topic": "ai",
+    "text": "Follow-up reminder: The prompt evaluator checks instruction leakage, missing context, and malformed JSON."
+  },
+  {
+    "id": "mammr-distractor-0074",
+    "topic": "ai",
+    "text": "Archived decision: The prompt evaluator checks instruction leakage, missing context, and malformed JSON."
+  },
+  {
+    "id": "mammr-distractor-0075",
+    "topic": "ai",
+    "text": "Operational aside: The prompt evaluator checks instruction leakage, missing context, and malformed JSON."
+  },
+  {
+    "id": "mammr-distractor-0076",
+    "topic": "ai",
+    "text": "Context note: The image captioning job stores alt text separately from the original image metadata."
+  },
+  {
+    "id": "mammr-distractor-0077",
+    "topic": "ai",
+    "text": "Follow-up reminder: The image captioning job stores alt text separately from the original image metadata."
+  },
+  {
+    "id": "mammr-distractor-0078",
+    "topic": "ai",
+    "text": "Archived decision: The image captioning job stores alt text separately from the original image metadata."
+  },
+  {
+    "id": "mammr-distractor-0079",
+    "topic": "ai",
+    "text": "Operational aside: The image captioning job stores alt text separately from the original image metadata."
+  },
+  {
+    "id": "mammr-distractor-0080",
+    "topic": "mobile",
+    "text": "Context note: The iOS build failed because the provisioning profile did not include the new bundle id."
+  },
+  {
+    "id": "mammr-distractor-0081",
+    "topic": "mobile",
+    "text": "Follow-up reminder: The iOS build failed because the provisioning profile did not include the new bundle id."
+  },
+  {
+    "id": "mammr-distractor-0082",
+    "topic": "mobile",
+    "text": "Archived decision: The iOS build failed because the provisioning profile did not include the new bundle id."
+  },
+  {
+    "id": "mammr-distractor-0083",
+    "topic": "mobile",
+    "text": "Operational aside: The iOS build failed because the provisioning profile did not include the new bundle id."
+  },
+  {
+    "id": "mammr-distractor-0084",
+    "topic": "mobile",
+    "text": "Context note: The Android notification permission prompt appears only after the user enables alerts."
+  },
+  {
+    "id": "mammr-distractor-0085",
+    "topic": "mobile",
+    "text": "Follow-up reminder: The Android notification permission prompt appears only after the user enables alerts."
+  },
+  {
+    "id": "mammr-distractor-0086",
+    "topic": "mobile",
+    "text": "Archived decision: The Android notification permission prompt appears only after the user enables alerts."
+  },
+  {
+    "id": "mammr-distractor-0087",
+    "topic": "mobile",
+    "text": "Operational aside: The Android notification permission prompt appears only after the user enables alerts."
+  },
+  {
+    "id": "mammr-distractor-0088",
+    "topic": "mobile",
+    "text": "Context note: The offline sync screen shows pending edits and lets the user retry failed uploads."
+  },
+  {
+    "id": "mammr-distractor-0089",
+    "topic": "mobile",
+    "text": "Follow-up reminder: The offline sync screen shows pending edits and lets the user retry failed uploads."
+  },
+  {
+    "id": "mammr-distractor-0090",
+    "topic": "mobile",
+    "text": "Archived decision: The offline sync screen shows pending edits and lets the user retry failed uploads."
+  },
+  {
+    "id": "mammr-distractor-0091",
+    "topic": "mobile",
+    "text": "Operational aside: The offline sync screen shows pending edits and lets the user retry failed uploads."
+  },
+  {
+    "id": "mammr-distractor-0092",
+    "topic": "mobile",
+    "text": "Context note: The tablet layout keeps the sidebar visible while collapsing secondary filters."
+  },
+  {
+    "id": "mammr-distractor-0093",
+    "topic": "mobile",
+    "text": "Follow-up reminder: The tablet layout keeps the sidebar visible while collapsing secondary filters."
+  },
+  {
+    "id": "mammr-distractor-0094",
+    "topic": "mobile",
+    "text": "Archived decision: The tablet layout keeps the sidebar visible while collapsing secondary filters."
+  },
+  {
+    "id": "mammr-distractor-0095",
+    "topic": "mobile",
+    "text": "Operational aside: The tablet layout keeps the sidebar visible while collapsing secondary filters."
+  }
+]

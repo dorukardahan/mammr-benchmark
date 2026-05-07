@@ -1,0 +1,19 @@
+{
+  "run_type": "0g-sandbox-clean-room",
+  "date_utc": "2026-05-07T10:39:32.541253+00:00",
+  "repository": "mammr-benchmark",
+  "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+  "artifact_archive_sha256": "38e9a7364ce2b6073e5d98956a90c59181f94ec062bdb5c8ae75a16b9eb53c35",
+  "environment": {
+    "runner": "0G Sandbox",
+    "os": "linux",
+    "python": "Python 3.11.14"
+  },
+  "commands": [
+    "python3 scripts/public_release_preflight.py"
+  ],
+  "result": {
+    "public_release_preflight": "pass"
+  },
+  "notes": "Public-safe clean-room validation record. Does not include secrets, provider URLs, sandbox IDs, account identifiers, local paths, or raw private text."
+}

@@ -1,0 +1,468 @@
+{
+  "schema_version": "mammr-public-analysis-summary-v1",
+  "scope": "public_v0.1_candidate",
+  "generated_for": "public release review",
+  "not_included": [
+    "unpublished internal model inventory rankings",
+    "raw operational traces",
+    "raw chat logs",
+    "vector caches",
+    "private account or infrastructure details"
+  ],
+  "dataset": {
+    "file": "data/mammr_pairs_public.json",
+    "pairs": 305,
+    "unique_texts": 564,
+    "categories": 21,
+    "sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545"
+  },
+  "pinned_local_gguf": [
+    {
+      "file": "bge-m3-q8_0-pinned-20260506.json",
+      "model": "bge-m3-Q8_0",
+      "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+      "weighted_score": 0.7143,
+      "weighted_ci95": [
+        0.6657,
+        0.7613
+      ],
+      "unweighted_score": 0.7016,
+      "mrr": 0.9134,
+      "recall_at_5": 0.9639,
+      "dimensions": 1024,
+      "backend_metadata": {
+        "schema_version": "mammr-backend-metadata-v1",
+        "benchmark_role": "public_sanitized_rerun",
+        "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+        "hardware_class": "cpu_only_vps",
+        "backend_type": "llama.cpp_openai_compatible_embedding_server",
+        "backend_name": "llama-server-openblas",
+        "backend_version": "version: 1 (408225b)",
+        "backend_binary_sha256": "5f2609599bc72850fe0a5349502cdaa137c2477aa620e64eb53ae5c010b0fae7",
+        "model_name": "BGE-M3 Q8_0",
+        "model_file": "bge-m3-Q8_0.gguf",
+        "model_sha256": "950f4a8e5e19477a6d3c26d2f162233c20002c601f75e4b002e3239997821167",
+        "quantization": "Q8_0",
+        "pooling": "cls",
+        "context_size": 8192,
+        "threads": 1,
+        "threads_batch": 1,
+        "parallel": 1,
+        "batch_size": 1,
+        "llama_batch_size": 2048,
+        "llama_ubatch_size": 2048,
+        "gpu_layers": 0,
+        "notes": "Benchmark ran through an isolated local embedding endpoint. Public-safe metadata only.",
+        "endpoint_scope": "isolated loopback transient benchmark endpoint"
+      }
+    },
+    {
+      "file": "snowflake-arctic-l-v2-q8_0-pinned-20260506.json",
+      "model": "snowflake-arctic-l-v2-Q8_0",
+      "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+      "weighted_score": 0.6995,
+      "weighted_ci95": [
+        0.6481,
+        0.7498
+      ],
+      "unweighted_score": 0.6852,
+      "mrr": 0.8917,
+      "recall_at_5": 0.9578,
+      "dimensions": 1024,
+      "backend_metadata": {
+        "schema_version": "mammr-backend-metadata-v1",
+        "benchmark_role": "public_sanitized_rerun",
+        "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+        "hardware_class": "cpu_only_vps",
+        "backend_type": "llama.cpp_openai_compatible_embedding_server",
+        "backend_name": "llama-server-openblas",
+        "backend_version": "version: 1 (408225b)",
+        "backend_binary_sha256": "5f2609599bc72850fe0a5349502cdaa137c2477aa620e64eb53ae5c010b0fae7",
+        "model_name": "Snowflake-Arctic-L-v2 Q8_0",
+        "model_file": "snowflake-arctic-embed-l-v2.0-Q8_0.gguf",
+        "model_sha256": "0be8320ecb0fb6e205f0a1419ce3d468834bc44d02cbfda5fd171b3681b12597",
+        "quantization": "Q8_0",
+        "pooling": "cls",
+        "context_size": 8192,
+        "threads": 1,
+        "threads_batch": 1,
+        "parallel": 1,
+        "batch_size": 1,
+        "llama_batch_size": 2048,
+        "llama_ubatch_size": 2048,
+        "gpu_layers": 0,
+        "notes": "Benchmark ran through an isolated local embedding endpoint. Public-safe metadata only.",
+        "endpoint_scope": "isolated loopback transient benchmark endpoint"
+      }
+    },
+    {
+      "file": "jina-v3-q8_0-pinned-20260506.json",
+      "model": "jina-v3-Q8_0",
+      "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+      "weighted_score": 0.6956,
+      "weighted_ci95": [
+        0.6474,
+        0.7429
+      ],
+      "unweighted_score": 0.6885,
+      "mrr": 0.9257,
+      "recall_at_5": 0.988,
+      "dimensions": 1024,
+      "backend_metadata": {
+        "schema_version": "mammr-backend-metadata-v1",
+        "benchmark_role": "public_sanitized_rerun",
+        "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+        "hardware_class": "cpu_only_vps",
+        "backend_type": "llama.cpp_openai_compatible_embedding_server",
+        "backend_name": "llama-server-openblas",
+        "backend_version": "version: 1 (408225b)",
+        "backend_binary_sha256": "5f2609599bc72850fe0a5349502cdaa137c2477aa620e64eb53ae5c010b0fae7",
+        "model_name": "Jina-v3 Q8_0",
+        "model_file": "jina-embeddings-v3-Q8_0.gguf",
+        "model_sha256": "da95bb315ec9766aabfdfa920124a6997a5d9617bd7c9708c4195557136864e1",
+        "quantization": "Q8_0",
+        "pooling": "mean",
+        "context_size": 8192,
+        "threads": 1,
+        "threads_batch": 1,
+        "parallel": 1,
+        "batch_size": 1,
+        "llama_batch_size": 2048,
+        "llama_ubatch_size": 2048,
+        "gpu_layers": 0,
+        "notes": "Benchmark ran through an isolated local embedding endpoint. Public-safe metadata only.",
+        "endpoint_scope": "isolated loopback transient benchmark endpoint"
+      }
+    },
+    {
+      "file": "qwen3-0.6b-q8_0-pinned-20260506.json",
+      "model": "qwen3-0.6b-Q8_0",
+      "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+      "weighted_score": 0.3731,
+      "weighted_ci95": [
+        0.3256,
+        0.4218
+      ],
+      "unweighted_score": 0.3869,
+      "mrr": 0.4549,
+      "recall_at_5": 0.6446,
+      "dimensions": 1024,
+      "backend_metadata": {
+        "schema_version": "mammr-backend-metadata-v1",
+        "benchmark_role": "public_sanitized_rerun",
+        "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+        "hardware_class": "cpu_only_vps",
+        "backend_type": "llama.cpp_openai_compatible_embedding_server",
+        "backend_name": "llama-server-openblas",
+        "backend_version": "version: 1 (408225b)",
+        "backend_binary_sha256": "5f2609599bc72850fe0a5349502cdaa137c2477aa620e64eb53ae5c010b0fae7",
+        "model_name": "Qwen3-0.6B Q8_0",
+        "model_file": "Qwen3-Embedding-0.6B-Q8_0.gguf",
+        "model_sha256": "06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439",
+        "quantization": "Q8_0",
+        "pooling": "last",
+        "context_size": 8192,
+        "threads": 1,
+        "threads_batch": 1,
+        "parallel": 1,
+        "batch_size": 1,
+        "llama_batch_size": 2048,
+        "llama_ubatch_size": 2048,
+        "gpu_layers": 0,
+        "notes": "Benchmark ran through an isolated local embedding endpoint. Public-safe metadata only.",
+        "endpoint_scope": "isolated loopback transient benchmark endpoint"
+      }
+    }
+  ],
+  "full_corpus_plus_distractors": {
+    "bge": {
+      "file": "results/retrieval/bge-public-full-corpus-20260506.json",
+      "model": "BGE-M3 Q8_0",
+      "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+      "distractors_sha256": "4024f98fae0ed6d6ae4df2f99e0fd03087078813be83850df0c12afd9dd2b13d",
+      "queries": 166,
+      "mrr": 0.6053,
+      "recall_at_1": 0.4518,
+      "recall_at_5": 0.8012,
+      "recall_at_20": 0.9157,
+      "median_rank": 2,
+      "max_rank": 325,
+      "candidate_counts": {
+        "public_documents": 303,
+        "synthetic_distractors": 96,
+        "total_with_distractors": 399
+      }
+    },
+    "jina": {
+      "file": "results/retrieval/jina-public-full-corpus-20260506.json",
+      "model": "Jina-v3 Q8_0",
+      "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+      "distractors_sha256": "4024f98fae0ed6d6ae4df2f99e0fd03087078813be83850df0c12afd9dd2b13d",
+      "queries": 166,
+      "mrr": 0.6043,
+      "recall_at_1": 0.4639,
+      "recall_at_5": 0.7952,
+      "recall_at_20": 0.9337,
+      "median_rank": 2,
+      "max_rank": 272,
+      "candidate_counts": {
+        "public_documents": 303,
+        "synthetic_distractors": 96,
+        "total_with_distractors": 399
+      }
+    },
+    "qwen3": {
+      "file": "results/retrieval/qwen3-public-full-corpus-20260506.json",
+      "model": "Qwen3-Embedding-0.6B Q8_0",
+      "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+      "distractors_sha256": "4024f98fae0ed6d6ae4df2f99e0fd03087078813be83850df0c12afd9dd2b13d",
+      "queries": 166,
+      "mrr": 0.152,
+      "recall_at_1": 0.1205,
+      "recall_at_5": 0.1747,
+      "recall_at_20": 0.2651,
+      "median_rank": 95,
+      "max_rank": 392,
+      "candidate_counts": {
+        "public_documents": 303,
+        "synthetic_distractors": 96,
+        "total_with_distractors": 399
+      }
+    },
+    "snowflake": {
+      "file": "results/retrieval/snowflake-public-full-corpus-20260506.json",
+      "model": "Snowflake-Arctic-L-v2 Q8_0",
+      "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+      "distractors_sha256": "4024f98fae0ed6d6ae4df2f99e0fd03087078813be83850df0c12afd9dd2b13d",
+      "queries": 166,
+      "mrr": 0.5764,
+      "recall_at_1": 0.4458,
+      "recall_at_5": 0.753,
+      "recall_at_20": 0.9036,
+      "median_rank": 2,
+      "max_rank": 225,
+      "candidate_counts": {
+        "public_documents": 303,
+        "synthetic_distractors": 96,
+        "total_with_distractors": 399
+      }
+    }
+  },
+  "heldout_plus_distractors": {
+    "bge": {
+      "file": "results/heldout/bge-heldout-full-corpus-20260506.json",
+      "model": "BGE-M3 Q8_0",
+      "dataset_sha256": "48d97350d1ffaaa87834c31ffd3877ca94000665657cad5afb9d8979f9622c75",
+      "distractors_sha256": "4024f98fae0ed6d6ae4df2f99e0fd03087078813be83850df0c12afd9dd2b13d",
+      "queries": 35,
+      "mrr": 0.6712,
+      "recall_at_1": 0.5429,
+      "recall_at_5": 0.8286,
+      "recall_at_20": 0.9429,
+      "median_rank": 1,
+      "max_rank": 39,
+      "candidate_counts": {
+        "public_documents": 60,
+        "synthetic_distractors": 96,
+        "total_with_distractors": 156
+      }
+    },
+    "jina": {
+      "file": "results/heldout/jina-heldout-full-corpus-20260506.json",
+      "model": "Jina-v3 Q8_0",
+      "dataset_sha256": "48d97350d1ffaaa87834c31ffd3877ca94000665657cad5afb9d8979f9622c75",
+      "distractors_sha256": "4024f98fae0ed6d6ae4df2f99e0fd03087078813be83850df0c12afd9dd2b13d",
+      "queries": 35,
+      "mrr": 0.7083,
+      "recall_at_1": 0.6,
+      "recall_at_5": 0.8286,
+      "recall_at_20": 0.9143,
+      "median_rank": 1,
+      "max_rank": 102,
+      "candidate_counts": {
+        "public_documents": 60,
+        "synthetic_distractors": 96,
+        "total_with_distractors": 156
+      }
+    },
+    "qwen3": {
+      "file": "results/heldout/qwen3-heldout-full-corpus-20260506.json",
+      "model": "Qwen3-Embedding-0.6B Q8_0",
+      "dataset_sha256": "48d97350d1ffaaa87834c31ffd3877ca94000665657cad5afb9d8979f9622c75",
+      "distractors_sha256": "4024f98fae0ed6d6ae4df2f99e0fd03087078813be83850df0c12afd9dd2b13d",
+      "queries": 35,
+      "mrr": 0.1338,
+      "recall_at_1": 0.0571,
+      "recall_at_5": 0.2,
+      "recall_at_20": 0.2571,
+      "median_rank": 49,
+      "max_rank": 153,
+      "candidate_counts": {
+        "public_documents": 60,
+        "synthetic_distractors": 96,
+        "total_with_distractors": 156
+      }
+    },
+    "snowflake": {
+      "file": "results/heldout/snowflake-heldout-full-corpus-20260506.json",
+      "model": "Snowflake-Arctic-L-v2 Q8_0",
+      "dataset_sha256": "48d97350d1ffaaa87834c31ffd3877ca94000665657cad5afb9d8979f9622c75",
+      "distractors_sha256": "4024f98fae0ed6d6ae4df2f99e0fd03087078813be83850df0c12afd9dd2b13d",
+      "queries": 35,
+      "mrr": 0.6208,
+      "recall_at_1": 0.4857,
+      "recall_at_5": 0.8286,
+      "recall_at_20": 0.9429,
+      "median_rank": 2,
+      "max_rank": 51,
+      "candidate_counts": {
+        "public_documents": 60,
+        "synthetic_distractors": 96,
+        "total_with_distractors": 156
+      }
+    }
+  },
+  "sanitized_reranker_matrix": {
+    "bge": {
+      "cohere-4-pro": {
+        "file": "results/reranker/bge-cohere-4-pro-top10-same-category-20260506.json",
+        "embedding_model": "BGE-M3 Q8_0",
+        "reranker": "Cohere Rerank 4 Pro",
+        "baseline_mrr": 0.9134,
+        "reranked_mrr": 0.9553,
+        "delta_mrr": 0.042,
+        "reranked_recall_at_1": 0.9217,
+        "reranked_recall_at_5": 1.0,
+        "avg_rerank_ms": 367.8,
+        "improved": 15,
+        "degraded": 2,
+        "unchanged": 149,
+        "errors": 0
+      },
+      "cohere-v3.5": {
+        "file": "results/reranker/bge-cohere-v3.5-top10-same-category-20260506.json",
+        "embedding_model": "BGE-M3 Q8_0",
+        "reranker": "Cohere Rerank v3.5",
+        "baseline_mrr": 0.9134,
+        "reranked_mrr": 0.9292,
+        "delta_mrr": 0.0158,
+        "reranked_recall_at_1": 0.8916,
+        "reranked_recall_at_5": 0.9819,
+        "avg_rerank_ms": 340.6,
+        "improved": 13,
+        "degraded": 10,
+        "unchanged": 143,
+        "errors": 0
+      }
+    },
+    "jina": {
+      "cohere-4-pro": {
+        "file": "results/reranker/jina-cohere-4-pro-top10-same-category-20260506.json",
+        "embedding_model": "Jina-v3 Q8_0",
+        "reranker": "Cohere Rerank 4 Pro",
+        "baseline_mrr": 0.9257,
+        "reranked_mrr": 0.9537,
+        "delta_mrr": 0.028,
+        "reranked_recall_at_1": 0.9217,
+        "reranked_recall_at_5": 0.994,
+        "avg_rerank_ms": 287.0,
+        "improved": 17,
+        "degraded": 6,
+        "unchanged": 143,
+        "errors": 0
+      },
+      "cohere-v3.5": {
+        "file": "results/reranker/jina-cohere-v3.5-top10-same-category-20260506.json",
+        "embedding_model": "Jina-v3 Q8_0",
+        "reranker": "Cohere Rerank v3.5",
+        "baseline_mrr": 0.9257,
+        "reranked_mrr": 0.9283,
+        "delta_mrr": 0.0027,
+        "reranked_recall_at_1": 0.8916,
+        "reranked_recall_at_5": 0.9819,
+        "avg_rerank_ms": 315.3,
+        "improved": 12,
+        "degraded": 11,
+        "unchanged": 143,
+        "errors": 0
+      }
+    },
+    "qwen3": {
+      "cohere-4-pro": {
+        "file": "results/reranker/qwen3-cohere-4-pro-top10-same-category-20260506.json",
+        "embedding_model": "Qwen3-Embedding-0.6B Q8_0",
+        "reranker": "Cohere Rerank 4 Pro",
+        "baseline_mrr": 0.4549,
+        "reranked_mrr": 0.8871,
+        "delta_mrr": 0.4322,
+        "reranked_recall_at_1": 0.8494,
+        "reranked_recall_at_5": 0.9217,
+        "avg_rerank_ms": 413.0,
+        "improved": 100,
+        "degraded": 2,
+        "unchanged": 64,
+        "errors": 0
+      },
+      "cohere-v3.5": {
+        "file": "results/reranker/qwen3-cohere-v3.5-top10-same-category-20260506.json",
+        "embedding_model": "Qwen3-Embedding-0.6B Q8_0",
+        "reranker": "Cohere Rerank v3.5",
+        "baseline_mrr": 0.4549,
+        "reranked_mrr": 0.8705,
+        "delta_mrr": 0.4156,
+        "reranked_recall_at_1": 0.8313,
+        "reranked_recall_at_5": 0.9096,
+        "avg_rerank_ms": 353.4,
+        "improved": 100,
+        "degraded": 3,
+        "unchanged": 63,
+        "errors": 0
+      }
+    },
+    "snowflake": {
+      "cohere-4-pro": {
+        "file": "results/reranker/snowflake-cohere-4-pro-top10-same-category-20260506.json",
+        "embedding_model": "Snowflake-Arctic-L-v2 Q8_0",
+        "reranker": "Cohere Rerank 4 Pro",
+        "baseline_mrr": 0.8917,
+        "reranked_mrr": 0.9553,
+        "delta_mrr": 0.0636,
+        "reranked_recall_at_1": 0.9217,
+        "reranked_recall_at_5": 1.0,
+        "avg_rerank_ms": 395.1,
+        "improved": 21,
+        "degraded": 2,
+        "unchanged": 143,
+        "errors": 0
+      },
+      "cohere-v3.5": {
+        "file": "results/reranker/snowflake-cohere-v3.5-top10-same-category-20260506.json",
+        "embedding_model": "Snowflake-Arctic-L-v2 Q8_0",
+        "reranker": "Cohere Rerank v3.5",
+        "baseline_mrr": 0.8917,
+        "reranked_mrr": 0.929,
+        "delta_mrr": 0.0374,
+        "reranked_recall_at_1": 0.8916,
+        "reranked_recall_at_5": 0.9819,
+        "avg_rerank_ms": 406.5,
+        "improved": 17,
+        "degraded": 11,
+        "unchanged": 138,
+        "errors": 0
+      }
+    }
+  },
+  "sandbox_preflight": {
+    "run_type": "0g-sandbox-clean-room",
+    "date_utc": "2026-05-07T04:41:07.974924+00:00",
+    "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+    "environment": {
+      "runner": "0G Sandbox",
+      "os": "linux",
+      "python": "Python 3.11.14"
+    },
+    "result": {
+      "public_release_preflight": "pass"
+    }
+  }
+}

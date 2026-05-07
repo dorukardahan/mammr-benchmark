@@ -1,0 +1,3270 @@
+{
+  "model": "bge-m3-Q8_0",
+  "timestamp": "2026-05-07T03:52:12.976393+00:00",
+  "dataset": "mammr_pairs_public.json",
+  "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+  "endpoint_label": "llama-server-openblas-cpu-vps",
+  "batch_size": 1,
+  "timeout_s": 120.0,
+  "unique_texts": 564,
+  "dimensions": 1024,
+  "total_pairs": 305,
+  "total_pass": 214,
+  "total_fail": 91,
+  "categories": {
+    "short_query_long_memory": {
+      "total": 15,
+      "pass": 12,
+      "fail": 3,
+      "weight": 10,
+      "accuracy": 0.8,
+      "avg_sim": 0.5709,
+      "min_sim": 0.3581,
+      "max_sim": 0.7252
+    },
+    "similar_but_different": {
+      "total": 12,
+      "pass": 8,
+      "fail": 4,
+      "weight": 8,
+      "accuracy": 0.6667,
+      "avg_sim": 0.6398,
+      "min_sim": 0.3577,
+      "max_sim": 0.8114
+    },
+    "same_topic_different_time": {
+      "total": 11,
+      "pass": 5,
+      "fail": 6,
+      "weight": 5,
+      "accuracy": 0.4545,
+      "avg_sim": 0.6532,
+      "min_sim": 0.5142,
+      "max_sim": 0.7648
+    },
+    "code_switching": {
+      "total": 11,
+      "pass": 9,
+      "fail": 2,
+      "weight": 9,
+      "accuracy": 0.8182,
+      "avg_sim": 0.6103,
+      "min_sim": 0.414,
+      "max_sim": 0.7285
+    },
+    "negative_control": {
+      "total": 27,
+      "pass": 2,
+      "fail": 25,
+      "weight": 9,
+      "accuracy": 0.0741,
+      "avg_sim": 0.5718,
+      "min_sim": 0.3031,
+      "max_sim": 0.7088
+    },
+    "turkish_morphology": {
+      "total": 30,
+      "pass": 20,
+      "fail": 10,
+      "weight": 6,
+      "accuracy": 0.6667,
+      "avg_sim": 0.8437,
+      "min_sim": 0.6529,
+      "max_sim": 0.9818
+    },
+    "conversational_recall": {
+      "total": 19,
+      "pass": 14,
+      "fail": 5,
+      "weight": 8,
+      "accuracy": 0.7368,
+      "avg_sim": 0.5373,
+      "min_sim": 0.3295,
+      "max_sim": 0.7818
+    },
+    "crosslingual": {
+      "total": 13,
+      "pass": 12,
+      "fail": 1,
+      "weight": 7,
+      "accuracy": 0.9231,
+      "avg_sim": 0.7939,
+      "min_sim": 0.3223,
+      "max_sim": 0.9615
+    },
+    "turkish_chars": {
+      "total": 12,
+      "pass": 8,
+      "fail": 4,
+      "weight": 4,
+      "accuracy": 0.6667,
+      "avg_sim": 0.594,
+      "min_sim": 0.3601,
+      "max_sim": 0.909
+    },
+    "specificity": {
+      "total": 12,
+      "pass": 6,
+      "fail": 6,
+      "weight": 9,
+      "accuracy": 0.5,
+      "avg_sim": 0.5393,
+      "min_sim": 0.3991,
+      "max_sim": 0.7118
+    },
+    "paraphrase": {
+      "total": 12,
+      "pass": 10,
+      "fail": 2,
+      "weight": 8,
+      "accuracy": 0.8333,
+      "avg_sim": 0.6497,
+      "min_sim": 0.4645,
+      "max_sim": 0.8427
+    },
+    "temporal": {
+      "total": 10,
+      "pass": 5,
+      "fail": 5,
+      "weight": 6,
+      "accuracy": 0.5,
+      "avg_sim": 0.4915,
+      "min_sim": 0.3047,
+      "max_sim": 0.7031
+    },
+    "code_mixed": {
+      "total": 11,
+      "pass": 10,
+      "fail": 1,
+      "weight": 5,
+      "accuracy": 0.9091,
+      "avg_sim": 0.6508,
+      "min_sim": 0.4332,
+      "max_sim": 0.7678
+    },
+    "noise_typo": {
+      "total": 11,
+      "pass": 10,
+      "fail": 1,
+      "weight": 4,
+      "accuracy": 0.9091,
+      "avg_sim": 0.6852,
+      "min_sim": 0.3116,
+      "max_sim": 0.8909
+    },
+    "irrelevant": {
+      "total": 28,
+      "pass": 27,
+      "fail": 1,
+      "weight": 9,
+      "accuracy": 0.9643,
+      "avg_sim": 0.2776,
+      "min_sim": 0.2209,
+      "max_sim": 0.3581
+    },
+    "synonym_alias": {
+      "total": 13,
+      "pass": 11,
+      "fail": 2,
+      "weight": 5,
+      "accuracy": 0.8462,
+      "avg_sim": 0.5865,
+      "min_sim": 0.4186,
+      "max_sim": 0.8994
+    },
+    "entity_confusion": {
+      "total": 12,
+      "pass": 9,
+      "fail": 3,
+      "weight": 6,
+      "accuracy": 0.75,
+      "avg_sim": 0.557,
+      "min_sim": 0.4162,
+      "max_sim": 0.7147
+    },
+    "context_implicit": {
+      "total": 12,
+      "pass": 9,
+      "fail": 3,
+      "weight": 5,
+      "accuracy": 0.75,
+      "avg_sim": 0.5433,
+      "min_sim": 0.3501,
+      "max_sim": 0.7649
+    },
+    "partial_match": {
+      "total": 12,
+      "pass": 9,
+      "fail": 3,
+      "weight": 5,
+      "accuracy": 0.75,
+      "avg_sim": 0.5504,
+      "min_sim": 0.3083,
+      "max_sim": 0.6876
+    },
+    "code_to_description": {
+      "total": 12,
+      "pass": 10,
+      "fail": 2,
+      "weight": 7,
+      "accuracy": 0.8333,
+      "avg_sim": 0.6441,
+      "min_sim": 0.3949,
+      "max_sim": 0.791
+    },
+    "adversarial": {
+      "total": 10,
+      "pass": 8,
+      "fail": 2,
+      "weight": 8,
+      "accuracy": 0.8,
+      "avg_sim": 0.5282,
+      "min_sim": 0.3126,
+      "max_sim": 0.8868
+    }
+  },
+  "pairs": [
+    {
+      "id": "mammr-v0.1-0000",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.6092,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0001",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.5448,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0002",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.5065,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0003",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.6388,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0004",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.6152,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0005",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.6211,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0006",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.6272,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0007",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.6411,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0008",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.5949,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0009",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.7252,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0010",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.6236,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0011",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.6617,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0012",
+      "category": "short_query_long_memory",
+      "expected": "high",
+      "similarity": 0.4081,
+      "status": "fail",
+      "margin": 0.0919
+    },
+    {
+      "id": "mammr-v0.1-0013",
+      "category": "short_query_long_memory",
+      "expected": "low",
+      "similarity": 0.3887,
+      "status": "fail",
+      "margin": 0.0387
+    },
+    {
+      "id": "mammr-v0.1-0014",
+      "category": "short_query_long_memory",
+      "expected": "low",
+      "similarity": 0.3581,
+      "status": "fail",
+      "margin": 0.0081
+    },
+    {
+      "id": "mammr-v0.1-0015",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.6306,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0016",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.8114,
+      "status": "fail",
+      "margin": 0.0614
+    },
+    {
+      "id": "mammr-v0.1-0017",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.726,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0018",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.6812,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0019",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.7048,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0020",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.7288,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0021",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.6335,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0022",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.786,
+      "status": "fail",
+      "margin": 0.036
+    },
+    {
+      "id": "mammr-v0.1-0023",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.5736,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0024",
+      "category": "similar_but_different",
+      "expected": "medium_high",
+      "similarity": 0.6176,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0025",
+      "category": "similar_but_different",
+      "expected": "low",
+      "similarity": 0.4267,
+      "status": "fail",
+      "margin": 0.0767
+    },
+    {
+      "id": "mammr-v0.1-0026",
+      "category": "similar_but_different",
+      "expected": "low",
+      "similarity": 0.3577,
+      "status": "fail",
+      "margin": 0.0077
+    },
+    {
+      "id": "mammr-v0.1-0027",
+      "category": "same_topic_different_time",
+      "expected": "medium",
+      "similarity": 0.687,
+      "status": "fail",
+      "margin": 0.037
+    },
+    {
+      "id": "mammr-v0.1-0028",
+      "category": "same_topic_different_time",
+      "expected": "medium",
+      "similarity": 0.723,
+      "status": "fail",
+      "margin": 0.073
+    },
+    {
+      "id": "mammr-v0.1-0029",
+      "category": "same_topic_different_time",
+      "expected": "medium",
+      "similarity": 0.6152,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0030",
+      "category": "same_topic_different_time",
+      "expected": "medium",
+      "similarity": 0.6396,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0031",
+      "category": "same_topic_different_time",
+      "expected": "medium",
+      "similarity": 0.6599,
+      "status": "fail",
+      "margin": 0.0099
+    },
+    {
+      "id": "mammr-v0.1-0032",
+      "category": "same_topic_different_time",
+      "expected": "medium_high",
+      "similarity": 0.759,
+      "status": "fail",
+      "margin": 0.009
+    },
+    {
+      "id": "mammr-v0.1-0033",
+      "category": "same_topic_different_time",
+      "expected": "medium_high",
+      "similarity": 0.7648,
+      "status": "fail",
+      "margin": 0.0148
+    },
+    {
+      "id": "mammr-v0.1-0034",
+      "category": "same_topic_different_time",
+      "expected": "medium_high",
+      "similarity": 0.6504,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0035",
+      "category": "same_topic_different_time",
+      "expected": "medium_high",
+      "similarity": 0.5142,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0036",
+      "category": "same_topic_different_time",
+      "expected": "medium_high",
+      "similarity": 0.6554,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0037",
+      "category": "same_topic_different_time",
+      "expected": "low",
+      "similarity": 0.5166,
+      "status": "fail",
+      "margin": 0.1666
+    },
+    {
+      "id": "mammr-v0.1-0038",
+      "category": "code_switching",
+      "expected": "high",
+      "similarity": 0.6152,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0039",
+      "category": "code_switching",
+      "expected": "high",
+      "similarity": 0.5668,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0040",
+      "category": "code_switching",
+      "expected": "high",
+      "similarity": 0.688,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0041",
+      "category": "code_switching",
+      "expected": "high",
+      "similarity": 0.6322,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0042",
+      "category": "code_switching",
+      "expected": "high",
+      "similarity": 0.7285,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0043",
+      "category": "code_switching",
+      "expected": "high",
+      "similarity": 0.6971,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0044",
+      "category": "code_switching",
+      "expected": "high",
+      "similarity": 0.5755,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0045",
+      "category": "code_switching",
+      "expected": "high",
+      "similarity": 0.6278,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0046",
+      "category": "code_switching",
+      "expected": "high",
+      "similarity": 0.6253,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0047",
+      "category": "code_switching",
+      "expected": "low",
+      "similarity": 0.414,
+      "status": "fail",
+      "margin": 0.064
+    },
+    {
+      "id": "mammr-v0.1-0048",
+      "category": "code_switching",
+      "expected": "low",
+      "similarity": 0.5425,
+      "status": "fail",
+      "margin": 0.1925
+    },
+    {
+      "id": "mammr-v0.1-0049",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.3821,
+      "status": "fail",
+      "margin": 0.0321
+    },
+    {
+      "id": "mammr-v0.1-0050",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.4751,
+      "status": "fail",
+      "margin": 0.1251
+    },
+    {
+      "id": "mammr-v0.1-0051",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.4343,
+      "status": "fail",
+      "margin": 0.0843
+    },
+    {
+      "id": "mammr-v0.1-0052",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.3031,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0053",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.3772,
+      "status": "fail",
+      "margin": 0.0272
+    },
+    {
+      "id": "mammr-v0.1-0054",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.336,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0055",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.6434,
+      "status": "fail",
+      "margin": 0.2934
+    },
+    {
+      "id": "mammr-v0.1-0056",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.561,
+      "status": "fail",
+      "margin": 0.211
+    },
+    {
+      "id": "mammr-v0.1-0057",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.6242,
+      "status": "fail",
+      "margin": 0.2742
+    },
+    {
+      "id": "mammr-v0.1-0058",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.6047,
+      "status": "fail",
+      "margin": 0.2547
+    },
+    {
+      "id": "mammr-v0.1-0059",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.6067,
+      "status": "fail",
+      "margin": 0.2567
+    },
+    {
+      "id": "mammr-v0.1-0060",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.7088,
+      "status": "fail",
+      "margin": 0.3588
+    },
+    {
+      "id": "mammr-v0.1-0061",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.6622,
+      "status": "fail",
+      "margin": 0.3122
+    },
+    {
+      "id": "mammr-v0.1-0062",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.5138,
+      "status": "fail",
+      "margin": 0.1638
+    },
+    {
+      "id": "mammr-v0.1-0063",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.5812,
+      "status": "fail",
+      "margin": 0.2312
+    },
+    {
+      "id": "mammr-v0.1-0064",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.6173,
+      "status": "fail",
+      "margin": 0.2673
+    },
+    {
+      "id": "mammr-v0.1-0065",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.6311,
+      "status": "fail",
+      "margin": 0.2811
+    },
+    {
+      "id": "mammr-v0.1-0066",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.6006,
+      "status": "fail",
+      "margin": 0.2506
+    },
+    {
+      "id": "mammr-v0.1-0067",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.7074,
+      "status": "fail",
+      "margin": 0.3574
+    },
+    {
+      "id": "mammr-v0.1-0068",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.5459,
+      "status": "fail",
+      "margin": 0.1959
+    },
+    {
+      "id": "mammr-v0.1-0069",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.6954,
+      "status": "fail",
+      "margin": 0.3454
+    },
+    {
+      "id": "mammr-v0.1-0070",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.6607,
+      "status": "fail",
+      "margin": 0.3107
+    },
+    {
+      "id": "mammr-v0.1-0071",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.6019,
+      "status": "fail",
+      "margin": 0.2519
+    },
+    {
+      "id": "mammr-v0.1-0072",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.6516,
+      "status": "fail",
+      "margin": 0.3016
+    },
+    {
+      "id": "mammr-v0.1-0073",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.5771,
+      "status": "fail",
+      "margin": 0.2271
+    },
+    {
+      "id": "mammr-v0.1-0074",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.6858,
+      "status": "fail",
+      "margin": 0.3358
+    },
+    {
+      "id": "mammr-v0.1-0075",
+      "category": "negative_control",
+      "expected": "low",
+      "similarity": 0.6512,
+      "status": "fail",
+      "margin": 0.3012
+    },
+    {
+      "id": "mammr-v0.1-0076",
+      "category": "turkish_morphology",
+      "expected": "low",
+      "similarity": 0.8725,
+      "status": "fail",
+      "margin": 0.5225
+    },
+    {
+      "id": "mammr-v0.1-0077",
+      "category": "turkish_morphology",
+      "expected": "low",
+      "similarity": 0.9139,
+      "status": "fail",
+      "margin": 0.5639
+    },
+    {
+      "id": "mammr-v0.1-0078",
+      "category": "turkish_morphology",
+      "expected": "low",
+      "similarity": 0.8201,
+      "status": "fail",
+      "margin": 0.4701
+    },
+    {
+      "id": "mammr-v0.1-0079",
+      "category": "turkish_morphology",
+      "expected": "low",
+      "similarity": 0.886,
+      "status": "fail",
+      "margin": 0.536
+    },
+    {
+      "id": "mammr-v0.1-0080",
+      "category": "turkish_morphology",
+      "expected": "low",
+      "similarity": 0.8826,
+      "status": "fail",
+      "margin": 0.5326
+    },
+    {
+      "id": "mammr-v0.1-0081",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.8604,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0082",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.6723,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0083",
+      "category": "turkish_morphology",
+      "expected": "medium_high",
+      "similarity": 0.7324,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0084",
+      "category": "turkish_morphology",
+      "expected": "medium_high",
+      "similarity": 0.6788,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0085",
+      "category": "turkish_morphology",
+      "expected": "medium_high",
+      "similarity": 0.6914,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0086",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.8907,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0087",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.7999,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0088",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.739,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0089",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.8883,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0090",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.9247,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0091",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.9148,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0092",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.6529,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0093",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.8712,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0094",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.9818,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0095",
+      "category": "turkish_morphology",
+      "expected": "medium_high",
+      "similarity": 0.8181,
+      "status": "fail",
+      "margin": 0.0681
+    },
+    {
+      "id": "mammr-v0.1-0096",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.8815,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0097",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.9263,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0098",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.9388,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0099",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.9243,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0100",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.9266,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0101",
+      "category": "turkish_morphology",
+      "expected": "high",
+      "similarity": 0.9551,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0102",
+      "category": "turkish_morphology",
+      "expected": "medium_high",
+      "similarity": 0.8913,
+      "status": "fail",
+      "margin": 0.1413
+    },
+    {
+      "id": "mammr-v0.1-0103",
+      "category": "turkish_morphology",
+      "expected": "medium_high",
+      "similarity": 0.8011,
+      "status": "fail",
+      "margin": 0.0511
+    },
+    {
+      "id": "mammr-v0.1-0104",
+      "category": "turkish_morphology",
+      "expected": "low",
+      "similarity": 0.78,
+      "status": "fail",
+      "margin": 0.43
+    },
+    {
+      "id": "mammr-v0.1-0105",
+      "category": "turkish_morphology",
+      "expected": "low",
+      "similarity": 0.7931,
+      "status": "fail",
+      "margin": 0.4431
+    },
+    {
+      "id": "mammr-v0.1-0106",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.6416,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0107",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.5332,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0108",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.4297,
+      "status": "fail",
+      "margin": 0.0703
+    },
+    {
+      "id": "mammr-v0.1-0109",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.5974,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0110",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.6699,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0111",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.5707,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0112",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.5438,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0113",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.7818,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0114",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.5457,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0115",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.4973,
+      "status": "fail",
+      "margin": 0.0027
+    },
+    {
+      "id": "mammr-v0.1-0116",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.6012,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0117",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.66,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0118",
+      "category": "conversational_recall",
+      "expected": "low",
+      "similarity": 0.3295,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0119",
+      "category": "conversational_recall",
+      "expected": "low",
+      "similarity": 0.4391,
+      "status": "fail",
+      "margin": 0.0891
+    },
+    {
+      "id": "mammr-v0.1-0120",
+      "category": "conversational_recall",
+      "expected": "low",
+      "similarity": 0.3725,
+      "status": "fail",
+      "margin": 0.0225
+    },
+    {
+      "id": "mammr-v0.1-0121",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.6027,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0122",
+      "category": "conversational_recall",
+      "expected": "high",
+      "similarity": 0.6027,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0123",
+      "category": "conversational_recall",
+      "expected": "low",
+      "similarity": 0.4407,
+      "status": "fail",
+      "margin": 0.0907
+    },
+    {
+      "id": "mammr-v0.1-0124",
+      "category": "conversational_recall",
+      "expected": "low",
+      "similarity": 0.3491,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0125",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.8957,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0126",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.8094,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0127",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.9615,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0128",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.9359,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0129",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.9516,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0130",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.7849,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0131",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.8666,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0132",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.9574,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0133",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.7407,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0134",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.747,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0135",
+      "category": "crosslingual",
+      "expected": "low",
+      "similarity": 0.4741,
+      "status": "fail",
+      "margin": 0.1241
+    },
+    {
+      "id": "mammr-v0.1-0136",
+      "category": "crosslingual",
+      "expected": "low",
+      "similarity": 0.3223,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0137",
+      "category": "crosslingual",
+      "expected": "high",
+      "similarity": 0.8742,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0138",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.7787,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0139",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.5932,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0140",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.7719,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0141",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.4129,
+      "status": "fail",
+      "margin": 0.0871
+    },
+    {
+      "id": "mammr-v0.1-0142",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.909,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0143",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.6636,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0144",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.5936,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0145",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.7143,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0146",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.4027,
+      "status": "fail",
+      "margin": 0.0973
+    },
+    {
+      "id": "mammr-v0.1-0147",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.3638,
+      "status": "fail",
+      "margin": 0.1362
+    },
+    {
+      "id": "mammr-v0.1-0148",
+      "category": "turkish_chars",
+      "expected": "low",
+      "similarity": 0.3601,
+      "status": "fail",
+      "margin": 0.0101
+    },
+    {
+      "id": "mammr-v0.1-0149",
+      "category": "turkish_chars",
+      "expected": "high",
+      "similarity": 0.5645,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0150",
+      "category": "specificity",
+      "expected": "high",
+      "similarity": 0.6834,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0151",
+      "category": "specificity",
+      "expected": "low",
+      "similarity": 0.5616,
+      "status": "fail",
+      "margin": 0.2116
+    },
+    {
+      "id": "mammr-v0.1-0152",
+      "category": "specificity",
+      "expected": "high",
+      "similarity": 0.6652,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0153",
+      "category": "specificity",
+      "expected": "low",
+      "similarity": 0.5678,
+      "status": "fail",
+      "margin": 0.2178
+    },
+    {
+      "id": "mammr-v0.1-0154",
+      "category": "specificity",
+      "expected": "high",
+      "similarity": 0.7118,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0155",
+      "category": "specificity",
+      "expected": "medium",
+      "similarity": 0.5053,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0156",
+      "category": "specificity",
+      "expected": "high",
+      "similarity": 0.4111,
+      "status": "fail",
+      "margin": 0.0889
+    },
+    {
+      "id": "mammr-v0.1-0157",
+      "category": "specificity",
+      "expected": "low",
+      "similarity": 0.4668,
+      "status": "fail",
+      "margin": 0.1168
+    },
+    {
+      "id": "mammr-v0.1-0158",
+      "category": "specificity",
+      "expected": "high",
+      "similarity": 0.5711,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0159",
+      "category": "specificity",
+      "expected": "low",
+      "similarity": 0.3991,
+      "status": "fail",
+      "margin": 0.0491
+    },
+    {
+      "id": "mammr-v0.1-0160",
+      "category": "specificity",
+      "expected": "high",
+      "similarity": 0.5009,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0161",
+      "category": "specificity",
+      "expected": "low",
+      "similarity": 0.4272,
+      "status": "fail",
+      "margin": 0.0772
+    },
+    {
+      "id": "mammr-v0.1-0162",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.7244,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0163",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.7105,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0164",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.6643,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0165",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.6114,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0166",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.6831,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0167",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.5246,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0168",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.8427,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0169",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.6296,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0170",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.663,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0171",
+      "category": "paraphrase",
+      "expected": "high",
+      "similarity": 0.7572,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0172",
+      "category": "paraphrase",
+      "expected": "low",
+      "similarity": 0.5217,
+      "status": "fail",
+      "margin": 0.1717
+    },
+    {
+      "id": "mammr-v0.1-0173",
+      "category": "paraphrase",
+      "expected": "low",
+      "similarity": 0.4645,
+      "status": "fail",
+      "margin": 0.1145
+    },
+    {
+      "id": "mammr-v0.1-0174",
+      "category": "temporal",
+      "expected": "high",
+      "similarity": 0.5621,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0175",
+      "category": "temporal",
+      "expected": "high",
+      "similarity": 0.7031,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0176",
+      "category": "temporal",
+      "expected": "high",
+      "similarity": 0.6992,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0177",
+      "category": "temporal",
+      "expected": "high",
+      "similarity": 0.4255,
+      "status": "fail",
+      "margin": 0.0745
+    },
+    {
+      "id": "mammr-v0.1-0178",
+      "category": "temporal",
+      "expected": "high",
+      "similarity": 0.4544,
+      "status": "fail",
+      "margin": 0.0456
+    },
+    {
+      "id": "mammr-v0.1-0179",
+      "category": "temporal",
+      "expected": "low",
+      "similarity": 0.336,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0180",
+      "category": "temporal",
+      "expected": "high",
+      "similarity": 0.6073,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0181",
+      "category": "temporal",
+      "expected": "high",
+      "similarity": 0.3047,
+      "status": "fail",
+      "margin": 0.1953
+    },
+    {
+      "id": "mammr-v0.1-0182",
+      "category": "temporal",
+      "expected": "low",
+      "similarity": 0.3916,
+      "status": "fail",
+      "margin": 0.0416
+    },
+    {
+      "id": "mammr-v0.1-0183",
+      "category": "temporal",
+      "expected": "low",
+      "similarity": 0.4316,
+      "status": "fail",
+      "margin": 0.0816
+    },
+    {
+      "id": "mammr-v0.1-0184",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.7537,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0185",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.764,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0186",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.6359,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0187",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.634,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0188",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.7001,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0189",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.7678,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0190",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.6395,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0191",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.6195,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0192",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.6896,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0193",
+      "category": "code_mixed",
+      "expected": "high",
+      "similarity": 0.5218,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0194",
+      "category": "code_mixed",
+      "expected": "low",
+      "similarity": 0.4332,
+      "status": "fail",
+      "margin": 0.0832
+    },
+    {
+      "id": "mammr-v0.1-0195",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.6677,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0196",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.4661,
+      "status": "fail",
+      "margin": 0.0339
+    },
+    {
+      "id": "mammr-v0.1-0197",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.8909,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0198",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.6387,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0199",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.7167,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0200",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.8179,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0201",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.8828,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0202",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.8374,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0203",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.5905,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0204",
+      "category": "noise_typo",
+      "expected": "high",
+      "similarity": 0.717,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0205",
+      "category": "noise_typo",
+      "expected": "low",
+      "similarity": 0.3116,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0206",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.3006,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0207",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2432,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0208",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.3075,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0209",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.3153,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0210",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.3103,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0211",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2209,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0212",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2525,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0213",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2377,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0214",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2599,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0215",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2259,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0216",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.3097,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0217",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2836,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0218",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.3581,
+      "status": "fail",
+      "margin": 0.0081
+    },
+    {
+      "id": "mammr-v0.1-0219",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2396,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0220",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2738,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0221",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2559,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0222",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.3341,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0223",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2619,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0224",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2886,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0225",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.3112,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0226",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.3019,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0227",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2853,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0228",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2487,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0229",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.3117,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0230",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2396,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0231",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.2901,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0232",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.231,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0233",
+      "category": "irrelevant",
+      "expected": "low",
+      "similarity": 0.274,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0234",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.5936,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0235",
+      "category": "synonym_alias",
+      "expected": "medium_high",
+      "similarity": 0.5,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0236",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.5892,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0237",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.693,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0238",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.5569,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0239",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.6019,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0240",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.5212,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0241",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.5168,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0242",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.6316,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0243",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.6018,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0244",
+      "category": "synonym_alias",
+      "expected": "low",
+      "similarity": 0.5003,
+      "status": "fail",
+      "margin": 0.1503
+    },
+    {
+      "id": "mammr-v0.1-0245",
+      "category": "synonym_alias",
+      "expected": "low",
+      "similarity": 0.4186,
+      "status": "fail",
+      "margin": 0.0686
+    },
+    {
+      "id": "mammr-v0.1-0246",
+      "category": "synonym_alias",
+      "expected": "high",
+      "similarity": 0.8994,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0247",
+      "category": "entity_confusion",
+      "expected": "high",
+      "similarity": 0.6758,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0248",
+      "category": "entity_confusion",
+      "expected": "low",
+      "similarity": 0.4334,
+      "status": "fail",
+      "margin": 0.0834
+    },
+    {
+      "id": "mammr-v0.1-0249",
+      "category": "entity_confusion",
+      "expected": "high",
+      "similarity": 0.6319,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0250",
+      "category": "entity_confusion",
+      "expected": "medium_high",
+      "similarity": 0.4959,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0251",
+      "category": "entity_confusion",
+      "expected": "high",
+      "similarity": 0.6894,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0252",
+      "category": "entity_confusion",
+      "expected": "medium_high",
+      "similarity": 0.5819,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0253",
+      "category": "entity_confusion",
+      "expected": "high",
+      "similarity": 0.7147,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0254",
+      "category": "entity_confusion",
+      "expected": "low",
+      "similarity": 0.4162,
+      "status": "fail",
+      "margin": 0.0662
+    },
+    {
+      "id": "mammr-v0.1-0255",
+      "category": "entity_confusion",
+      "expected": "high",
+      "similarity": 0.5195,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0256",
+      "category": "entity_confusion",
+      "expected": "low",
+      "similarity": 0.4197,
+      "status": "fail",
+      "margin": 0.0697
+    },
+    {
+      "id": "mammr-v0.1-0257",
+      "category": "entity_confusion",
+      "expected": "high",
+      "similarity": 0.5898,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0258",
+      "category": "entity_confusion",
+      "expected": "medium_high",
+      "similarity": 0.5157,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0259",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.7649,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0260",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.5817,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0261",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.6253,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0262",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.5852,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0263",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.5073,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0264",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.4445,
+      "status": "fail",
+      "margin": 0.0555
+    },
+    {
+      "id": "mammr-v0.1-0265",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.5595,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0266",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.5563,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0267",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.5392,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0268",
+      "category": "context_implicit",
+      "expected": "high",
+      "similarity": 0.6141,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0269",
+      "category": "context_implicit",
+      "expected": "low",
+      "similarity": 0.3501,
+      "status": "fail",
+      "margin": 0.0001
+    },
+    {
+      "id": "mammr-v0.1-0270",
+      "category": "context_implicit",
+      "expected": "low",
+      "similarity": 0.3915,
+      "status": "fail",
+      "margin": 0.0415
+    },
+    {
+      "id": "mammr-v0.1-0271",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.643,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0272",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.5259,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0273",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.6679,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0274",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.6876,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0275",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.3083,
+      "status": "fail",
+      "margin": 0.1917
+    },
+    {
+      "id": "mammr-v0.1-0276",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.6216,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0277",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.5571,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0278",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.619,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0279",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.6085,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0280",
+      "category": "partial_match",
+      "expected": "high",
+      "similarity": 0.5935,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0281",
+      "category": "partial_match",
+      "expected": "low",
+      "similarity": 0.4145,
+      "status": "fail",
+      "margin": 0.0645
+    },
+    {
+      "id": "mammr-v0.1-0282",
+      "category": "partial_match",
+      "expected": "low",
+      "similarity": 0.3581,
+      "status": "fail",
+      "margin": 0.0081
+    },
+    {
+      "id": "mammr-v0.1-0283",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.6875,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0284",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.7321,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0285",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.791,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0286",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.7578,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0287",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.6395,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0288",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.5909,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0289",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.7118,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0290",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.6393,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0291",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.7048,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0292",
+      "category": "code_to_description",
+      "expected": "high",
+      "similarity": 0.6526,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0293",
+      "category": "code_to_description",
+      "expected": "low",
+      "similarity": 0.3949,
+      "status": "fail",
+      "margin": 0.0449
+    },
+    {
+      "id": "mammr-v0.1-0294",
+      "category": "code_to_description",
+      "expected": "low",
+      "similarity": 0.427,
+      "status": "fail",
+      "margin": 0.077
+    },
+    {
+      "id": "mammr-v0.1-0295",
+      "category": "adversarial",
+      "expected": "medium",
+      "similarity": 0.4214,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0296",
+      "category": "adversarial",
+      "expected": "medium",
+      "similarity": 0.4985,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0297",
+      "category": "adversarial",
+      "expected": "medium",
+      "similarity": 0.3898,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0298",
+      "category": "adversarial",
+      "expected": "low",
+      "similarity": 0.3126,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0299",
+      "category": "adversarial",
+      "expected": "low",
+      "similarity": 0.4458,
+      "status": "fail",
+      "margin": 0.0958
+    },
+    {
+      "id": "mammr-v0.1-0300",
+      "category": "adversarial",
+      "expected": "medium",
+      "similarity": 0.4787,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0301",
+      "category": "adversarial",
+      "expected": "medium",
+      "similarity": 0.5366,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0302",
+      "category": "adversarial",
+      "expected": "low",
+      "similarity": 0.4425,
+      "status": "fail",
+      "margin": 0.0925
+    },
+    {
+      "id": "mammr-v0.1-0303",
+      "category": "adversarial",
+      "expected": "high",
+      "similarity": 0.8691,
+      "status": "pass",
+      "margin": 0.0
+    },
+    {
+      "id": "mammr-v0.1-0304",
+      "category": "adversarial",
+      "expected": "high",
+      "similarity": 0.8868,
+      "status": "pass",
+      "margin": 0.0
+    }
+  ],
+  "embed_times_s": [
+    0.3967,
+    1.8923,
+    0.3282,
+    1.4023,
+    0.2448,
+    1.4505,
+    0.2391,
+    1.6132,
+    0.2407,
+    1.4065,
+    0.2225,
+    2.4153,
+    0.2081,
+    2.0564,
+    0.1705,
+    1.4549,
+    0.2364,
+    1.5422,
+    0.2455,
+    1.4089,
+    0.236,
+    1.5245,
+    0.1989,
+    1.3171,
+    0.2469,
+    1.3476,
+    1.138,
+    1.0372,
+    0.7647,
+    1.7711,
+    1.4622,
+    1.3177,
+    1.4276,
+    1.6172,
+    0.6106,
+    0.874,
+    1.1002,
+    0.9357,
+    0.6197,
+    0.7913,
+    0.6056,
+    0.4978,
+    0.7777,
+    0.7504,
+    0.5769,
+    0.6247,
+    0.6549,
+    0.5555,
+    0.8418,
+    0.971,
+    0.5815,
+    1.4127,
+    1.3371,
+    2.0109,
+    1.2711,
+    1.372,
+    1.1752,
+    1.3862,
+    1.5225,
+    1.2707,
+    1.1883,
+    0.9915,
+    1.0964,
+    0.9297,
+    1.1356,
+    1.1379,
+    1.3565,
+    0.807,
+    2.2214,
+    0.5883,
+    1.1178,
+    0.5197,
+    0.6938,
+    0.365,
+    1.6146,
+    0.2939,
+    1.3768,
+    0.5393,
+    1.4827,
+    0.4564,
+    1.7124,
+    0.2479,
+    1.4045,
+    0.4621,
+    1.6065,
+    0.295,
+    1.2058,
+    0.668,
+    1.4662,
+    0.2759,
+    1.5546,
+    0.6051,
+    0.5951,
+    0.4103,
+    0.2472,
+    1.5728,
+    1.4168,
+    1.345,
+    0.3263,
+    0.8148,
+    0.2249,
+    0.9034,
+    0.228,
+    1.1103,
+    0.9416,
+    0.3485,
+    0.4572,
+    0.2725,
+    0.451,
+    0.1988,
+    0.4873,
+    0.497,
+    0.5224,
+    0.462,
+    0.5928,
+    0.274,
+    0.4556,
+    0.3746,
+    0.5307,
+    0.2263,
+    0.9266,
+    0.4296,
+    0.4584,
+    0.2846,
+    0.5281,
+    0.3671,
+    0.4133,
+    0.3176,
+    0.4176,
+    0.7711,
+    0.7661,
+    0.6002,
+    0.3797,
+    0.5662,
+    0.5311,
+    0.2742,
+    0.385,
+    0.4569,
+    0.6314,
+    0.8804,
+    0.4487,
+    0.3248,
+    0.5036,
+    0.4295,
+    1.1379,
+    0.2665,
+    0.4561,
+    0.2052,
+    0.2713,
+    0.4579,
+    0.2593,
+    0.4406,
+    0.3123,
+    0.6578,
+    0.4811,
+    0.4373,
+    0.2997,
+    0.3259,
+    0.2085,
+    0.2776,
+    0.2651,
+    0.177,
+    0.1444,
+    0.3094,
+    0.3924,
+    0.2568,
+    0.3813,
+    0.2524,
+    0.1811,
+    0.6959,
+    0.5324,
+    0.1571,
+    0.203,
+    0.2236,
+    0.2655,
+    0.7689,
+    0.3828,
+    0.2195,
+    0.3082,
+    0.3657,
+    0.1685,
+    0.1753,
+    0.2587,
+    0.2425,
+    0.2038,
+    0.2329,
+    0.4072,
+    0.5018,
+    0.1944,
+    0.1819,
+    0.3844,
+    0.1905,
+    0.2462,
+    0.2071,
+    0.167,
+    0.1808,
+    0.1981,
+    0.1807,
+    0.1795,
+    0.1782,
+    0.2848,
+    0.2974,
+    0.5454,
+    0.9826,
+    0.3275,
+    1.2233,
+    0.3807,
+    2.0381,
+    0.2438,
+    1.1983,
+    0.2075,
+    1.1155,
+    0.3185,
+    1.2097,
+    0.2638,
+    2.2929,
+    0.373,
+    1.2897,
+    0.2174,
+    1.1208,
+    0.3392,
+    1.2215,
+    0.2647,
+    1.4572,
+    0.2452,
+    1.4138,
+    0.8308,
+    1.5426,
+    0.5618,
+    0.1589,
+    1.162,
+    0.3286,
+    1.1846,
+    1.1662,
+    0.6159,
+    0.2414,
+    0.1799,
+    0.1708,
+    0.3335,
+    0.3631,
+    0.3927,
+    0.1884,
+    0.2736,
+    0.3183,
+    0.267,
+    0.3418,
+    0.2779,
+    0.1954,
+    0.3518,
+    0.4156,
+    0.3832,
+    0.2896,
+    1.0688,
+    0.3374,
+    0.6049,
+    0.5103,
+    0.5936,
+    0.3569,
+    0.3946,
+    0.4586,
+    0.2553,
+    0.2785,
+    0.2045,
+    0.2327,
+    0.2449,
+    0.2473,
+    0.1689,
+    0.4935,
+    0.2029,
+    0.298,
+    0.2215,
+    0.3673,
+    0.2121,
+    0.2366,
+    0.2156,
+    0.3007,
+    0.2183,
+    0.2824,
+    0.2472,
+    0.2747,
+    0.3805,
+    0.2574,
+    0.2681,
+    0.231,
+    0.5989,
+    0.7252,
+    0.2599,
+    1.2317,
+    0.7703,
+    0.3407,
+    1.6584,
+    1.0626,
+    0.3715,
+    1.2711,
+    0.6775,
+    0.2441,
+    1.2557,
+    0.5766,
+    0.4997,
+    0.9326,
+    0.7211,
+    0.2266,
+    0.2853,
+    0.2961,
+    0.3423,
+    0.4137,
+    0.2438,
+    0.2894,
+    0.3714,
+    0.488,
+    0.4044,
+    0.2375,
+    0.3011,
+    0.4471,
+    0.4271,
+    0.2905,
+    0.2939,
+    0.7175,
+    0.4176,
+    0.5474,
+    0.3815,
+    0.35,
+    0.2626,
+    0.3852,
+    0.4553,
+    0.3699,
+    0.8142,
+    1.2454,
+    1.6662,
+    0.4978,
+    1.1566,
+    0.5312,
+    1.3652,
+    0.5752,
+    0.2426,
+    0.7242,
+    0.4688,
+    1.3197,
+    0.6719,
+    0.8741,
+    0.525,
+    0.9853,
+    0.4034,
+    1.1434,
+    0.3353,
+    0.8349,
+    0.5115,
+    1.229,
+    0.2718,
+    0.7434,
+    0.3988,
+    1.228,
+    0.3528,
+    0.3989,
+    0.6618,
+    0.6421,
+    0.4853,
+    0.6315,
+    0.8012,
+    0.6374,
+    0.3704,
+    0.4769,
+    0.2004,
+    0.2444,
+    0.3421,
+    0.5597,
+    0.1835,
+    0.225,
+    0.3693,
+    0.4067,
+    0.2422,
+    0.4107,
+    0.329,
+    0.3226,
+    0.3849,
+    0.8325,
+    0.2128,
+    0.376,
+    0.2678,
+    0.6174,
+    0.4802,
+    1.216,
+    0.499,
+    0.2436,
+    0.3008,
+    0.2847,
+    0.3282,
+    0.4262,
+    0.2895,
+    0.2449,
+    0.2631,
+    0.2707,
+    0.3311,
+    0.2509,
+    0.2942,
+    0.3048,
+    0.6816,
+    0.2482,
+    0.1999,
+    0.2781,
+    0.4354,
+    0.2695,
+    0.4063,
+    0.2705,
+    0.357,
+    0.3207,
+    0.6701,
+    0.3057,
+    0.4309,
+    0.4716,
+    0.3044,
+    0.3854,
+    0.3122,
+    0.2678,
+    0.412,
+    0.3715,
+    0.3232,
+    0.2882,
+    0.3819,
+    0.2677,
+    0.3573,
+    0.3845,
+    0.3296,
+    0.2372,
+    0.4317,
+    0.2089,
+    0.3167,
+    0.2007,
+    0.35,
+    0.2926,
+    0.4095,
+    0.3222,
+    0.513,
+    0.199,
+    0.3705,
+    0.3257,
+    0.9048,
+    0.5053,
+    0.7982,
+    0.2463,
+    0.3571,
+    0.225,
+    0.1908,
+    0.2436,
+    0.1514,
+    0.1915,
+    0.1375,
+    0.168,
+    0.1715,
+    0.1982,
+    0.2071,
+    0.2812,
+    0.2573,
+    0.1541,
+    0.261,
+    0.277,
+    0.4845,
+    0.3231,
+    1.3752,
+    0.292,
+    0.259,
+    0.1409,
+    0.1437,
+    0.1642,
+    0.2403,
+    1.056,
+    1.0145,
+    0.2573,
+    0.7836,
+    0.7932,
+    0.2266,
+    0.8552,
+    0.9376,
+    0.2243,
+    1.1954,
+    0.9765,
+    0.6537,
+    0.5015,
+    0.2822,
+    0.6919,
+    0.7269,
+    0.2266,
+    1.0098,
+    0.3634,
+    0.986,
+    0.1912,
+    1.8472,
+    0.2075,
+    1.3439,
+    0.4235,
+    1.1088,
+    0.1985,
+    0.7448,
+    0.2697,
+    0.7035,
+    0.2235,
+    1.5688,
+    0.2061,
+    1.1608,
+    0.7484,
+    0.9971,
+    0.6581,
+    0.4296,
+    0.223,
+    1.2606,
+    0.1596,
+    0.639,
+    1.4592,
+    0.1376,
+    1.6292,
+    0.2238,
+    1.1911,
+    0.2985,
+    1.0689,
+    0.1576,
+    1.0058,
+    0.2092,
+    0.6257,
+    0.218,
+    1.458,
+    0.125,
+    0.8261,
+    0.4767,
+    0.44,
+    1.4497,
+    0.3883,
+    0.7049,
+    0.4356,
+    0.5312,
+    0.4605,
+    0.8055,
+    0.7277,
+    0.8007,
+    0.34,
+    0.3794,
+    0.7937,
+    0.6164,
+    0.4113,
+    0.7076,
+    0.6384,
+    1.4269,
+    0.4278,
+    0.8664,
+    0.4097,
+    0.3276,
+    0.4172,
+    0.9843,
+    0.7066,
+    0.5491,
+    0.4422,
+    0.7076,
+    0.5666,
+    0.1748,
+    0.5563,
+    0.1644,
+    0.3555,
+    2.214,
+    0.3291,
+    0.3924,
+    0.4977,
+    0.3692,
+    0.5709,
+    0.7304,
+    0.4986
+  ],
+  "weighted_score": 0.7143,
+  "unweighted_score": 0.7016,
+  "mrr": 0.9134,
+  "recall_at_5": 0.9639,
+  "retrieval_queries": 166,
+  "label_counts": {
+    "high": 166,
+    "low": 103,
+    "medium": 11,
+    "medium_high": 25
+  },
+  "backend_metadata": {
+    "schema_version": "mammr-backend-metadata-v1",
+    "benchmark_role": "public_sanitized_rerun",
+    "dataset_sha256": "844361d0f7bb013f05c5fc3a172d71e8ed15cc9d801e60ac16749508a1c89545",
+    "hardware_class": "cpu_only_vps",
+    "backend_type": "llama.cpp_openai_compatible_embedding_server",
+    "backend_name": "llama-server-openblas",
+    "backend_version": "version: 1 (408225b)",
+    "backend_binary_sha256": "5f2609599bc72850fe0a5349502cdaa137c2477aa620e64eb53ae5c010b0fae7",
+    "model_name": "BGE-M3 Q8_0",
+    "model_file": "bge-m3-Q8_0.gguf",
+    "model_sha256": "950f4a8e5e19477a6d3c26d2f162233c20002c601f75e4b002e3239997821167",
+    "quantization": "Q8_0",
+    "pooling": "cls",
+    "context_size": 8192,
+    "threads": 1,
+    "threads_batch": 1,
+    "parallel": 1,
+    "batch_size": 1,
+    "llama_batch_size": 2048,
+    "llama_ubatch_size": 2048,
+    "gpu_layers": 0,
+    "notes": "Benchmark ran through an isolated local embedding endpoint. Public-safe metadata only.",
+    "endpoint_scope": "isolated loopback transient benchmark endpoint"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "run_type": "0g-sandbox-clean-room",
+  "date_utc": "YYYY-MM-DDTHH:MM:SSZ",
+  "repository": "mammr-benchmark",
+  "git_commit": "COMMIT_SHA",
+  "dataset_sha256": "DATASET_SHA256",
+  "environment": {
+    "runner": "0G Sandbox",
+    "os": "unknown",
+    "python": "unknown"
+  },
+  "commands": [
+    "python3 scripts/check_public_safety.py",
+    "python3 scripts/audit_dataset.py",
+    "python3 scripts/run_embedding_eval.py --dry-run"
+  ],
+  "result": {
+    "safety": "unknown",
+    "audit": "unknown",
+    "dry_run": "unknown"
+  },
+  "notes": "Do not include secrets, private paths, private IPs, hostnames, account identifiers, or raw private memory text."
+}
