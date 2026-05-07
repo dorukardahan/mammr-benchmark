@@ -1,5 +1,7 @@
 # MAMMR
 
+![MAMMR memory retrieval benchmark hero](docs/assets/mammr-hero.png)
+
 MAMMR is a benchmark for multilingual agent memory retrieval.
 
 Agent memory retrieval is not generic semantic search. A long-running agent often receives a short, vague query like "what was the VPS issue?" and must recover a long, messy memory involving commands, logs, configuration, stale state, and Turkish-English code-switching.
